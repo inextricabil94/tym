@@ -1,0 +1,17 @@
+﻿{
+  "status": "trained",
+  "task": "segment_type",
+  "language": "en",
+  "training_rows": 376,
+  "labels": [
+    "FIC",
+    "GEN",
+    "NAR",
+    "REM"
+  ],
+  "source_types": [
+    "provided_annotation"
+  ],
+  "model_path": "C:\\Users\\serba\\Documents\\ChatGPT\\PhD\\tym-private-research\\mlnet-run-20261002\\segment_type_en_sdca.zip",
+  "model_format": "ML.NET .zip"
+}

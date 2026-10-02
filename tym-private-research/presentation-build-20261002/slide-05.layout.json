@@ -1,0 +1,1645 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/3hqgqq",
+    "id": "3hqgqq",
+    "slide": 5,
+    "layoutId": "c69ef7e8-07f8-4aab-a3cc-a4f23b1abfde",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Arial"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "c69ef7e8-07f8-4aab-a3cc-a4f23b1abfde",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dk7214j6",
+      "id": "1",
+      "bbox": [
+        72,
+        44,
+        1136,
+        100
+      ],
+      "geometry": "rect",
+      "text": "Sixteen supervised classifiers",
+      "textPreview": "Sixteen supervised classifiers",
+      "resolvedFontSize": 44,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 44,
+        "typeface": "Arial",
+        "color": "#142D43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Sixteen supervised classifiers"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Sixteen supervised classifiers",
+          "resolvedTextStyle": {
+            "fontSize": 44,
+            "typeface": "Arial",
+            "color": "#142D43",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Sixteen supervised classifiers",
+              "fontSize": 44,
+              "typeface": "Arial",
+              "color": "#142D43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/3ep4jep8",
+      "id": "2",
+      "bbox": [
+        72,
+        150,
+        1136,
+        462
+      ],
+      "text": "Task | Lang. | Rows | Classes | Variants\nsegment_type | en | 376 | 4 | whole\nsegment_type | ro | 375 | 4 | whole\ntemporal_relation | en | 382 | 5 | whole\ntemporal_relation | ro | 382 | 5 | whole\nTimeBank event_class | ro | 5,947 | 7 | whole + structured\nTimeBank event_tense | ro | 5,920 | 7 | whole + structured\nTimeBank timex_type | ro | 1,144 | 4 | whole + structured\nTimeBank tlink | ro | 4,808 | 14 | whole + structured\nTimeBank slink | ro | 2,133 | 6 | whole + structured\nTimeBank alink | ro | 199 | 5 | whole + structured",
+      "textPreview": "Task | Lang. | Rows | Classes | Variants | segment_type | en | 376 | 4 | whole | segment_type | ro | 375 | 4 | whole | temporal_relation ...",
+      "rows": 11,
+      "cols": 5,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            72,
+            150,
+            430,
+            42
+          ],
+          "text": "Task",
+          "textPreview": "Task",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Task",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Task"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            502,
+            150,
+            130,
+            42
+          ],
+          "text": "Lang.",
+          "textPreview": "Lang.",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Lang.",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Lang."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "column": 3,
+          "bbox": [
+            632,
+            150,
+            170,
+            42
+          ],
+          "text": "Rows",
+          "textPreview": "Rows",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Rows",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Rows"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "column": 4,
+          "bbox": [
+            802,
+            150,
+            150,
+            42
+          ],
+          "text": "Classes",
+          "textPreview": "Classes",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Classes",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Classes"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 1,
+          "column": 5,
+          "bbox": [
+            952,
+            150,
+            256,
+            42
+          ],
+          "text": "Variants",
+          "textPreview": "Variants",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Variants",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Variants"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            72,
+            192,
+            430,
+            42
+          ],
+          "text": "segment_type",
+          "textPreview": "segment_type",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "segment_type",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "segment_type"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            502,
+            192,
+            130,
+            42
+          ],
+          "text": "en",
+          "textPreview": "en",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "en",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "column": 3,
+          "bbox": [
+            632,
+            192,
+            170,
+            42
+          ],
+          "text": "376",
+          "textPreview": "376",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "376",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "376"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 2,
+          "column": 4,
+          "bbox": [
+            802,
+            192,
+            150,
+            42
+          ],
+          "text": "4",
+          "textPreview": "4",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "4",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 2,
+          "column": 5,
+          "bbox": [
+            952,
+            192,
+            256,
+            42
+          ],
+          "text": "whole",
+          "textPreview": "whole",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "whole",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "whole"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            72,
+            234,
+            430,
+            42
+          ],
+          "text": "segment_type",
+          "textPreview": "segment_type",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "segment_type",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "segment_type"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            502,
+            234,
+            130,
+            42
+          ],
+          "text": "ro",
+          "textPreview": "ro",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "ro",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "ro"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "row": 3,
+          "column": 3,
+          "bbox": [
+            632,
+            234,
+            170,
+            42
+          ],
+          "text": "375",
+          "textPreview": "375",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "375",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "375"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "row": 3,
+          "column": 4,
+          "bbox": [
+            802,
+            234,
+            150,
+            42
+          ],
+          "text": "4",
+          "textPreview": "4",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "4",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "row": 3,
+          "column": 5,
+          "bbox": [
+            952,
+            234,
+            256,
+            42
+          ],
+          "text": "whole",
+          "textPreview": "whole",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "whole",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "whole"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            72,
+            276,
+            430,
+            42
+          ],
+          "text": "temporal_relation",
+          "textPreview": "temporal_relation",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "temporal_relation",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "temporal_relation"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 17,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            502,
+            276,
+            130,
+            42
+          ],
+          "text": "en",
+          "textPreview": "en",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "en",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 18,
+          "row": 4,
+          "column": 3,
+          "bbox": [
+            632,
+            276,
+            170,
+            42
+          ],
+          "text": "382",
+          "textPreview": "382",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "382",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "382"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 19,
+          "row": 4,
+          "column": 4,
+          "bbox": [
+            802,
+            276,
+            150,
+            42
+          ],
+          "text": "5",
+          "textPreview": "5",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "5",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "5"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 20,
+          "row": 4,
+          "column": 5,
+          "bbox": [
+            952,
+            276,
+            256,
+            42
+          ],
+          "text": "whole",
+          "textPreview": "whole",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "whole",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "whole"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 21,
+          "row": 5,
+          "column": 1,
+          "bbox": [
+            72,
+            318,
+            430,
+            42
+          ],
+          "text": "temporal_relation",
+          "textPreview": "temporal_relation",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "temporal_relation",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "temporal_relation"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 22,
+          "row": 5,
+          "column": 2,
+          "bbox": [
+            502,
+            318,
+            130,
+            42
+          ],
+          "text": "ro",
+          "textPreview": "ro",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "ro",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "ro"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 23,
+          "row": 5,
+          "column": 3,
+          "bbox": [
+            632,
+            318,
+            170,
+            42
+          ],
+          "text": "382",
+          "textPreview": "382",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "382",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "382"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 24,
+          "row": 5,
+          "column": 4,
+          "bbox": [
+            802,
+            318,
+            150,
+            42
+          ],
+          "text": "5",
+          "textPreview": "5",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "5",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "5"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 25,
+          "row": 5,
+          "column": 5,
+          "bbox": [
+            952,
+            318,
+            256,
+            42
+          ],
+          "text": "whole",
+          "textPreview": "whole",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "whole",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "whole"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 26,
+          "row": 6,
+          "column": 1,
+          "bbox": [
+            72,
+            360,
+            430,
+            42
+          ],
+          "text": "TimeBank event_class",
+          "textPreview": "TimeBank event_class",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "TimeBank event_class",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "TimeBank event_class"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 27,
+          "row": 6,
+          "column": 2,
+          "bbox": [
+            502,
+            360,
+            130,
+            42
+          ],
+          "text": "ro",
+          "textPreview": "ro",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "ro",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "ro"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 28,
+          "row": 6,
+          "column": 3,
+          "bbox": [
+            632,
+            360,
+            170,
+            42
+          ],
+          "text": "5,947",
+          "textPreview": "5,947",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "5,947",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "5,947"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 29,
+          "row": 6,
+          "column": 4,
+          "bbox": [
+            802,
+            360,
+            150,
+            42
+          ],
+          "text": "7",
+          "textPreview": "7",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "7",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "7"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 30,
+          "row": 6,
+          "column": 5,
+          "bbox": [
+            952,
+            360,
+            256,
+            42
+          ],
+          "text": "whole + structured",
+          "textPreview": "whole + structured",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "whole + structured",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "whole + structured"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 31,
+          "row": 7,
+          "column": 1,
+          "bbox": [
+            72,
+            402,
+            430,
+            42
+          ],
+          "text": "TimeBank event_tense",
+          "textPreview": "TimeBank event_tense",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "TimeBank event_tense",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "TimeBank event_tense"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 32,
+          "row": 7,
+          "column": 2,
+          "bbox": [
+            502,
+            402,
+            130,
+            42
+          ],
+          "text": "ro",
+          "textPreview": "ro",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "ro",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "ro"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 33,
+          "row": 7,
+          "column": 3,
+          "bbox": [
+            632,
+            402,
+            170,
+            42
+          ],
+          "text": "5,920",
+          "textPreview": "5,920",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "5,920",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "5,920"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 34,
+          "row": 7,
+          "column": 4,
+          "bbox": [
+            802,
+            402,
+            150,
+            42
+          ],
+          "text": "7",
+          "textPreview": "7",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "7",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "7"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 35,
+          "row": 7,
+          "column": 5,
+          "bbox": [
+            952,
+            402,
+            256,
+            42
+          ],
+          "text": "whole + structured",
+          "textPreview": "whole + structured",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "whole + structured",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "whole + structured"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 36,
+          "row": 8,
+          "column": 1,
+          "bbox": [
+            72,
+            444,
+            430,
+            42
+          ],
+          "text": "TimeBank timex_type",
+          "textPreview": "TimeBank timex_type",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "TimeBank timex_type",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "TimeBank timex_type"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 37,
+          "row": 8,
+          "column": 2,
+          "bbox": [
+            502,
+            444,
+            130,
+            42
+          ],
+          "text": "ro",
+          "textPreview": "ro",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "ro",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "ro"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 38,
+          "row": 8,
+          "column": 3,
+          "bbox": [
+            632,
+            444,
+            170,
+            42
+          ],
+          "text": "1,144",
+          "textPreview": "1,144",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "1,144",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "1,144"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 39,
+          "row": 8,
+          "column": 4,
+          "bbox": [
+            802,
+            444,
+            150,
+            42
+          ],
+          "text": "4",
+          "textPreview": "4",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "4",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 40,
+          "row": 8,
+          "column": 5,
+          "bbox": [
+            952,
+            444,
+            256,
+            42
+          ],
+          "text": "whole + structured",
+          "textPreview": "whole + structured",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "whole + structured",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "whole + structured"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 41,
+          "row": 9,
+          "column": 1,
+          "bbox": [
+            72,
+            486,
+            430,
+            42
+          ],
+          "text": "TimeBank tlink",
+          "textPreview": "TimeBank tlink",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "TimeBank tlink",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "TimeBank tlink"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 42,
+          "row": 9,
+          "column": 2,
+          "bbox": [
+            502,
+            486,
+            130,
+            42
+          ],
+          "text": "ro",
+          "textPreview": "ro",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "ro",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "ro"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 43,
+          "row": 9,
+          "column": 3,
+          "bbox": [
+            632,
+            486,
+            170,
+            42
+          ],
+          "text": "4,808",
+          "textPreview": "4,808",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "4,808",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "4,808"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 44,
+          "row": 9,
+          "column": 4,
+          "bbox": [
+            802,
+            486,
+            150,
+            42
+          ],
+          "text": "14",
+          "textPreview": "14",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "14",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "14"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 45,
+          "row": 9,
+          "column": 5,
+          "bbox": [
+            952,
+            486,
+            256,
+            42
+          ],
+          "text": "whole + structured",
+          "textPreview": "whole + structured",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "whole + structured",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "whole + structured"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 46,
+          "row": 10,
+          "column": 1,
+          "bbox": [
+            72,
+            528,
+            430,
+            42
+          ],
+          "text": "TimeBank slink",
+          "textPreview": "TimeBank slink",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "TimeBank slink",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "TimeBank slink"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 47,
+          "row": 10,
+          "column": 2,
+          "bbox": [
+            502,
+            528,
+            130,
+            42
+          ],
+          "text": "ro",
+          "textPreview": "ro",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "ro",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "ro"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 48,
+          "row": 10,
+          "column": 3,
+          "bbox": [
+            632,
+            528,
+            170,
+            42
+          ],
+          "text": "2,133",
+          "textPreview": "2,133",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "2,133",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "2,133"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 49,
+          "row": 10,
+          "column": 4,
+          "bbox": [
+            802,
+            528,
+            150,
+            42
+          ],
+          "text": "6",
+          "textPreview": "6",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "6",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 50,
+          "row": 10,
+          "column": 5,
+          "bbox": [
+            952,
+            528,
+            256,
+            42
+          ],
+          "text": "whole + structured",
+          "textPreview": "whole + structured",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "whole + structured",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "whole + structured"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 51,
+          "row": 11,
+          "column": 1,
+          "bbox": [
+            72,
+            570,
+            430,
+            42
+          ],
+          "text": "TimeBank alink",
+          "textPreview": "TimeBank alink",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "TimeBank alink",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "TimeBank alink"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 52,
+          "row": 11,
+          "column": 2,
+          "bbox": [
+            502,
+            570,
+            130,
+            42
+          ],
+          "text": "ro",
+          "textPreview": "ro",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "ro",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "ro"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 53,
+          "row": 11,
+          "column": 3,
+          "bbox": [
+            632,
+            570,
+            170,
+            42
+          ],
+          "text": "199",
+          "textPreview": "199",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "199",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "199"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 54,
+          "row": 11,
+          "column": 4,
+          "bbox": [
+            802,
+            570,
+            150,
+            42
+          ],
+          "text": "5",
+          "textPreview": "5",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "5",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "5"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 55,
+          "row": 11,
+          "column": 5,
+          "bbox": [
+            952,
+            570,
+            256,
+            42
+          ],
+          "text": "whole + structured",
+          "textPreview": "whole + structured",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "whole + structured",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "whole + structured"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ripkzu1g",
+      "id": "3",
+      "bbox": [
+        72,
+        638,
+        1136,
+        62
+      ],
+      "geometry": "rect",
+      "text": "Four TYM models and two variants of each TimeBank task. Two additional K-Means artifacts remain private.",
+      "textPreview": "Four TYM models and two variants of each TimeBank task. Two additional K-Means artifacts remain private.",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Arial",
+        "color": "#536979",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Four TYM models and two variants of each TimeBank task. Two additional K-Means artifacts remain private."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Four TYM models and two variants of each TimeBank task. Two additional K-Means artifacts remain private.",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Arial",
+            "color": "#536979"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Four TYM models and two variants of each TimeBank task. Two additional K-Means artifacts remain private.",
+              "fontSize": 21,
+              "typeface": "Arial",
+              "color": "#536979"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

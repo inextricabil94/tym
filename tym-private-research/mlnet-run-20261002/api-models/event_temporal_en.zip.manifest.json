@@ -1,0 +1,30 @@
+﻿{
+  "schema_version": 1,
+  "task": "event_temporal",
+  "language": "en",
+  "trainer": "SdcaMaximumEntropy",
+  "featurizer": "ML.NET FeaturizeText",
+  "seed": 42,
+  "training_rows": 24,
+  "labels": [
+    "Future",
+    "Past",
+    "Present"
+  ],
+  "source_types": [
+    "synthetic_seed"
+  ],
+  "source_groups": [
+    "temporal-seeds-v1"
+  ],
+  "document_count": 0,
+  "research_limit": null,
+  "synthetic_provenance": {
+    "rows": 24,
+    "rows_with_parent": 0,
+    "phenomenon_counts": {},
+    "transformation_counts": {},
+    "generator_version_counts": {}
+  },
+  "model_sha256": "6238b35ee6c4f3f0518c3312bb947ec764ae1977ec455d092a14cb2abb00fbd1"
+}

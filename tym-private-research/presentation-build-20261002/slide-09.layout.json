@@ -1,0 +1,515 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/a131ev",
+    "id": "a131ev",
+    "slide": 9,
+    "layoutId": "c69ef7e8-07f8-4aab-a3cc-a4f23b1abfde",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Arial"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "c69ef7e8-07f8-4aab-a3cc-a4f23b1abfde",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hk7y1k76",
+      "id": "1",
+      "bbox": [
+        72,
+        44,
+        1136,
+        100
+      ],
+      "geometry": "rect",
+      "text": "Grouped TimeBank diagnostic",
+      "textPreview": "Grouped TimeBank diagnostic",
+      "resolvedFontSize": 44,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 44,
+        "typeface": "Arial",
+        "color": "#142D43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Grouped TimeBank diagnostic"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Grouped TimeBank diagnostic",
+          "resolvedTextStyle": {
+            "fontSize": 44,
+            "typeface": "Arial",
+            "color": "#142D43",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Grouped TimeBank diagnostic",
+              "fontSize": 44,
+              "typeface": "Arial",
+              "color": "#142D43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/fqdsf2p4",
+      "id": "2",
+      "bbox": [
+        72,
+        162,
+        1136,
+        425
+      ],
+      "text": "Protocol | Executed scope\nInput | 20,151 rows from 157 documents\nprovided_annotation / adjudication_unknown\nGrouping | Exact normalized task/language feature duplicates join documents\n50 components with 107 cross-document duplicate feature rows\nValidation | 3 folds with 6,744, 6,721 and 6,686 rows\nEvery row receives one out-of-fold prediction\nWhole-text comparison | Training-fold majority, SDCA and L-BFGS maximum entropy\nFeaturizeText, at most 100 iterations, one trainer thread",
+      "textPreview": "Protocol | Executed scope | Input | 20,151 rows from 157 documents | provided_annotation / adjudication_unknown | Grouping | Exact normal...",
+      "rows": 5,
+      "cols": 2,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            72,
+            162,
+            295,
+            85
+          ],
+          "text": "Protocol",
+          "textPreview": "Protocol",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Protocol",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Protocol"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            367,
+            162,
+            841,
+            85
+          ],
+          "text": "Executed scope",
+          "textPreview": "Executed scope",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Executed scope",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Executed scope"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            72,
+            247,
+            295,
+            85
+          ],
+          "text": "Input",
+          "textPreview": "Input",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Input",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Input"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            367,
+            247,
+            841,
+            85
+          ],
+          "text": "20,151 rows from 157 documents\nprovided_annotation / adjudication_unknown",
+          "textPreview": "20,151 rows from 157 documents | provided_annotation / adjudication_unknown",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "20,151 rows from 157 documents",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "20,151 rows from 157 documents"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "provided_annotation / adjudication_unknown",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "provided_annotation / adjudication_unknown"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            72,
+            332,
+            295,
+            85
+          ],
+          "text": "Grouping",
+          "textPreview": "Grouping",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Grouping",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Grouping"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            367,
+            332,
+            841,
+            85
+          ],
+          "text": "Exact normalized task/language feature duplicates join documents\n50 components with 107 cross-document duplicate feature rows",
+          "textPreview": "Exact normalized task/language feature duplicates join documents | 50 components with 107 cross-document duplicate feature rows",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Exact normalized task/language feature duplicates join documents",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Exact normalized task/language feature duplicates join documents"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "50 components with 107 cross-document duplicate feature rows",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "50 components with 107 cross-document duplicate feature rows"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            72,
+            417,
+            295,
+            85
+          ],
+          "text": "Validation",
+          "textPreview": "Validation",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Validation",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Validation"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            367,
+            417,
+            841,
+            85
+          ],
+          "text": "3 folds with 6,744, 6,721 and 6,686 rows\nEvery row receives one out-of-fold prediction",
+          "textPreview": "3 folds with 6,744, 6,721 and 6,686 rows | Every row receives one out-of-fold prediction",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "3 folds with 6,744, 6,721 and 6,686 rows",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "3 folds with 6,744, 6,721 and 6,686 rows"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "Every row receives one out-of-fold prediction",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Every row receives one out-of-fold prediction"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 5,
+          "column": 1,
+          "bbox": [
+            72,
+            502,
+            295,
+            85
+          ],
+          "text": "Whole-text comparison",
+          "textPreview": "Whole-text comparison",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Whole-text comparison",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Whole-text comparison"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 5,
+          "column": 2,
+          "bbox": [
+            367,
+            502,
+            841,
+            85
+          ],
+          "text": "Training-fold majority, SDCA and L-BFGS maximum entropy\nFeaturizeText, at most 100 iterations, one trainer thread",
+          "textPreview": "Training-fold majority, SDCA and L-BFGS maximum entropy | FeaturizeText, at most 100 iterations, one trainer thread",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Training-fold majority, SDCA and L-BFGS maximum entropy",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Training-fold majority, SDCA and L-BFGS maximum entropy"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "FeaturizeText, at most 100 iterations, one trainer thread",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "FeaturizeText, at most 100 iterations, one trainer thread"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vipgzapg",
+      "id": "3",
+      "bbox": [
+        72,
+        633,
+        1136,
+        62
+      ],
+      "geometry": "rect",
+      "text": "Scores classify labels given supplied spans and endpoints. TYM has one source work and remains outside this split.",
+      "textPreview": "Scores classify labels given supplied spans and endpoints. TYM has one source work and remains outside this split.",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Arial",
+        "color": "#536979",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Scores classify labels given supplied spans and endpoints. TYM has one source work and remains outside this split."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Scores classify labels given supplied spans and endpoints. TYM has one source work and remains outside this split.",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Arial",
+            "color": "#536979"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Scores classify labels given supplied spans and endpoints. TYM has one source work and remains outside this split.",
+              "fontSize": 21,
+              "typeface": "Arial",
+              "color": "#536979"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,20 @@
+﻿{
+  "status": "trained",
+  "task": "timebank_event_tense",
+  "language": "ro",
+  "training_rows": 5920,
+  "labels": [
+    "FUTURE",
+    "INFINITIVE",
+    "NONE",
+    "PAST",
+    "PASTPART",
+    "PRESENT",
+    "PRESPART"
+  ],
+  "source_types": [
+    "provided_annotation"
+  ],
+  "model_path": "C:\\Users\\serba\\Documents\\ChatGPT\\PhD\\tym-private-research\\mlnet-run-20261002\\timebank_event_tense_ro_sdca.zip",
+  "model_format": "ML.NET .zip"
+}

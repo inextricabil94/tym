@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "source_group": "provided-hln-motiw-narrative",
+  "output_rows": 1515,
+  "provenance": "provided_annotation/adjudication_unknown; train-only",
+  "files": [
+    {
+      "file": "hln_ro.xml",
+      "language": "ro",
+      "segments": 375,
+      "segment_labels": {
+        "FIC": 25,
+        "GEN": 4,
+        "NAR": 313,
+        "REM": 33
+      },
+      "relations_in_xml": 383,
+      "relations_imported": 382,
+      "relations_skipped_missing_segment_endpoint": 1,
+      "relation_labels": {
+        "AFTER": 38,
+        "BEFORE": 36,
+        "IMMEDIATELY_AFTER": 211,
+        "IMMEDIATELY_BEFORE": 20,
+        "SIMULTANEOUS": 77
+      },
+      "span_count": 375
+    },
+    {
+      "file": "motiw_en.xml",
+      "language": "en",
+      "segments": 376,
+      "segment_labels": {
+        "FIC": 25,
+        "GEN": 4,
+        "NAR": 314,
+        "REM": 33
+      },
+      "relations_in_xml": 382,
+      "relations_imported": 382,
+      "relations_skipped_missing_segment_endpoint": 0,
+      "relation_labels": {
+        "AFTER": 24,
+        "BEFORE": 32,
+        "IMMEDIATELY_AFTER": 218,
+        "IMMEDIATELY_BEFORE": 24,
+        "SIMULTANEOUS": 84
+      },
+      "span_count": 376
+    }
+  ],
+  "notes": [
+    "The English and Romanian files are translations/parallel annotations of one story and must remain in the same split.",
+    "This parser converts the custom TYM TAGS XML; it does not convert Ro-TimeBank or ISO-TimeML.",
+    "Evaluation must use a separate, independently adjudicated human-gold corpus.",
+    "A TREL whose endpoint is not present in its source file is skipped and counted above."
+  ]
+}

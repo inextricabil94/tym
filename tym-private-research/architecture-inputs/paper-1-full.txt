@@ -1,0 +1,725 @@
+===PAGE 1===
+ 
+Spatial-Temporal  and  Semantic  Information  
+Extraction
+ Boghiu  Șerban  Paul  Faculty  of  Computer  Science  Alexandru  Ioan  Cuza  University  of  Iași  serban.boghiu@info.uaic.ro   
+Abstract —  This  document  continues  the  research  of  extracting  and  processing  events  from  a  temporal,  spatial  and  semantical  point  of  view,  but  in  a  more  experimental   and  technical  way.  Technologies  that  can  be  used  in  an  implementation  of  the  Time  Yards  Model  (TYM)  are  presented  and  a  brief  comparison  between  them  is  made.  A  use  case  of  text  interpretation  is  also  presented  with  results  in  analyzing  past  hazards  and  predicting  potential  others,  which  could  be  inspiring  for  a  generalization  of  TYM  in  which  not  only  human  characters  are  traced  in  time,  but  also  political  developments,  pandemics  or  other  events  that  involve  large  masses  of  people.  
+Keywords—action,  time,  temporality,  named  entity  recognition,  geoparsing,  natural  text  processing,  hazards   
+I.  I
+NTRODUCTION
+   Spatial-temporal  information  is  present  all  around  us  in  a  large  variety  of  types  of  text:  literature,  daily  news,  posts,  chats,  etc.  Hence,  the  need  of  processing  them  automatically  and  organizing  their  content  up  to  the  level  that  allows  the  rather  unstructured  textual  data  to  be  placed  in  representation  forms  that  can  trigger  automated  or  machine-aided  reasoning  and  other  complex  tasks  that  mimic  the  way  humans  interpret  texts.    The  concepts  of  time  and  space  play  a  significant  role  in  our  life,  and  many  modern  approaches  are  oriented  today  towards  
+analyzing  and  modeling  them  in  a  spatial-temporal  space  (Klimešová,  Dana   and  Eva   Ocelíková,  2012,  “Spatial-temporal  modeling  and  visualization”).  When  data  is  collected  across  time  as  well  as  space  and  has  at  least  one  property  (spatial  or  temporal),  we  can  define  a  spatial-temporal  model.  Most  natural  language  processing  formalisms  focus  on  how  time  and  space  are  expressed  in  text  do  make  use  of  some  common  features,  such  as  time  and  space  measures  in  different  units  or  directly  expressed  temporal  and  spatial  correlations,  out  of  which  partial  ordering  of  events  in  time  and  spatial  arrangements  of  objects  can  be  inferred  or  predicted.  Other  very  recent  techniques  get  rid  of  specific  features  at  all  and,  working  directly  on  the  raw  text  passed  through  different  layers  of  a  neural  network,  are  able  to  evidence  predictions  about  time  and  space,  in  a  way  which  is  very  close  to  how  humans  behave  when  reading.  In  this  survey  we  review  a  number  of  technologies  that  deal  with  time  and  space  in  texts,  with  the  intention  to  lay  the  basis  of  further  research  that  should  focus  on  the  temporal  and  spatial  interpretation  of  the  natural  language.  In  particular,  we  are  interested  in  offering  an  implementation  of  the  Time  Yards  Model  (Cristea,  2017;  Cristea  and  Macovei,  2017),  with  possible  theoretical  extensions  that  make  this  model  applicable  to  hazards  and  mass  events.   
+
+===PAGE 2===
+Classical  NLP  models  consider  time  from  a  logical  perspective  (Allen,  1983;  Allen  &  Ferguson,  1994),  rather  distant  from  the  way  the  machine  could  decipher  it  in  a  text.  In  order  to  be  processed,  the  text  should  be  regarded  as  a  set  of  chronologically  and  logically  connected  events,  starting  from  a  sequence  of  textual  elements  that  are  linked  through  relations.  The  relations  can  hold  between  words,  between  sentences  or  between  larger  spans  of  text,  like  for  instance  paragraphs,  but  at  the  lowest  layer  they  relate  textual  mentions  of  events.  Some  models  describing  this  behavior  will  be  presented  below.  In  the  future  we  will  focus  on  textual  data  acquired  from  a  wide  variety  of  sources,  but  in  this  study  we  consider  as  a  use  case  a  social  media  channel,  the  tweets,  and  a  particular  type  of  event,  the  Coronavirus  pandemic.  The  interpretation  of  this  type  of  data  can  play  a  vital  role  in  identifying  and  preventing  hazards,  such  as  pandemics  or  natural  disasters,  but  we  also  believe  it  could  be  a  good  source  to  inspire  us  on  the  most  adequate  methods  to  be  integrated  in  our  study  dedicated  to  TYM.   Time  and  space  textual  patterns,  rather  frequently  used  in  the  semantic  interpretation  of  texts,  may  be  highly  complex,  so  it  is  a  challenging  and  demanding  process  to  properly  develop  them  to  be  suited  in  various  types  of  event  mentioning  data.  For  instance,  in  order  to  analyze  the  traffic  of  the  virus  as  mentioned  on  tweets,  that  would  reveal  its  impressive  negative  effects  on  the  population,  such  patterns  should  be  able  to  put  in  evidence  spatial-temporal  placement  of  the  events,  in  geographical  regions  and  on  a  timeline,  and  output  a  semantic  annotation  that  could  be  taken  as  an  interpretation  of  what  happened.  We  propose  a  review  of  the  best  models  and  techniques  of  time  and  space  processing  in  view  of  finding  the  best  models  and  technologies  suitable  to  be  used  for  the  implementation  of  a  theory  that  tries  to  copy  
+on  the  machine  the  human  ability  to  unthread  time  and  decipher  spatial  relations,  in  social  media,  written  press  or  even  on  creative  texts,  characters'  trajectories  or  happenings  involving  a  mass  of  people.  Thus,  this  investigation  will  draw  the  basic  knowledge  level  of  the  research  intended  to  uncover  in  texts  the  occurrence  of  events,  their  involved  characters,  and  their  relationship  with  time  and  space.  Furthermore,  to  understand  better  what  an  event  is,  we  have  to  describe  a  spatial-temporal  dataset,  rich  in  spatial  (certain  places)  and  temporal  (certain  dates  and  times)  data.  An  example  could  be  the  evolution  of  the  COVID-19  mortality  rate  in  China  between  December  2019  and  March  2020,  where  the  spatial  space  are  located  in  China  and  the  intended  result  is  a  summary  of  the  COVID-19  mortality  evolution  in  this  time  interval.    In  recent  years,  more  and  more  spatial-temporal  models  in  social  networks  have  been  introduced.  A  brief  summary  following  [2]  is:  (1)  link-based  -  models  that  apply  link  analysis  (e.g.  Page  Rank)  to  recognize  experienced/skillful  users  and  locations  that  have  certain  special  properties  [3,  4];  (2)  content-based  -  models  that  use  data  from  a  user’s  profile  and  the  locations’  features  [5,  6];  (3)  collaborative  filtering  -  models  that  affect  users’  preferences  (e.g.  location  history)  [7,  8];  (4)  time-progressive  -  models  that  take  into  account  the  imminence  of  an  impact  (i.e.,  the  immediate,  near,  and  far  future)  [9].  The  ultimate  research  question  that  this  report  intends  to  answer  is:  How  to  efficiently  implement  a  system  that  exploits  the  spatial  and  temporal  data  paired  with  events  on  Social  Media  to  recognize  critical  issues  in  real-tim e?     
+
+===PAGE 3===
+II.  T
+EMPORAL
+ P
+ROCESSING
+   In  order  to  decipher  the  temporal  expressions  and  references  from  texts  our  survey  aims  to  test  the  most  important  state  of  the  art  libraries  and  tools  that  are  specialized  in  this  area.  Temporal  processing  needs  great  precision  because  it  is  the  main  feature  that  helps  us  order  and  group  the  events  to  obtain  significant  information  from  them.   A.  D
+UCKLING
+  Duckling  is  a  programming  language,  an  engine  and  a  tooling  system  for  expressing,  testing,  and  evaluating  composable  language  rules  on  textual  input  strings.  It  is  known  to  offer  very  good  results  in  terms  of  accuracy  and  extensibility  (Duckling;).  Developed  by  Facebook,  Duckling  parses  texts  up  to  structured  data  [10].  In  order  to  use  Duckling,  I  have  created  a  Haskell  environment  using  Stack,  a  project  
+builder  for  multi-package  Haskell  projects.  I  have  also  created  a  basic  HTTP  REST  API  using  Flask  in  order  to  expose  the  service  calls.   In  this  PhD  thesis,  we  will  work  mainly  with  English  and  Romanian  language  texts  and,  indeed,  the  Duckling  engine  provides  support  for  all  languages,   by  allowing  the  creation  of  customised  language  specific  rules  and  the  use  of  specific  gazetteers.  Thus,  the  application  developer  can  easily  integrate  the  engine  and  localize  it  to  a  given  language  by  updating  some  specific  files.   Time  graining  is  accomplished  by  creating  language  specific  rules.  Duckling  has  Romanian  language  support  by  using  rules  of  the  following  type:   ("secunde(grain)",  "sec(und(a|e| ă ))?")   
+
+
+===PAGE 4===
+which  accepts  and  recognises  expressions  in  which  different  lexical  variants  of  the  Romanian  word  secundă  occurs.  This  example  will  recognise  and  process  the  following  variations:   5  sec,  o  secunda,  o  secund ă ,  30  de  secunde    
+Currently  we  have  defined  rules  capable  to  process  different  kinds  of  time  measure  units:   (" secunde  (grain)",  "sec(und(a|e| ă ))?")  
+(" minute  (grain)",  "min(ut(e|ul)?)?")  (" ore  (grain)",  "or(a|e(le)?| ă )")  
+(" zile  (grain)",  "zi(le(le)?|u(a| ă ))?")  
+(" saptamani  (grain)",  "sapt(a| ă )m(a|â)n(ile|a| ă |i)")  (" luni  (grain)",  "lun(i(le)?|a| ă )")  
+(" trimestre  (grain)",  "trimestr(e(le)?|ul?)")  
+(" ani  (grain)",  "an(ul|ii?)?")   
+ 
+In  order  to  improve  the  accuracy  of  our  temporal  processing  engine  based  on  Duckling,  we  are  going  to  add  new  rules  (patterns)  to  deal  with  other  unrecognizable  yet  temporal  expressions  that  will  be  found  in  Romanian  texts.  Examples:  deceniu,  secol,  veac,  mileniu.   Other  examples  of  rules  customized  for  Romanian  are  given  below,  in  which  the  reference  date_and_time  is  February  12th  -  20 13,  4:30  o’clock  (2013,  2,  12,  4,  30,  0):  Year,  Month,  Day,  Hour,  Minutes,  Seconds,  [      (datetime  (2013,  2,  12,  4,  30,  0)  Second)               [  "acum"               ,  "chiar  acum",               "momentul  prezent"               ]  
+  ,  (datetime  (2013,  2,  12,  0,  0,  0)  Day)               [  "azi"               ,  "astazi"               ,  "ast ă zi"               ]    ,  (datetime  (2013,  2,  11,  0,  0,  0)  Day)               [  "ieri"               ]    ,  (datetime  (2013,  2,  13,  0,  0,  0)  Day)               [  "maine"               ,  "mâine"               ]    ,  (datetime  (2013,  2,  18,  0,  0,  0)  Day)               [  "luni"               ,  "lunea  asta"               ,  "lunea  aceasta"               ]    ,  examples  (datetime  (2013,  2,  18,  0,  0,  0)  Day)               [  "Luni,  18  Feb"               ,  "Luni,  18  Februarie"               ]    ,  examples  (datetime  (2013,  2,  19,  0,  0,  0)  Day)               [  "marti"               ,  "mar ț i"               ,  "Marti  19"               ,  "Marti  pe  19"               ,  "Mar ț i  19"               ]    ,  examples  (datetime  (2013,  2,  14,  0,  0,  0)  Day)               [  "joi"               ,  "jo"               ]    ,  examples  (datetime  (2013,  2,  15,  0,  0,  0)  Day)               [  "vineri"               ,  "vi"               ]    ,  examples  (datetime  (2013,  2,  16,  0,  0,  0)  Day)               [  "sambata"               ,  "sâmb ă t ă "               ,  "sam"               ]    ,  examples  (datetime  (2013,  2,  17,  0,  0,  0)  Day)               [  "duminica"               ,  "duminic ă "  
+
+===PAGE 5===
+             ,  "du"               ,  "dum"               ]    ,  examples  (datetime  (2013,  3,  1,  0,  0,  0)  Day)               [  "1  martie"               ,  "intai  martie"               ]   ,  examples  (datetimeInterval  ((2013,  6,  19,  0,  0,  0),  (2013,  6,  21,  0,  0,  0))  Day)               [  "iunie  19-20"               ]    ,  examples  (datetime  (2013,  12,  25,  0,  0,  0)  Day)               [  "ziua  de  craciun"               ,  "cr ă ciun"               ]    ,  examples  (datetime  (2013,  2,  14,  0,  0,  0)  Day)               [  "poimaine"               ,  "poimâine"               ]    ]      
+ Duckling  offers  support  for  different  dimensions:  email,  distances,  temperatures  etc.  Each  dimension  has  its  own  rules  defined  for  each  language.    
+Dimension  Example  input  
+AmountOfMoney  
+"42€"  
+CreditCardNumber  
+"4111-1111-1111-1111"  
+Distance  "6  miles"  
+Duration  "3  mins"  
+Email  "duckling-team@fb.com"  
+Numeral  "eighty  eight"  
+Ordinal  "33rd"  
+PhoneNumber  
+"+1  (650)  123-4567"  
+Quantity  "3  cups  of  sugar"  
+Temperature  
+"80F"  
+Time  "today  at  9am"  
+Url  "https://api.wit.ai/message?q=hi"  
+Volume  "4  gallons"     In  order  to  test  the  accuracy  for  temporal   dimension  we  have  created  new  custom  specific  rules  and  we  regenerated  the  Duckling  classifiers.    As  example  input  for  our  temporal  processing  API,  we  used  a  text  rich  in  temporal  expressions:    Letopisețul  de  la  Putna  despre  primii  domni  ai  Moldovei   Povestirea  pe  scurt  despre  domnii  Moldovei.  De  la  facerea  lumii  în  anul  6867  -  1359,  de  atunci,  cu  voia  lui  Dumnezeu,  s-a  început  țara  Moldovei:  a  venit  Dragoș  voievod  din  țara  Ungurească,  din  Maramureș,  la  vânătoare  după  un  bour  și  a  domnit  2  ani.  Și  a  domnit  fiul  lui  Sas,  4  ani.  Și  a  domnit  Bogdan,  4  ani.  Și  a  domnit  fiul  lui,  Lațco,  8  ani.  Și  a  domnit  fiul  Musatei,  Petru,  16  ani.  
+
+===PAGE 6===
+Și  a  domnit  fratele  lui,  Roman,  3  ani.  Și  după  dânsul  a  domnit  fratele  lui,  Ștefan,  7  ani.  Și  a  domnit  Iuga  2  ani.  În  anul  6907  -  1399  a  venit  la  domnie  Alexandru  voievod  și  a  domnit  32  de  ani  și  8  luni.  Iliaș,  întâiul  lui  fiu,  a  domnit  2  ani  și  9  luni  singur,  iar  cu  fratele  său,  Ștefan,  au  domnit  împreună  7  ani.  A  prins  Ștefan  voievod,  pe  fratele  său  Iliaș  și  l-a  orbit.  Iar  Ștefan  voievod,  sin-  gur,  a  domnit  5  ani.  Și  i-a  tăiat  capul  Roman  voievod  și  a  domnit  Roman  voievod,  fiul  lui  Iliaș,  un  an.  A  domnit  Petru  voievod,  fiul  lui  Alexandru  voievod,  un  an.  Și  el  a  dat  cetatea  Chilia  ungurilor.  Și  a  domnit  Ciubăr  2  luni.  A  domnit  Alexăndrel,  fiul  lui  Iliaș  voievod,  4  ani.  Și  în  vremea  lui  a  fost  binecuvântat  prea  sfințitul  chir  Theoctist  ca  mitropolit  de  patriarhul  Nicodim  al  țării  Sârbești,  în  vremea  bine  credinciosului  despot  Gheorghie.  Și  a  murit  la  Cetatea  Albă,  în  anul  6962  -  1454  august  26.  A  domnit  Bogdan  voievod,  fiul  lui  Alexandru  voievod,  tatăl  lui  Ștefan  voievod,  2  ani.  Și  i-a  tăiat  capul  Petru  numit  Aron,  la  Răuseni.  A  domnit  Aron  2  ani.  Și  în  vremea  lui  s-a  început  darea  turcească.  Și  după  câtva  timp  i-a  tăiat  capul  Ștefan  voievod.   (Cronicile  slavo-române,  p.  60–61)
+ 1
+    
+1
+ Nota  Bene:  în  lumea  medievală,  memoria  istorică  este  foarte  scurtă  și  selectivă.  La  un  secol  de  la  începuturile  statului  moldovean,  tot  ce  se  mai  consemnează  sunt  numele  și,  cu  aproximație,  durata  domniei,  inclusiv  pentru  Alexandru  cel  Bun,  care  este  bunicul  lui  Ștefan  cel  Mare.   (“Istoria  României  în  texte”  2001,  Bogdan  Murgescu,  pag.  86)  
+  The  temporal  processing  API  of  the  Duckling  implementation  is  hosted  on  localhost:8000  (see  a  GUI  snapshot  in  Figure  1).    The  full  response  will  be  appended  to  the  paper  as  APPENDIX.   
+  We  think  that  the  ReTeRom-Cobiliro  platform
+ 2
+ can  provide  a  rich  collection  of  texts  displaying  temporal  expressions  (novels,  interviews,  fairy  tales,  etc.)  on  which  this  kind  of  patterns  could  be  used.    III.  S
+PATIAL
+ P
+ROCESSING
+  Spatial  processing  plays  a  vital  role  in  interpreting  data.  This  section  presents  state  of  the  art  technologies  that  can  be  used  to  accomplish  this  task.  
+A.  I
+DENTIFYING
+ L
+OCATIONS
+  Mordecai,  developed  in  Python,  is  a  framework  that  manages  to  identify  
+2
+http://platforma.cobiliro.info.uaic.ro/ 
+
+
+===PAGE 7===
+geolocations  accurately,  with  some  help  from  an  elastic  search  service.  It  extracts  names  of  places  from  a  text  and  returns  the  coordinates  and  structured  geographical  information  [11].   For  example,  given  the  sentence:   I  traveled  from  Oxford  to  Ottawa .   the  library  returns  the  result:  [  
+{'country_conf':  0.96474487,  
+  'country_predicted':  'GBR',  
+  'geo':  {'admin1':  'England',  
+   'country_code3':  'GBR',  
+   'feature_class':  'P',  
+   'feature_code':  'PPLA2',  
+   'geonameid':  '2640729',  
+   'lat':  '51.75222',  
+   'lon':  '-1.25596',  
+   'place_name':  'Oxford'},  
+  'spans':  [{'end':  22,  'start':  16}],  
+  'word':  'Oxford'},  
+ {'country_conf':  0.83302397,  
+  'country_predicted':  'CAN',  
+  'geo':  {'admin1':  'Ontario',  
+   'country_code3':  'CAN',  
+   'feature_class':  'P',  
+   'feature_code':  'PPLC',  
+   'geonameid':  '6094817',  
+   'lat':  '45.41117',  
+   'lon':  '-75.69812',  
+   'place_name':  'Ottawa'},  
+  'spans':  [{nd':  32,  'start':  26}],  
+  'word':  'Ottawa'}  
+]
+ 
+ This  library  is  extremely  useful  because  it  has  a  promising  precision  and  recall  and  could  be  useful  in  a  processing  chain  that  has  to  place  in  order  events  on  a  time  axis.  As  related  to  time,  given  the  coordinates,  a  map  can  be  obtained  to  visualise  graphically  the  placement  of  the  events.   IV.  D
+ATA
+ S
+ETS
+ 
+AND
+ M
+ETHODS
+ 
+FOR
+ P
+REDICTING
+ H
+AZARDS
+  This  section  deals  with  the  collecting  and  compiling  of  a  social  media  dataset  rich  in  time  and  space  mentions  and  inspecting  its  metadata.  In  order  to  decipher  in  texts  the  occurrence  of  events  together  with  their  involved  characters,  and  their  relationships  with  time  and  space,  we  describe  a  machine  learning  approach.  In  general,  small  documents  like  tweets  do  not  have  enough  information  to  make  their  semantic  context  clear.  In  contrast,  novels  or  other  larger  documents  have  too  much  variation.  The  big  challenge  is  to  find  a  proper  segmentation  of  textual  data  in  which  the  identity  of  time  and/or  of  space  could  be  maintained.  In  order  to  elucidate  this  issue,  we  prefered  to  combine  both  types  of  texts.  A.  D
+ATA
+ 
+SETS
+ We  thought  that  in  the  context  of  the  COVID-19  global  pandemic  it  would  be  relevant  for  our  study  to  use  a  dataset  acquired  by  the  John  Hopkins  University  [12],  which  operates  a  dashboard  for  tracking  the  COVID-19  and  shares  a  data  repository.      Their  model  resembles  our  previously  defined  model:  every  record  provides  a  Province,  Country,  Timestamp,  Number  of  confirmed  cases,  Number  of  deaths,  Number  of  recovered  cases,  Latitude  and  Longitude.  We  will  also  use  a  dataset  of  tweets  on  the  
+
+===PAGE 8===
+same  topic  acquired  from  the  Twitter  Stream.  Within  a  certain  established  time  interval  (a  start  and  an  end  day),  we  can  thus  analyse  the  dramatic  increase  in  the  number  of  cases,  as  the  awareness  for  the  vivacity  with  which  the  virus  is  spreading.  From  11th  of  March  till  1st  of  April  we  gathered  about  4  million  tweets  per  day,  all  covering  COVID-19  related  topics  only.  All  the  gathered  data  is  going  to  be  parsed  and  imported  into  an  SQL  database.  This  way  we  can  easily  access,  manipulate  and  analyse  all  the  information.  Every  existing  database  entry  will  be  further  analysed.  
+B.  S
+YSTEM
+ 
+ARCHITECTURE
+ The  web  application  will  be  hosted  in  the  cloud  in  order  to  provide  high  performance  and  reliability.  To  ensure  data  persistence  we  are  going  to  use  the  Microsoft  SQL  Server,  and  in  order  to  provide  cross-platform  development  we  are  going  to  use  the  ASP.NET  Core  framework.   Figure  2  describes  the  components  of  an  architecture  that  will  provide  the  NLP  pipeline  for  our  task  and  their  corresponding  dependencies  (an  architecture  that  is  closed  to  ours  can  be  found  in  [13]).  A  description  of  each  of  the  modules  used  in  this  system  and  their  state-of-art  performances  is  presented  below.   Note  that  only  the  significant  components  have  been  listed,  the  NLP  pipeline  is  built  by  customizing,  adding,  and/or  removing  some  of  them.
+ 
+ 
+A  text  record  will  go  through  the  following  steps:  ●  Sentence  Boundary-Detection  ●  Part-of-speech  Tagging  (POS-tagger)  ●  Named  Entity  Recognition  (NER)  ●  Coreference  Resolution  ●  Temporal  Tagging  ●  Spatial  Tagging  
+●  Sentimental  Analysis  (SA)  using  Neural  Network  No  NLP  component  does  modify  the  existing  content  of  the  text.  They  only  add  annotations  that  represent  deeper  levels  of  understanding  for  the  textual  data.    1.  Sentence  Boundary-Detection   Here,  each  sentence  will  be  included  in  a  <SENTENCE>  XML  element,  having  as  attributes:  ID  -  a  GUID  that  will  uniquely  identify  the  sentence,  NUMBER .   <SENTENCE  ID=”1be93344-765e-4d6d-a4a5-d4e05be2ae5b”  NUMBER=”0”>  Lorem  Ipsum  is  simply  a  dummy  text  of  the  printing  and  typesetting  industry. </SENTENCE>  <SENTENCE  ID=”45f4f107-e35b-4f4e-868c-1dd4e5f9f007”  NUMBER=”1”> Lorem  Ipsum  has  been  the  industry's  standard  dummy  text  ever  since  the  1500s,  when  an  unknown  printer  took  a  galley  of  type  and  scrambled  it  to  make  a  type  specimen  book. </SENTENCE>   <SENTENCE  ID=”cc105f2a-94f1-4581-b9e9-ea9912a1f395”  NUMBER=”2”> It  has  survived  not  only  five  centuries,  but  also  the  leap  into  electronic  typesetting,  remaining  essentially  unchanged. </SENTENCE>   <SENTENCE  ID=”ef7e84f9-edb5-4aea-8614-2cb28a28e296”  NUMBER=”3”> It  was  popularized  in  the  1960s  with  the  release  of  Letraset  sheets  containing  Lorem  Ipsum  passages,  and  more  recently  with  desktop  publishing  software  like  Aldus  PageMaker  including  versions  of  
+Lorem
+ 
+Ipsum.
+ 
+</SENTENCE>
+  2.  POS-tagger   
+
+===PAGE 9===
+Based  on  these  annotations,  the  rendering  engine  will  display  relevant  information  for  any  attribute  and  tag  that  are  available  on  the  content.  For  POS  tagging,  we  are  going  to  use  Stanford  Log-linear  Part-Of-Speech  Tagger  for  .NET.  The  tagger  is  licensed  under  the  GNU  General  Public  License  [14]  and  based  on  text  records,  it  assigns  part  of  speech  to  each  word  (and  other  tokens)  -  such  as  noun,  verb  and  adjective.  The  tagger  format  does  not  respect  our  tagging  convention,  so  in  order  to  use  it  the  provided  output  should  be  mapped  to  our  XML  tag  model.  This  way,  all  the  libraries  and  tools  that  we  use  will  provide  a  unified  output.    3.  NER  &  Coreference  Resolution    Coreference  Resolution  is  dependent  on  the   NER’s  output (Figure  4).  It  assigns  predefined  categories  to  them  such  as:  person  names,  organizations  and  locations.  For  this  task,  we  have  chosen  the  Stanford  Deterministic  Coreference  Resolution  System .  
+ 
+Figure  4:  Chains  of  coreferential  data  evidenced  by  the  Anaphora  Resolution  module   
+4.  Temporal  Tagging     The  text  content  of  each  record  is  tagged  for  temporality  using  the  TimeML  standard,  described  in  my  previous  PhD  report.  Each  tweet  or  text  content  will  be  analysed,  and  any  temporal  expression  will  be  marked  with  a  TIMEX3,  tag  as  illustrated  below.  If  there  is  no  identified  expression,  the  date  of  the  tweet  will  be  annotated  and  attached  to  the  resource.  Possible  LINK  for  each  tweet  can  be  made  using  its’  comments .  Example:   
+< TIMEX3  tid=”t1”  type=”DURATION”>Thursday</ TIMEX3 >,  I  < EVENT  eid=”e1”  class=”I_ACTION”>took</ EVENT >  the  plane  to  Copenhagen.  < MAKEINSTANCE  eiid=”ei1”  eventID=”e1”  pos=”VERB”  tense=”PAST”  polarity=”pos”/>  < TLINK  eventInstanceID=”e1”  relatedToTime=”t1”  signalID=”s1”  relType=”DURING”>   
+ SUTime
+ 3
+ is  a  library  developed  by  Stanford  University  to  recognize  and  normalize  time  expressions.  It  detects  temporal  expressions  and  computes  a  timespan  between  that  moment  and  the  current  time  reference.    For  example,  the  expression  “ next  Wednesday  at  3  p.m .”  will  be  translated  as  “ 2019-06-25T15:00 ”,  depending  on  the  current  date  and  time.    5.  Spatial  Tagging    SpatialML  (Inderjeet  Mani,  Janet  Hitzeman,  Justin  Richer  et  al.,  2008,  “SpatialML:  Annotation  Scheme,  Corpora,  and  Tools”)  is  a  standard  that  focuses  on  geographical  annotation  of  space,  including  relevant  landmarks  and  providing  spatial  information  about  a  domain.  The  tagging  is  done  based  on  the  output  of  the  Named  Entity  Recognition  module,  which  recognizes  mentions  of  locations  in  the  given  text.  If  there  is  no  location  discovered,  the  location  of  the  tweet  will  be  added  to  its  content  as  described  in  the  example  below.   
+ 
+I  visited  many  trattorias  in  Rome,  Italy.      <PLACE  type=”PPLC”,  country=”IT”  form=”NAM”>Rome</PLACE>   <PLACE  type=”COUNTRY”,  country=”IT”  form=”NAM”>Italy</PLACE >    
+6.  Sentiment  Analysis   
+3
+ https://github.com/topics/sutime 
+
+
+===PAGE 10===
+Sentimental  analysis  using  Neural  Networks  is  done  through  the  CNTK.GPU
+ 4
+.  This  is  a  library  developed  by  Microsoft  that  trains  and  runs  deep  neural  networks.  The  network  in  the  package  is  using  a  single  LSTM  layer  (Jinyu  Li,  Changliang  Liu,  Yifan  Gong,  2018  "Layer  Trajectory  LSTM")  to  process  the  tweets  and  text  content,  and  a  single  dense  layer  to  classify  the  results  into  a  positive  or  negative  prediction.  To  increase  the  accuracy  of  prediction  I  will  use  the  IMDB  Movie  Dataset.  This  is  a  dataset  with  25,000  positive  movie  reviews  and  25,000  negative  movie  reviews.   Mining  the  abundant  information  on  Social  Media  can  reflect  responsive  plans  for  ongoing  events  questioned  by  users  and  situational  awareness  companies  [15].  C.  E
+VALUATION
+ In  order  to  improve  the  system,  several  tests  were  conducted.  Accuracy,  commonly  used  in  order  to  evaluate  the  performance  of  a  model  as  the  proposed  one,  is  obtained  by  using  the  following  formula:     
+𝐴𝑐𝑐𝑢𝑟𝑎𝑐𝑦
+=
+ 𝑁 ( 𝑐𝑜𝑟𝑟𝑒𝑐𝑡  𝑐𝑙𝑎𝑠𝑠𝑖𝑓𝑖𝑐𝑎𝑡𝑖𝑜𝑛𝑠 )
+𝑇
+(
+𝑐𝑙𝑎𝑠𝑠𝑖𝑓𝑖𝑐𝑎𝑡𝑖𝑜𝑛𝑠
+)
+ We  used  the  Multinomial  Naïve  Bayes  classifier  (Huaixin  Chen  and  Daocai  Fu,  2018  "An  Improved  Naïve  Bayes  Classifier  for  Large  Scale  Text")  for  this  study.  In  fact,  this  formula  is  described  as  the  total  number  of  correct  classifications  over  the  total  number  of  classifications  made  at  a  given  point  in  time.  In  addition,  we  also  created  the  confusion  matrix,  also  known  as  the  error  matrix,  which  was  extracted  based  on  the  predictions  made  by  the  classifier  (see  Table  1).  
+4
+https://github.com/mdfarragher/DLR/tree/master/BinaryClassification/LstmDemo 
+Some  quantifiers  will  be  retrieved  from  the  daily  reports  such  as  the  number  of  deaths  per  day  or  the  growth  of  active  cases  per  day.  These  quantifiers  are  mapped  to  tweets  based  on  their  date  time  information.  In  order  to  increase  our  accuracy,  we  must  further  reconsider  each  parameter  that  is  used  in  the  prediction  algorithm.  Based  on  this  study,  we  may  add  or  subtract  parameters  to  provide  a  better  accuracy.  Table  1  shows  the  results  of  the  Multinomial  Naïve  Bayes  Multi-Class  classification  model  (Prediction  result  -  horizontally,  Actual  result  -  vertically)  on  a  set  of  test  data  in  which  the  true  values  are  known.  The  matrix  shows  that  over  65%  of  tweets  have  been  correctly  classified  and  also  a  rather  symmetric  displacement  of  confusion  values  with  respect  to  the  diagonal,  in  which  can  be  remarked  that  the  more  distant  the  labels  are,  the  lesser  is  the  confusion:  thus,  the  confusion  rates  for  diametrically  opposed  classification  classes  (I  –  H,  H  –  I)  can  be  considered  very  good  (2  –  72,  70-2).      Table  1.  The  resulting  confusion  matrix    Insignificant  Low  Medium  High  
+Insignificant  70  20  8  2  
+Low  8  65  12  15  
+Medium  10  10  68  12  
+High  2  10  16  72  
+   Basically,  our  detection  algorithm  has  a  good  prediction  accuracy:  from  100  randomly  picked  “insignificant”  tweets,  70  are  classified  correctly,  20  are  classified  with  a  “low”  chance,  8  with  a  “medium”  chance,  and  only  2  
+
+===PAGE 11===
+with  a  “high”  chance  of  being  pandemic  related. Previous  literature  has  shown  that  spatio-temporal-semantic  models  have  a  great  potential  to  provide  reliable  predictions  of  infectious  diseases  in  time  and  space.  Studies  of  this  type  could  be  beneficial  for  authorities,  epidemiologists,  physicians,  etc.,  to  keep  track  of  the  dynamics  of  virologic  indicators  in  order  to  help  build  smart  vaccine  tech,  by  providing  new  ways  of  detecting  potential  viruses  and  their  effects  on  human  health.  Governments  can  thus  be  informed,  so  they  can  easily  act  on  time  imposing  specific  restrictions  that  can  help  to  stop  the  spread  of  pandemic  diseases  or  any  other  hazards.   7.  Conclusions   This  study  contains  a  quick  review  over  some  of  the  most  relevant  NLP  techniques  that  can  be  made  part  of  a  system  aiming  to  analyse  time  and  space  in  free  texts,  in  social  media  and  in  other  types  of  texts.  We  took  into  consideration  a  rather  large  spectrum  of  methods,  from  POS-tagging  to  sentiment  analysis,  mostly  for  two  reasons:  because  most  of  them  are  compulsory  modules  in  our  future  implementation  and  even  if  they  are  not  so  (as  could  be  the  case  with  a  sentiment  analysis  module),  the  approach  used  there  could  be  revised  to  match  our  needs.  As  such,  we  now  have  the  most  significant  ingredients,  which,  we  think,  could  be  used  to  develop  a  system  able  to  put  in  evidence  time  segments  and  their  reordering  based  on  different  classification  criteria.  As  such,  time  tracks,  revealing  destinies  of  character  in  free  texts,  as  intended  in  the  TYM,  are  just  one  example,  but  a  diversity  of  other  types  of  applications  could  also  be  envisioned.   What  is  not  included  in  our  study  is  a  review  of  methods  that  take  into  consideration  the  characters  involved  in  different  events  (for  instance,  as  actants  or  recipients  of  actions).  
+This  represents  a  compulsory  component  of  the  endeavour  we  envision.  Indeed,  to  refer  back  to  TYM,  a  time  segment  is  characterised  by  three  conditions:  the  unity  of  time  (meaning  that  all  events  mentioned  in  the  text  span  of  the  time  segment  should  be  either  synchronous  or  linearly  ordered  on  the  time  axis),  the  unity  of  characters  (meaning  that  the  involved  characters  mentioned  are  not  changing  over  the  text  span)  and  the  unity  of  perspective  (meaning  that  the  events  included  in  a  time  segment  are  narrated  by  a  unique  teller,  being  she/he  the  author  or  one  of  the  text  characters).     R
+EFERENCES
+  [1]  Klimešová,  Dana   and  Eva   Ocelíková  (2012).  “Spatial-temporal  modeling  and  visualisation”.  International  Journal  of  Mathematical  Models  and  Methods  in  Applied  Sciences 6(1)  -  https://www.researchgate.net/publication/265193407_Spatial-temporal_modeling_and_visualisation  [2]  Zarezade,  Ali,  Sina  Jafarzadeh,  and  Hamid  R.  Rabiee (2018).  “Recurrent  spatio-temporal  modeling  of  check-ins  in  location-based  social  networks”.  PLoS  One.  2018;  13(5):  e0197683,  doi:  10.1371/journal.pone.0197683 [3]  Liu  B,  Fu  Y,  Yao  Z,  Xiong  H.  (2013).  “Learning  geographical  preferences  for  point-of-interest  recommendation”.  Proceedings  of  the  19th  ACM  SIGKDD  international  conference  on  Knowledge  discovery  and  data  mining.  ACM,  1043–1051.  [4]  Scellato  S,  Noulas  A,  Mascolo  C.  (2011).  “Exploiting  place  features  in  link  prediction  on  location-based  social  networks”.  Proceedings  of  the  17th  ACM  SIGKDD  international  conference  on  Knowledge  discovery  and  data  mining .  ACM,  1046–1054.  
+
+===PAGE 12===
+[5]  Xiao  X,  Zheng  Y,  Luo  Q,  Xie  X.  (2014).  “Inferring  social  ties  between  users  with  human  location  history”.  Journal  of  Ambient  Intelligence  and  Humanized  Computing ,  5(1),  3-19  [6]  Liu  B,  Xiong  H.  (2013).  “Point-of-Interest  Recommendation  in  Location  Based  Social  Networks  with  Topic  and  Location  Awareness”.  Proceedings  of  the  2013  SIAM  International  Conference  on  Data  Mining .  SIAM,  396-404.  [7]  Yuan  Q,  Cong  G,  Ma  Z,  Sun  A,  Thalmann  NM.  (2013).  "Time-aware  point-of-interest  recommendation".  Proceedings  of  the  36th  international  ACM  SIGIR  conference  on  Research  and  development  in  information  retrieval .  ACM,  363-372.  [8]  Huayu,  R  H,   Li  YG,  Zhu  H.  (2016).  “Point-of-interest  recommendations:  Learning  potential  check-ins  from  friends”.  In:  Proceedings  of  the  22th  ACM  SIGKDD  international  conference  on  Knowledge  discovery  and  data  mining .  ACM.  [9]  Appel,  G.,  Grewal,  L.,  Hadi,  R.  et  al.  (2020).  The  future  of  social  media  in  marketing.  Journal  of  the  Acad.  Mark.  Sci .  48,  79-95  -   https://doi.org/10.1007/s11747-019-00695-1 [10]  --  Duckling  --   [11]  https://github.com/openeventdata/mordecai/ 
+[12]  2019-nCoV  Data  Repository  -  https://github.com/CSSEGISandData/COVID-19 [13]  https://gokulchittaranjan.wordpress.com/2015/09/08/nlppipelines-1/ [14]  https://github.com/sergey-tihon/Stanford.NLP.NET/blob/master/LICENSE.txt [15]  Xu,  S.,  Li,  S,  and  Huanh,  W.  (2019).  "  A  spatial ‐ temporal ‐ semantic  approach  for  detecting  local  events  using  geo ‐ social  media  data".  Transactions  in  GIS,  24:1,  https://doi.org/10.1111/tgis.12589.  [16]  Allen,  1983:  Allen,  James  F.   "Maintaining  knowledge  about  temporal  intervals".   Communications  of  the  ACM  26 (11)  pp.832-843,  Nov.  1983.   [17]  Allen  &  Ferguson,  1994:  Actions  and  Events  in  Temporal  Logic,  technical  report…  [18]  Dan  Cristea  (2017).  The  Time  Yards  Model:  Rethinking  the  way  to  look  at  texts.  SYNASC-2016,  p.  15-22.  [19]  Dan  Cristea,  Andreea  Macovei  (2017).  Why  Time  Resembles  Rail  Yards?  A  Way  to  Look  at  Time  in  Textbooks,  in  Romanian  Journal  of  Information  Science  and  Technology,  Vol.  19,  1-2,  2016,  pp.  31-43.     
+ 
+ 
+
+===PAGE 13===
+APPENDIX  Temporal  processing  output  for  Letopisețul  de  la  Putna  despre  primii  domni  ai  Moldovei :    
+ 
+
+
+===PAGE 14===
+ JSON  format:  [  
+    {  
+        "body":  "6867  -  1359",  
+        "start":  129,  
+        "value":  {  
+            "value":  "68671359",  
+            "type":  "value"  
+        },  
+        "end":  140,  
+        "dim":  "phone-number",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "un",  
+        "start":  279,  
+        "value":  {  
+            "value":  1,  
+            "type":  "value"  
+        },  
+        "end":  281,  
+        "dim":  "number",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "2  ani",  
+        "start":  299,  
+        "value":  {  
+            "value":  2,  
+
+===PAGE 15===
+            "year":  2,  
+            "type":  "value",  
+            "unit":  "year",  
+            "normalized":  {  
+                "value":  63072000,  
+                "unit":  "second"  
+            }  
+        },  
+        "end":  304,  
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "4  ani",  
+        "start":  332,  
+        "value":  {  
+            "value":  4,  
+            "year":  4,  
+            "type":  "value",  
+            "unit":  "year",  
+            "normalized":  {  
+                "value":  126144000,  
+                "unit":  "second"  
+            }  
+        },  
+        "end":  337,  
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+    {  
+
+===PAGE 16===
+        "body":  "4  ani",  
+        "start":  359,  
+        "value":  {  
+            "value":  4,  
+            "year":  4,  
+            "type":  "value",  
+            "unit":  "year",  
+            "normalized":  {  
+                "value":  126144000,  
+                "unit":  "second"  
+            }  
+        },  
+        "end":  364,  
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "8  ani",  
+        "start":  395,  
+        "value":  {  
+            "value":  8,  
+            "year":  8,  
+            "type":  "value",  
+            "unit":  "year",  
+            "normalized":  {  
+                "value":  252288000,  
+                "unit":  "second"  
+            }  
+        },  
+        "end":  400,  
+
+===PAGE 17===
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "16  ani",  
+        "start":  435,  
+        "value":  {  
+            "value":  16,  
+            "year":  16,  
+            "type":  "value",  
+            "unit":  "year",  
+            "normalized":  {  
+                "value":  504576000,  
+                "unit":  "second"  
+            }  
+        },  
+        "end":  441,  
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "3  ani",  
+        "start":  475,  
+        "value":  {  
+            "value":  3,  
+            "year":  3,  
+            "type":  "value",  
+            "unit":  "year",  
+            "normalized":  {  
+                "value":  94608000,  
+
+===PAGE 18===
+                "unit":  "second"  
+            }  
+        },  
+        "end":  480,  
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "7  ani",  
+        "start":  527,  
+        "value":  {  
+            "value":  7,  
+            "year":  7,  
+            "type":  "value",  
+            "unit":  "year",  
+            "normalized":  {  
+                "value":  220752000,  
+                "unit":  "second"  
+            }  
+        },  
+        "end":  532,  
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "2  ani",  
+        "start":  551,  
+        "value":  {  
+            "value":  2,  
+            "year":  2,  
+
+===PAGE 19===
+            "type":  "value",  
+            "unit":  "year",  
+            "normalized":  {  
+                "value":  63072000,  
+                "unit":  "second"  
+            }  
+        },  
+        "end":  556,  
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "6907  -  1399  1",  
+        "start":  566,  
+        "value":  {  
+            "value":  "690713991",  
+            "type":  "value"  
+        },  
+        "end":  579,  
+        "dim":  "phone-number",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "32  de  ani",  
+        "start":  628,  
+        "value":  {  
+            "value":  32,  
+            "year":  32,  
+            "type":  "value",  
+            "unit":  "year",  
+
+===PAGE 20===
+            "normalized":  {  
+                "value":  1009152000,  
+                "unit":  "second"  
+            }  
+        },  
+        "end":  637,  
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "8  luni",  
+        "start":  641,  
+        "value":  {  
+            "value":  8,  
+            "month":  8,  
+            "type":  "value",  
+            "unit":  "month",  
+            "normalized":  {  
+                "value":  20736000,  
+                "unit":  "second"  
+            }  
+        },  
+        "end":  647,  
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "2  ani",  
+        "start":  682,  
+        "value":  {  
+
+===PAGE 21===
+            "value":  2,  
+            "year":  2,  
+            "type":  "value",  
+            "unit":  "year",  
+            "normalized":  {  
+                "value":  63072000,  
+                "unit":  "second"  
+            }  
+        },  
+        "end":  687,  
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "9  luni",  
+        "start":  691,  
+        "value":  {  
+            "value":  9,  
+            "month":  9,  
+            "type":  "value",  
+            "unit":  "month",  
+            "normalized":  {  
+                "value":  23328000,  
+                "unit":  "second"  
+            }  
+        },  
+        "end":  697,  
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+
+===PAGE 22===
+    {  
+        "body":  "7  ani",  
+        "start":  753,  
+        "value":  {  
+            "value":  7,  
+            "year":  7,  
+            "type":  "value",  
+            "unit":  "year",  
+            "normalized":  {  
+                "value":  220752000,  
+                "unit":  "second"  
+            }  
+        },  
+        "end":  758,  
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "5  ani",  
+        "start":  858,  
+        "value":  {  
+            "value":  5,  
+            "year":  5,  
+            "type":  "value",  
+            "unit":  "year",  
+            "normalized":  {  
+                "value":  157680000,  
+                "unit":  "second"  
+            }  
+        },  
+
+===PAGE 23===
+        "end":  863,  
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "un  an",  
+        "start":  941,  
+        "value":  {  
+            "value":  1,  
+            "year":  1,  
+            "type":  "value",  
+            "unit":  "year",  
+            "normalized":  {  
+                "value":  31536000,  
+                "unit":  "second"  
+            }  
+        },  
+        "end":  946,  
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "un  an",  
+        "start":  1000,  
+        "value":  {  
+            "value":  1,  
+            "year":  1,  
+            "type":  "value",  
+            "unit":  "year",  
+            "normalized":  {  
+
+===PAGE 24===
+                "value":  31536000,  
+                "unit":  "second"  
+            }  
+        },  
+        "end":  1005,  
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "2  luni",  
+        "start":  1064,  
+        "value":  {  
+            "value":  2,  
+            "month":  2,  
+            "type":  "value",  
+            "unit":  "month",  
+            "normalized":  {  
+                "value":  5184000,  
+                "unit":  "second"  
+            }  
+        },  
+        "end":  1070,  
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "4  ani",  
+        "start":  1117,  
+        "value":  {  
+            "value":  4,  
+
+===PAGE 25===
+            "year":  4,  
+            "type":  "value",  
+            "unit":  "year",  
+            "normalized":  {  
+                "value":  126144000,  
+                "unit":  "second"  
+            }  
+        },  
+        "end":  1122,  
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "6962  -  1454",  
+        "start":  1330,  
+        "value":  {  
+            "value":  "69621454",  
+            "type":  "value"  
+        },  
+        "end":  1341,  
+        "dim":  "phone-number",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "1454  august  26",  
+        "start":  1337,  
+        "value":  {  
+            "values":  [  
+                {  
+                    "value":  "1454-08-26T00:00:00.000-07:53",  
+
+===PAGE 26===
+                    "grain":  "day",  
+                    "type":  "value"  
+                }  
+            ],  
+            "value":  "1454-08-26T00:00:00.000-07:53",  
+            "grain":  "day",  
+            "type":  "value"  
+        },  
+        "end":  1351,  
+        "dim":  "time",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "2  ani",  
+        "start":  1432,  
+        "value":  {  
+            "value":  2,  
+            "year":  2,  
+            "type":  "value",  
+            "unit":  "year",  
+            "normalized":  {  
+                "value":  63072000,  
+                "unit":  "second"  
+            }  
+        },  
+        "end":  1437,  
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+    {  
+
+===PAGE 27===
+        "body":  "2  ani",  
+        "start":  1502,  
+        "value":  {  
+            "value":  2,  
+            "year":  2,  
+            "type":  "value",  
+            "unit":  "year",  
+            "normalized":  {  
+                "value":  63072000,  
+                "unit":  "second"  
+            }  
+        },  
+        "end":  1507,  
+        "dim":  "duration",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "60",  
+        "start":  1634,  
+        "value":  {  
+            "value":  60,  
+            "type":  "value"  
+        },  
+        "end":  1636,  
+        "dim":  "number",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "61",  
+        "start":  1637,  
+
+===PAGE 28===
+        "value":  {  
+            "value":  61,  
+            "type":  "value"  
+        },  
+        "end":  1639,  
+        "dim":  "number",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "La  un",  
+        "start":  1722,  
+        "value":  {  
+            "values":  [  
+                {  
+                    "value":  "2021-06-06T01:00:00.000-07:00",  
+                    "grain":  "hour",  
+                    "type":  "value"  
+                },  
+                {  
+                    "value":  "2021-06-06T13:00:00.000-07:00",  
+                    "grain":  "hour",  
+                    "type":  "value"  
+                },  
+                {  
+                    "value":  "2021-06-07T01:00:00.000-07:00",  
+                    "grain":  "hour",  
+                    "type":  "value"  
+                }  
+            ],  
+            "value":  "2021-06-06T01:00:00.000-07:00",  
+
+===PAGE 29===
+            "grain":  "hour",  
+            "type":  "value"  
+        },  
+        "end":  1727,  
+        "dim":  "time",  
+        "latent":  false  
+    },  
+    {  
+        "body":  "mai",  
+        "start":  1783,  
+        "value":  {  
+            "values":  [  
+                {  
+                    "value":  "2022-05-01T00:00:00.000-07:00",  
+                    "grain":  "month",  
+                    "type":  "value"  
+                },  
+                {  
+                    "value":  "2023-05-01T00:00:00.000-07:00",  
+                    "grain":  "month",  
+                    "type":  "value"  
+                },  
+                {  
+                    "value":  "2024-05-01T00:00:00.000-07:00",  
+                    "grain":  "month",  
+                    "type":  "value"  
+                }  
+            ],  
+            "value":  "2022-05-01T00:00:00.000-07:00",  
+            "grain":  "month",  
+
+===PAGE 30===
+            "type":  "value"  
+        },  
+        "end":  1786,  
+        "dim":  "time",  
+        "latent":  false  
+    }  
+]  
+ 

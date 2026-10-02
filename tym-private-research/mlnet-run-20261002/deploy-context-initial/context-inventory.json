@@ -1,0 +1,287 @@
+[
+  {
+    "path": "api\\.dockerignore",
+    "bytes": 29,
+    "sha256": "53f5dee5f7d3daee807d6dcce4df66d6a470280d06ecfe23420e75a040c599f3"
+  },
+  {
+    "path": "api\\Dockerfile",
+    "bytes": 612,
+    "sha256": "dddf01f4c78e1b72902485657da7d8647d2ea9d002c474eebecab85f3c2c7837"
+  },
+  {
+    "path": "api\\models\\segment_type_en_sdca.zip",
+    "bytes": 1325392,
+    "sha256": "49b63848660c78a248d1f5e7bcdf11870cad41b189024c8f6decf40daeaf87de"
+  },
+  {
+    "path": "api\\models\\segment_type_en_sdca.zip.manifest.json",
+    "bytes": 826,
+    "sha256": "33874ea0a29756a225bd45cfb736a25c3139ace08af335ed80b0ad15422be533"
+  },
+  {
+    "path": "api\\models\\segment_type_ro_sdca.zip",
+    "bytes": 1487114,
+    "sha256": "71813f28dca1ac50b45d8c6a90e1cf48847397de37afe7443c642f17e9f98101"
+  },
+  {
+    "path": "api\\models\\segment_type_ro_sdca.zip.manifest.json",
+    "bytes": 826,
+    "sha256": "3acd1f5ef07b3680b68c76349690ba3627e4b1aecc95ce363a393dc0b40ac643"
+  },
+  {
+    "path": "api\\models\\temporal_relation_en_sdca.zip",
+    "bytes": 1362345,
+    "sha256": "e02cddf70efb157e8604fa10e4b40e2e077d119c768316c75db0b66ad1405b51"
+  },
+  {
+    "path": "api\\models\\temporal_relation_en_sdca.zip.manifest.json",
+    "bytes": 886,
+    "sha256": "59d2ee287cd4f87c9032e5b7c0f6989414c50f6e4e428a4175bac78cbad87b46"
+  },
+  {
+    "path": "api\\models\\temporal_relation_ro_sdca.zip",
+    "bytes": 1533760,
+    "sha256": "75900e3d86afb454a42d4b2c4bb54d48042e38eb8074b69cadb287e2d01ff071"
+  },
+  {
+    "path": "api\\models\\temporal_relation_ro_sdca.zip.manifest.json",
+    "bytes": 886,
+    "sha256": "adc5a658979fd6234b6af935e39c12598ceaa7f3c9fbddad834e1a3745c060df"
+  },
+  {
+    "path": "api\\models\\timebank_alink_ro_sdca.zip",
+    "bytes": 173554,
+    "sha256": "339fc8e0bb4b7df7bfdb81401e996d476ef2c456efdfd1d5b8f56e637a97edc2"
+  },
+  {
+    "path": "api\\models\\timebank_alink_ro_sdca.zip.manifest.json",
+    "bytes": 868,
+    "sha256": "e3ff9ab6c436f89302ffa3a49e13e2aa4c7dbe164f33df606dfab9cd298664cb"
+  },
+  {
+    "path": "api\\models\\timebank_alink_ro_structured_sdca.zip",
+    "bytes": 436571,
+    "sha256": "05d7aa156812469644c6a72bd3166c36fd03e6c53ed51f7444c3378697b70b5b"
+  },
+  {
+    "path": "api\\models\\timebank_alink_ro_structured_sdca.zip.manifest.json",
+    "bytes": 1218,
+    "sha256": "9ef04d70dc5ed3096e8f6f334036489174235008f086d2f5970e5fa542d5e483"
+  },
+  {
+    "path": "api\\models\\timebank_event_class_ro_sdca.zip",
+    "bytes": 807361,
+    "sha256": "91ed077679e30aaa5831b28c15cfec2043dfd24307bb4ede4832d7ee1f3adac6"
+  },
+  {
+    "path": "api\\models\\timebank_event_class_ro_sdca.zip.manifest.json",
+    "bytes": 903,
+    "sha256": "e08e8ab2bc6d638a94d2546c08820a5588392d9ab9278aa787fc4d716a074066"
+  },
+  {
+    "path": "api\\models\\timebank_event_class_ro_structured_sdca.zip",
+    "bytes": 1261061,
+    "sha256": "108c21e3adb5d11447388ec38489ebff83529aab1ca2631701f36576f906a763"
+  },
+  {
+    "path": "api\\models\\timebank_event_class_ro_structured_sdca.zip.manifest.json",
+    "bytes": 1215,
+    "sha256": "9b6789381951f4abf954885e87e04d2ad06344dc44a9522da75aa1e159a0a3a4"
+  },
+  {
+    "path": "api\\models\\timebank_event_tense_ro_sdca.zip",
+    "bytes": 798655,
+    "sha256": "0a2d932d0bda2f682c73d2900f23da631046f372f5036377547b26147139a599"
+  },
+  {
+    "path": "api\\models\\timebank_event_tense_ro_sdca.zip.manifest.json",
+    "bytes": 892,
+    "sha256": "ef432f004ff9d29d078c4b77a0ede7bb48f6fae0b35734950b11c8b5c43b0582"
+  },
+  {
+    "path": "api\\models\\timebank_event_tense_ro_structured_sdca.zip",
+    "bytes": 1255166,
+    "sha256": "93199a4ebc0e56f69651832a986fbd825027116219de86d48cce749b2693e99a"
+  },
+  {
+    "path": "api\\models\\timebank_event_tense_ro_structured_sdca.zip.manifest.json",
+    "bytes": 1204,
+    "sha256": "057b7acde5ad556a17e480d5b779c9f80b906bb8c75ad82da11b59df4a699d40"
+  },
+  {
+    "path": "api\\models\\timebank_slink_ro_sdca.zip",
+    "bytes": 697134,
+    "sha256": "119dfe0de9624693112d952adc99fb00dd839a25f8e2912f3b1dca163e814723"
+  },
+  {
+    "path": "api\\models\\timebank_slink_ro_sdca.zip.manifest.json",
+    "bytes": 892,
+    "sha256": "7cccbb905c40497c7b1fc869ebb688ab85273b7f45186f6bad3b0a56428c5d47"
+  },
+  {
+    "path": "api\\models\\timebank_slink_ro_structured_sdca.zip",
+    "bytes": 1698788,
+    "sha256": "6e9fcddd11181271669275d50a3ca1fc77c5d33e79fe632bde6bd4efb498cf3c"
+  },
+  {
+    "path": "api\\models\\timebank_slink_ro_structured_sdca.zip.manifest.json",
+    "bytes": 1257,
+    "sha256": "503f96cf9be076a327670bf933b6636c4f7d135aca28446c4faca3f804c0dce6"
+  },
+  {
+    "path": "api\\models\\timebank_timex_type_ro_sdca.zip",
+    "bytes": 382613,
+    "sha256": "cc31b8dc22c1cb53bffa3126fe011fc92495c21dd8770ddb803bd6a1cab5b82f"
+  },
+  {
+    "path": "api\\models\\timebank_timex_type_ro_sdca.zip.manifest.json",
+    "bytes": 836,
+    "sha256": "6fa7f1cb4518468dd845285babc053fa9350ce20c58a79f1e4f2e0bc307e5625"
+  },
+  {
+    "path": "api\\models\\timebank_timex_type_ro_structured_sdca.zip",
+    "bytes": 592044,
+    "sha256": "d506881dba7f7f7230447dcf00a0d888892c4a049e9912d8f7f7466f25fb46d9"
+  },
+  {
+    "path": "api\\models\\timebank_timex_type_ro_structured_sdca.zip.manifest.json",
+    "bytes": 1145,
+    "sha256": "b7e0e34ac2e7d350e95d49246ec970623911367181b240014ec134c4e0d7de9d"
+  },
+  {
+    "path": "api\\models\\timebank_tlink_ro_sdca.zip",
+    "bytes": 1056256,
+    "sha256": "7f4d888efa19cb0ad2fa883e0cc34c99c33cfbca35e1a3a9661ba6466bc99174"
+  },
+  {
+    "path": "api\\models\\timebank_tlink_ro_sdca.zip.manifest.json",
+    "bytes": 1007,
+    "sha256": "d3492e167c32ce152c7f6e2a28c39b9acae69149a7883076d113b2bbda3d0e64"
+  },
+  {
+    "path": "api\\models\\timebank_tlink_ro_structured_sdca.zip",
+    "bytes": 2255069,
+    "sha256": "ad64cf756f0fb2db70b006e6988cff19abfcb2105c3d6c581a9d694bc8fb8be3"
+  },
+  {
+    "path": "api\\models\\timebank_tlink_ro_structured_sdca.zip.manifest.json",
+    "bytes": 1372,
+    "sha256": "704239124e2cf3fd44c095db324b3d8b97d66c0ad9988a5a14988240a98c6207"
+  },
+  {
+    "path": "api\\src\\Tym.Corpus.Api\\ApiContracts.cs",
+    "bytes": 2525,
+    "sha256": "c0a08e4ccf9fb4c25b9740903500ebf73b297cbe8483d57e403190f9f5e10535"
+  },
+  {
+    "path": "api\\src\\Tym.Corpus.Api\\CorpusModelService.cs",
+    "bytes": 15616,
+    "sha256": "d4e161403cdb1f15c263c5cdf3c2ff27b5b907dece815cb04f99ee33d4c7664e"
+  },
+  {
+    "path": "api\\src\\Tym.Corpus.Api\\DocumentAnalyzer.cs",
+    "bytes": 12442,
+    "sha256": "589a572af710baceab39438cfa119f9a8a9defbae2d2821a616ec76376d94642"
+  },
+  {
+    "path": "api\\src\\Tym.Corpus.Api\\DocumentContracts.cs",
+    "bytes": 4384,
+    "sha256": "64dd3a8a935e6106afb0eb9f64a61e8f73cca4b922133149d17fbfb8b8158503"
+  },
+  {
+    "path": "api\\src\\Tym.Corpus.Api\\DocumentEndpoints.cs",
+    "bytes": 604,
+    "sha256": "87817d7f6a89688ca00fc8ce300f158db76ff9f5468f0542ba03769117405b6c"
+  },
+  {
+    "path": "api\\src\\Tym.Corpus.Api\\DocumentValidator.cs",
+    "bytes": 14678,
+    "sha256": "6380ce73573d25a347cd8d63f88349f8b9f595f721d621db1aa2bdfa7bd6a59e"
+  },
+  {
+    "path": "api\\src\\Tym.Corpus.Api\\ModelCatalog.cs",
+    "bytes": 3265,
+    "sha256": "085f6bd97cdbb67fb3209ba4c89b304cda539360d0d8edbf0998501c512670de"
+  },
+  {
+    "path": "api\\src\\Tym.Corpus.Api\\PredictionEndpoint.cs",
+    "bytes": 975,
+    "sha256": "2ad273fd6a099d5bf45a7cfa7a5007979a41e9a8ed222ecf596474d3666fb035"
+  },
+  {
+    "path": "api\\src\\Tym.Corpus.Api\\Program.cs",
+    "bytes": 1834,
+    "sha256": "79e2744841507f0b95f6af71ade7fa57a088c6abcd10c81ae8f55180b2e804f6"
+  },
+  {
+    "path": "api\\src\\Tym.Corpus.Api\\Tym.Corpus.Api.csproj",
+    "bytes": 379,
+    "sha256": "f2631165db8a3906953454af910ff333458d41c9cdcca18d9048a50648c29e51"
+  },
+  {
+    "path": "api\\src\\Tym.Corpus.Core\\TextModelInput.cs",
+    "bytes": 3570,
+    "sha256": "609176d1706a6e71c6b4f85b48c0009eab3653a019bcd2b9650073492701c059"
+  },
+  {
+    "path": "api\\src\\Tym.Corpus.Core\\Tym.Corpus.Core.csproj",
+    "bytes": 205,
+    "sha256": "3472fccce5613343d3b55f6c2bbc48cbfd3de01f9cf32fd8607b8ac3a7e26395"
+  },
+  {
+    "path": "ui\\.dockerignore",
+    "bytes": 86,
+    "sha256": "93a5c12dc8e31a520c6266d4582e3737ce40b57b1a0c67060afad6b1d0563d06"
+  },
+  {
+    "path": "ui\\Dockerfile",
+    "bytes": 703,
+    "sha256": "0ce46a92f2d3c6151addce5ad805c010d862a846809254df0dc43d3198788c0a"
+  },
+  {
+    "path": "ui\\package-lock.json",
+    "bytes": 2948,
+    "sha256": "7c4bdd8a09d5a97e7c26d0b9b059be458542fa0904623ae710b1dc2e37e147ab"
+  },
+  {
+    "path": "ui\\package.json",
+    "bytes": 389,
+    "sha256": "42dd76b652a909b1f348dbd0c71b24889c34a18b9d10e1e65fcb03315c081aa0"
+  },
+  {
+    "path": "ui\\Program.cs",
+    "bytes": 838,
+    "sha256": "b8fe6183e1e32daea7dae05a9e4546d59409e1a684896c90bfad6220e4d3376e"
+  },
+  {
+    "path": "ui\\tsconfig.json",
+    "bytes": 322,
+    "sha256": "dde7dd237a57b6462bc447596a13923a35a909c64b4681690110a51c4958e637"
+  },
+  {
+    "path": "ui\\Tym.Corpus.Ui.csproj",
+    "bytes": 369,
+    "sha256": "5db7686ddb612bc508dacd915e1a698f834ff677badebffef1082d4a0cf43b7a"
+  },
+  {
+    "path": "ui\\client\\app.ts",
+    "bytes": 15072,
+    "sha256": "fe81e2e1fe6a8ab873fbbc700904afa2232942b8b492ff195af5480c1a09c261"
+  },
+  {
+    "path": "ui\\wwwroot\\app.js",
+    "bytes": 13714,
+    "sha256": "596145303c3e01fbf269e39dc4d4fa805e988fb6f2f1c664ec165690e66aae3d"
+  },
+  {
+    "path": "ui\\wwwroot\\index.html",
+    "bytes": 13025,
+    "sha256": "29f84efa25995457c63e77744338d93921b623e405015acd62013f948859f375"
+  },
+  {
+    "path": "ui\\wwwroot\\styles.css",
+    "bytes": 7700,
+    "sha256": "0b815af6df14ea8ec0b5f535d130b39e7945a4fb4eacfc1df75112ee6f313351"
+  }
+]

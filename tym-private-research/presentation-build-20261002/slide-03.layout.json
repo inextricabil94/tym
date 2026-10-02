@@ -1,0 +1,577 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/sf3jnq",
+    "id": "sf3jnq",
+    "slide": 3,
+    "layoutId": "c69ef7e8-07f8-4aab-a3cc-a4f23b1abfde",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Arial"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "c69ef7e8-07f8-4aab-a3cc-a4f23b1abfde",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x8rqpgry",
+      "id": "1",
+      "bbox": [
+        72,
+        44,
+        1136,
+        100
+      ],
+      "geometry": "rect",
+      "text": "Research evidence and current implementation",
+      "textPreview": "Research evidence and current implementation",
+      "resolvedFontSize": 44,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 44,
+        "typeface": "Arial",
+        "color": "#142D43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Research evidence and current implementation"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Research evidence and current implementation",
+          "resolvedTextStyle": {
+            "fontSize": 44,
+            "typeface": "Arial",
+            "color": "#142D43",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Research evidence and current implementation",
+              "fontSize": 44,
+              "typeface": "Arial",
+              "color": "#142D43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/fed0729c",
+      "id": "2",
+      "bbox": [
+        72,
+        170,
+        1136,
+        400
+      ],
+      "text": "Evidence | Dataset or scope | Result\nHistorical CNN in the paper | 2,000 event instances | 58.9% accuracy\nabout 58.7% macro F1\nCurrent corpus training | Ten baselines and six\nstructured variants | 21,666 unique task rows\nSaved ML.NET artifacts\nCurrent grouped diagnostic | Six TimeBank label tasks\nSupplied spans and endpoints | 20,151 out-of-fold rows\nUnknown annotation adjudication",
+      "textPreview": "Evidence | Dataset or scope | Result | Historical CNN in the paper | 2,000 event instances | 58.9% accuracy | about 58.7% macro F1 | Curr...",
+      "rows": 4,
+      "cols": 3,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            72,
+            170,
+            350,
+            100
+          ],
+          "text": "Evidence",
+          "textPreview": "Evidence",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Evidence",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Evidence"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            422,
+            170,
+            375,
+            100
+          ],
+          "text": "Dataset or scope",
+          "textPreview": "Dataset or scope",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Dataset or scope",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Dataset or scope"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "column": 3,
+          "bbox": [
+            797,
+            170,
+            411,
+            100
+          ],
+          "text": "Result",
+          "textPreview": "Result",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Result",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Result"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            72,
+            270,
+            350,
+            100
+          ],
+          "text": "Historical CNN in the paper",
+          "textPreview": "Historical CNN in the paper",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Historical CNN in the paper",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Historical CNN in the paper"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            422,
+            270,
+            375,
+            100
+          ],
+          "text": "2,000 event instances",
+          "textPreview": "2,000 event instances",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "2,000 event instances",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "2,000 event instances"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "column": 3,
+          "bbox": [
+            797,
+            270,
+            411,
+            100
+          ],
+          "text": "58.9% accuracy\nabout 58.7% macro F1",
+          "textPreview": "58.9% accuracy | about 58.7% macro F1",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "58.9% accuracy",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "58.9% accuracy"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "about 58.7% macro F1",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "about 58.7% macro F1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            72,
+            370,
+            350,
+            100
+          ],
+          "text": "Current corpus training",
+          "textPreview": "Current corpus training",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Current corpus training",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Current corpus training"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            422,
+            370,
+            375,
+            100
+          ],
+          "text": "Ten baselines and six\nstructured variants",
+          "textPreview": "Ten baselines and six | structured variants",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Ten baselines and six",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Ten baselines and six"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "structured variants",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "structured variants"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "column": 3,
+          "bbox": [
+            797,
+            370,
+            411,
+            100
+          ],
+          "text": "21,666 unique task rows\nSaved ML.NET artifacts",
+          "textPreview": "21,666 unique task rows | Saved ML.NET artifacts",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "21,666 unique task rows",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "21,666 unique task rows"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "Saved ML.NET artifacts",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Saved ML.NET artifacts"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            72,
+            470,
+            350,
+            100
+          ],
+          "text": "Current grouped diagnostic",
+          "textPreview": "Current grouped diagnostic",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Current grouped diagnostic",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Current grouped diagnostic"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            422,
+            470,
+            375,
+            100
+          ],
+          "text": "Six TimeBank label tasks\nSupplied spans and endpoints",
+          "textPreview": "Six TimeBank label tasks | Supplied spans and endpoints",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Six TimeBank label tasks",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Six TimeBank label tasks"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "Supplied spans and endpoints",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Supplied spans and endpoints"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 4,
+          "column": 3,
+          "bbox": [
+            797,
+            470,
+            411,
+            100
+          ],
+          "text": "20,151 out-of-fold rows\nUnknown annotation adjudication",
+          "textPreview": "20,151 out-of-fold rows | Unknown annotation adjudication",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "20,151 out-of-fold rows",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "20,151 out-of-fold rows"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "Unknown annotation adjudication",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Unknown annotation adjudication"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/b698nq98",
+      "id": "3",
+      "bbox": [
+        72,
+        633,
+        1136,
+        62
+      ],
+      "geometry": "rect",
+      "text": "The current run uses lexical ML.NET classifiers. The historical CNN metrics describe the paper’s experiment.",
+      "textPreview": "The current run uses lexical ML.NET classifiers. The historical CNN metrics describe the paper’s experiment.",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Arial",
+        "color": "#536979",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "The current run uses lexical ML.NET classifiers. The historical CNN metrics describe the paper’s experiment."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "The current run uses lexical ML.NET classifiers. The historical CNN metrics describe the paper’s experiment.",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Arial",
+            "color": "#536979"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "The current run uses lexical ML.NET classifiers. The historical CNN metrics describe the paper’s experiment.",
+              "fontSize": 21,
+              "typeface": "Arial",
+              "color": "#536979"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

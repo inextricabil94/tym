@@ -1,0 +1,587 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/hgc9ao",
+    "id": "hgc9ao",
+    "slide": 4,
+    "layoutId": "c69ef7e8-07f8-4aab-a3cc-a4f23b1abfde",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Arial"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "c69ef7e8-07f8-4aab-a3cc-a4f23b1abfde",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xkryh8f6",
+      "id": "1",
+      "bbox": [
+        72,
+        44,
+        1136,
+        100
+      ],
+      "geometry": "rect",
+      "text": "Corpus provenance and import audit",
+      "textPreview": "Corpus provenance and import audit",
+      "resolvedFontSize": 44,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 44,
+        "typeface": "Arial",
+        "color": "#142D43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Corpus provenance and import audit"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Corpus provenance and import audit",
+          "resolvedTextStyle": {
+            "fontSize": 44,
+            "typeface": "Arial",
+            "color": "#142D43",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Corpus provenance and import audit",
+              "fontSize": 44,
+              "typeface": "Arial",
+              "color": "#142D43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/369onud4",
+      "id": "2",
+      "bbox": [
+        72,
+        165,
+        1136,
+        425
+      ],
+      "text": "Corpus | Retained material | Audit decision\nTYM parallel narrative | One story in two languages\n751 segments and 764 relations | Duplicate XML variants add no rows\n1,515 task examples\nRo-TimeBank ISO-TimeML | 157 of 183 documents\n20,151 task examples | 26 mixed documents quarantined\n1 ambiguous signal link skipped\nAnnotation provenance | provided_annotation\nadjudication_unknown | Exploratory training/diagnostics\nHuman adjudication unverified",
+      "textPreview": "Corpus | Retained material | Audit decision | TYM parallel narrative | One story in two languages | 751 segments and 764 relations | Dupl...",
+      "rows": 4,
+      "cols": 3,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            72,
+            165,
+            290,
+            106.25
+          ],
+          "text": "Corpus",
+          "textPreview": "Corpus",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Corpus",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Corpus"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            362,
+            165,
+            406,
+            106.25
+          ],
+          "text": "Retained material",
+          "textPreview": "Retained material",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Retained material",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Retained material"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "column": 3,
+          "bbox": [
+            768,
+            165,
+            440,
+            106.25
+          ],
+          "text": "Audit decision",
+          "textPreview": "Audit decision",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Audit decision",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Audit decision"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            72,
+            271.25,
+            290,
+            106.25
+          ],
+          "text": "TYM parallel narrative",
+          "textPreview": "TYM parallel narrative",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "TYM parallel narrative",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "TYM parallel narrative"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            362,
+            271.25,
+            406,
+            106.25
+          ],
+          "text": "One story in two languages\n751 segments and 764 relations",
+          "textPreview": "One story in two languages | 751 segments and 764 relations",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "One story in two languages",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "One story in two languages"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "751 segments and 764 relations",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "751 segments and 764 relations"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "column": 3,
+          "bbox": [
+            768,
+            271.25,
+            440,
+            106.25
+          ],
+          "text": "Duplicate XML variants add no rows\n1,515 task examples",
+          "textPreview": "Duplicate XML variants add no rows | 1,515 task examples",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Duplicate XML variants add no rows",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Duplicate XML variants add no rows"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "1,515 task examples",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "1,515 task examples"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            72,
+            377.5,
+            290,
+            106.25
+          ],
+          "text": "Ro-TimeBank ISO-TimeML",
+          "textPreview": "Ro-TimeBank ISO-TimeML",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Ro-TimeBank ISO-TimeML",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Ro-TimeBank ISO-TimeML"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            362,
+            377.5,
+            406,
+            106.25
+          ],
+          "text": "157 of 183 documents\n20,151 task examples",
+          "textPreview": "157 of 183 documents | 20,151 task examples",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "157 of 183 documents",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "157 of 183 documents"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "20,151 task examples",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "20,151 task examples"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "column": 3,
+          "bbox": [
+            768,
+            377.5,
+            440,
+            106.25
+          ],
+          "text": "26 mixed documents quarantined\n1 ambiguous signal link skipped",
+          "textPreview": "26 mixed documents quarantined | 1 ambiguous signal link skipped",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "26 mixed documents quarantined",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "26 mixed documents quarantined"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "1 ambiguous signal link skipped",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "1 ambiguous signal link skipped"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            72,
+            483.75,
+            290,
+            106.25
+          ],
+          "text": "Annotation provenance",
+          "textPreview": "Annotation provenance",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Annotation provenance",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Annotation provenance"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            362,
+            483.75,
+            406,
+            106.25
+          ],
+          "text": "provided_annotation\nadjudication_unknown",
+          "textPreview": "provided_annotation | adjudication_unknown",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "provided_annotation",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "provided_annotation"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "adjudication_unknown",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "adjudication_unknown"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 4,
+          "column": 3,
+          "bbox": [
+            768,
+            483.75,
+            440,
+            106.25
+          ],
+          "text": "Exploratory training/diagnostics\nHuman adjudication unverified",
+          "textPreview": "Exploratory training/diagnostics | Human adjudication unverified",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Exploratory training/diagnostics",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Exploratory training/diagnostics"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "Human adjudication unverified",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Human adjudication unverified"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bipgfyxg",
+      "id": "3",
+      "bbox": [
+        72,
+        633,
+        1136,
+        62
+      ],
+      "geometry": "rect",
+      "text": "The paired TYM translations share one story. ISO-TimeML labels keep separate task namespaces.",
+      "textPreview": "The paired TYM translations share one story. ISO-TimeML labels keep separate task namespaces.",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Arial",
+        "color": "#536979",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "The paired TYM translations share one story. ISO-TimeML labels keep separate task namespaces."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "The paired TYM translations share one story. ISO-TimeML labels keep separate task namespaces.",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Arial",
+            "color": "#536979"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "The paired TYM translations share one story. ISO-TimeML labels keep separate task namespaces.",
+              "fontSize": 21,
+              "typeface": "Arial",
+              "color": "#536979"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

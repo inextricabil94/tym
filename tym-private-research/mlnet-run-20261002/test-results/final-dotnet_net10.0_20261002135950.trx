@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="f13afc79-94ae-4b45-92ed-a54445f563df" name="serba@ZEPHYR 2026-10-02 13:59:47" runUser="Zephyr\CodexSandboxOffline" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-02T13:59:47.2498950+03:00" queuing="2026-10-02T13:59:47.2498954+03:00" start="2026-10-02T13:59:44.7466435+03:00" finish="2026-10-02T13:59:50.4047158+03:00" />
+  <TestSettings name="default" id="7e022739-d99b-4e6d-9c94-bbe08a5c1d50">
+    <Deployment runDeploymentRoot="serba_ZEPHYR_2026-10-02_13_59_47" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="afcd362a-80f1-4d7c-8c86-6d546696564b" testId="18121879-72ed-bf89-5b8f-646f5664e1fe" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_timex_type_ro_sdca.zip&quot;, id: &quot;free-ro-date&quot;, text: &quot;Context: În [TARGET] primăvara trecută [/TARGET], &quot;···, expectedLabel: &quot;DATE&quot;)" computerName="ZEPHYR" duration="00:00:00.1829400" startTime="2026-10-02T13:59:47.6930091+03:00" endTime="2026-10-02T13:59:47.8756318+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="afcd362a-80f1-4d7c-8c86-6d546696564b">
+      <Output>
+        <StdOut>timebank_timex_type_ro_sdca.zip | free-ro-date =&gt; DATE</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6d6a7c34-d7f4-448d-845f-f7962fb1e5b9" testId="1f20bb8d-510b-3696-728f-02f298cc1834" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;segment_type_en_sdca.zip&quot;, id: &quot;free-en-memory&quot;, text: &quot;Years after leaving home, Mara remembered the blue&quot;···, expectedLabel: &quot;REM&quot;)" computerName="ZEPHYR" duration="00:00:00.1765212" startTime="2026-10-02T13:59:49.7830701+03:00" endTime="2026-10-02T13:59:49.9592747+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d6a7c34-d7f4-448d-845f-f7962fb1e5b9">
+      <Output>
+        <StdOut>segment_type_en_sdca.zip | free-en-memory =&gt; REM</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="076b6765-9303-4ac9-9d5d-72832e3fbdd8" testId="ed5d3a83-c97e-9554-4820-e63c01fc30f1" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Constructor_rejects_blank_model_path(modelPath: &quot;&quot;)" computerName="ZEPHYR" duration="00:00:00.0003446" startTime="2026-10-02T13:59:47.8359899+03:00" endTime="2026-10-02T13:59:47.8362512+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="076b6765-9303-4ac9-9d5d-72832e3fbdd8" />
+    <UnitTestResult executionId="eb359a55-f249-444b-9d5c-85400fb30793" testId="e4ffa501-7a39-2a84-47f2-9051a72f74f6" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Constructor_reports_missing_model_path" computerName="ZEPHYR" duration="00:00:00.0015317" startTime="2026-10-02T13:59:46.8585008+03:00" endTime="2026-10-02T13:59:46.8599512+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eb359a55-f249-444b-9d5c-85400fb30793" />
+    <UnitTestResult executionId="29252c6f-776c-4ba5-85ed-8d6137374303" testId="c533c027-17be-0745-34bb-c02829eb8808" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_loads_saved_model_and_scores_unlabeled_free_text(text: &quot;Tomorrow we will visit the old harbor.&quot;, expectedLabel: &quot;FUTURE&quot;)" computerName="ZEPHYR" duration="00:00:00.1421060" startTime="2026-10-02T13:59:47.0266630+03:00" endTime="2026-10-02T13:59:47.1685901+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="29252c6f-776c-4ba5-85ed-8d6137374303">
+      <Output>
+        <StdOut>Synthetic demo model | Tomorrow we will visit the old harbor. =&gt; FUTURE</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e2c116e5-546f-4cd1-9ffc-574b01d1a713" testId="30bc8fdc-69bc-c186-c1d2-8c788294e851" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_event_class_ro_sdca.zip&quot;, id: &quot;free-ro-event-opinion&quot;, text: &quot;Context: [TARGET] Cred [/TARGET] că drumul va fi l&quot;···, expectedLabel: &quot;I_STATE&quot;)" computerName="ZEPHYR" duration="00:00:00.1696119" startTime="2026-10-02T13:59:49.9596035+03:00" endTime="2026-10-02T13:59:50.1289893+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e2c116e5-546f-4cd1-9ffc-574b01d1a713">
+      <Output>
+        <StdOut>timebank_event_class_ro_sdca.zip | free-ro-event-opinion =&gt; I_STATE</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ea280d0a-00ed-449c-8391-4cca34961870" testId="e68354a8-0ca5-baa4-0e84-4a870a7e2780" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_tlink_ro_sdca.zip&quot;, id: &quot;free-ro-before-link&quot;, text: &quot;From: a plecat\nFrom context: Mara [TARGET] a plec&quot;···, expectedLabel: &quot;AFTER&quot;)" computerName="ZEPHYR" duration="00:00:00.1878249" startTime="2026-10-02T13:59:49.5949980+03:00" endTime="2026-10-02T13:59:49.7826018+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea280d0a-00ed-449c-8391-4cca34961870">
+      <Output>
+        <StdOut>timebank_tlink_ro_sdca.zip | free-ro-before-link =&gt; AFTER</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="282a7ccb-a9b2-4f94-95db-fd52cfccc91a" testId="f6c8dedc-4e46-28e8-ba22-12e86d6a53b8" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_rejects_blank_text(text: &quot;&quot;)" computerName="ZEPHYR" duration="00:00:00.1602746" startTime="2026-10-02T13:59:47.6704848+03:00" endTime="2026-10-02T13:59:47.8305637+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="282a7ccb-a9b2-4f94-95db-fd52cfccc91a" />
+    <UnitTestResult executionId="bcfe18a7-c693-4d8c-b2ec-f88424d03385" testId="6d4e73a3-9526-fea8-415e-5400dfac4908" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Constructor_rejects_blank_model_path(modelPath: &quot; \t\r\n&quot;)" computerName="ZEPHYR" duration="00:00:00.0000448" startTime="2026-10-02T13:59:47.8366316+03:00" endTime="2026-10-02T13:59:47.8367453+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bcfe18a7-c693-4d8c-b2ec-f88424d03385" />
+    <UnitTestResult executionId="4cd98c86-9f54-45a1-89ba-2d8ce7bdd877" testId="0b470208-ade1-4163-1971-4aa30c92bd5b" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;temporal_relation_en_sdca.zip&quot;, id: &quot;free-en-concurrent&quot;, text: &quot;Earlier segment: The rain stopped. Relation cue: a&quot;···, expectedLabel: &quot;AFTER&quot;)" computerName="ZEPHYR" duration="00:00:00.2066298" startTime="2026-10-02T13:59:48.0765561+03:00" endTime="2026-10-02T13:59:48.2829914+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4cd98c86-9f54-45a1-89ba-2d8ce7bdd877">
+      <Output>
+        <StdOut>temporal_relation_en_sdca.zip | free-en-concurrent =&gt; AFTER</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3f68a5b6-6293-499d-b6d9-69bcd27a9996" testId="eecb1a31-7720-48a6-e872-6f8367808f0d" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_timex_type_ro_sdca.zip&quot;, id: &quot;free-ro-duration&quot;, text: &quot;Context: A rămas acolo timp de [TARGET] trei zile &quot;···, expectedLabel: &quot;DURATION&quot;)" computerName="ZEPHYR" duration="00:00:00.1813693" startTime="2026-10-02T13:59:46.6774279+03:00" endTime="2026-10-02T13:59:46.8398861+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3f68a5b6-6293-499d-b6d9-69bcd27a9996">
+      <Output>
+        <StdOut>timebank_timex_type_ro_sdca.zip | free-ro-duration =&gt; DURATION</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="279cceab-8481-43e1-bce9-40b1877050c2" testId="337928c5-d49e-20df-849a-179e60c617b7" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Independently_loaded_models_return_the_same_prediction" computerName="ZEPHYR" duration="00:00:00.2993868" startTime="2026-10-02T13:59:47.8370532+03:00" endTime="2026-10-02T13:59:48.1311388+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="279cceab-8481-43e1-bce9-40b1877050c2" />
+    <UnitTestResult executionId="828b28ff-1c96-4a98-8291-33da51654c16" testId="4503d3cb-7879-4cfb-0f09-a326794ececa" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_rejects_blank_text(text: &quot; \t\r\n&quot;)" computerName="ZEPHYR" duration="00:00:00.1560764" startTime="2026-10-02T13:59:47.3569121+03:00" endTime="2026-10-02T13:59:47.5126667+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="828b28ff-1c96-4a98-8291-33da51654c16" />
+    <UnitTestResult executionId="715aa1c6-abd3-4291-8348-bb4a06fa5898" testId="fc88486b-7fab-27fd-8acb-18bf65383420" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_event_tense_ro_sdca.zip&quot;, id: &quot;free-ro-past&quot;, text: &quot;Context: Ieri Mara [TARGET] a terminat [/TARGET] c&quot;···, expectedLabel: &quot;PAST&quot;)" computerName="ZEPHYR" duration="00:00:00.5324777" startTime="2026-10-02T13:59:46.1126156+03:00" endTime="2026-10-02T13:59:46.6578392+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="715aa1c6-abd3-4291-8348-bb4a06fa5898">
+      <Output>
+        <StdOut>timebank_event_tense_ro_sdca.zip | free-ro-past =&gt; PAST</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4cc39c56-e8da-4fee-9225-3bcbfe624c13" testId="78d6096f-e6cb-5f78-b7ce-ed70824823b8" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_loads_saved_model_and_scores_unlabeled_free_text(text: &quot;Yesterday we visited the old harbor.&quot;, expectedLabel: &quot;PAST&quot;)" computerName="ZEPHYR" duration="00:00:00.1656291" startTime="2026-10-02T13:59:46.8625618+03:00" endTime="2026-10-02T13:59:47.0263470+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4cc39c56-e8da-4fee-9225-3bcbfe624c13">
+      <Output>
+        <StdOut>Synthetic demo model | Yesterday we visited the old harbor. =&gt; PAST</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f4a2f325-ea76-4fde-801a-b1928e71323a" testId="51bf02eb-6e57-34a9-4f58-e394d7f5a931" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_tlink_ro_sdca.zip&quot;, id: &quot;free-ro-after-link&quot;, text: &quot;From: a părăsit\nFrom context: Mara [TARGET] a păr&quot;···, expectedLabel: &quot;AFTER&quot;)" computerName="ZEPHYR" duration="00:00:00.1934452" startTime="2026-10-02T13:59:46.8413221+03:00" endTime="2026-10-02T13:59:47.0333724+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4a2f325-ea76-4fde-801a-b1928e71323a">
+      <Output>
+        <StdOut>timebank_tlink_ro_sdca.zip | free-ro-after-link =&gt; AFTER</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9c943941-f8c0-4894-94df-870e3166b038" testId="16b12c2a-9195-1f9c-ac70-626ed53a1755" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Constructor_rejects_blank_model_path(modelPath: null)" computerName="ZEPHYR" duration="00:00:00.0004670" startTime="2026-10-02T13:59:47.8354807+03:00" endTime="2026-10-02T13:59:47.8356505+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c943941-f8c0-4894-94df-870e3166b038" />
+    <UnitTestResult executionId="3331d4c0-c272-4f9e-bd95-0d69eb365b94" testId="638eaabd-a652-f578-768e-77364ecddbca" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_loads_saved_model_and_scores_unlabeled_free_text(text: &quot;Now we visit the old harbor.&quot;, expectedLabel: &quot;PRESENT&quot;)" computerName="ZEPHYR" duration="00:00:00.1877259" startTime="2026-10-02T13:59:47.1690388+03:00" endTime="2026-10-02T13:59:47.3564084+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3331d4c0-c272-4f9e-bd95-0d69eb365b94">
+      <Output>
+        <StdOut>Synthetic demo model | Now we visit the old harbor. =&gt; PRESENT</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="95623bff-35ee-4048-bb4e-e4a61a9fd1e8" testId="03b26c2a-17a0-a68c-ab33-ee6ff807bf12" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;temporal_relation_en_sdca.zip&quot;, id: &quot;free-en-retrospective&quot;, text: &quot;Earlier segment: Mara left the village before dawn&quot;···, expectedLabel: &quot;AFTER&quot;)" computerName="ZEPHYR" duration="00:00:00.2282870" startTime="2026-10-02T13:59:48.8066840+03:00" endTime="2026-10-02T13:59:49.0346507+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="95623bff-35ee-4048-bb4e-e4a61a9fd1e8">
+      <Output>
+        <StdOut>temporal_relation_en_sdca.zip | free-en-retrospective =&gt; AFTER</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9c0f64c6-ef73-49a8-ab14-d10c2b3a0273" testId="e1909c41-f8eb-ff29-6862-a60927d828b9" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_alink_ro_sdca.zip&quot;, id: &quot;free-ro-initiation&quot;, text: &quot;From: a început\nFrom context: Ploaia [TARGET] a î&quot;···, expectedLabel: &quot;INITIATES&quot;)" computerName="ZEPHYR" duration="00:00:00.1471912" startTime="2026-10-02T13:59:48.4483299+03:00" endTime="2026-10-02T13:59:48.5952426+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c0f64c6-ef73-49a8-ab14-d10c2b3a0273">
+      <Output>
+        <StdOut>timebank_alink_ro_sdca.zip | free-ro-initiation =&gt; INITIATES</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6edf5e02-1cfa-4747-bf31-6ed22d4e658a" testId="5a6f4d66-083c-5c04-a8bd-e3c813022e6f" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_slink_ro_sdca.zip&quot;, id: &quot;free-ro-evidential-link&quot;, text: &quot;From: știa\nFrom context: El [TARGET] știa [/TARGE&quot;···, expectedLabel: &quot;EVIDENTIAL&quot;)" computerName="ZEPHYR" duration="00:00:00.1759660" startTime="2026-10-02T13:59:49.0350062+03:00" endTime="2026-10-02T13:59:49.2107463+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6edf5e02-1cfa-4747-bf31-6ed22d4e658a">
+      <Output>
+        <StdOut>timebank_slink_ro_sdca.zip | free-ro-evidential-link =&gt; EVIDENTIAL</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="be62c912-d904-4b37-a342-a76ecfbdcd62" testId="d322325d-f2b4-7c89-9da6-16c92d20ad95" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_event_class_ro_sdca.zip&quot;, id: &quot;free-ro-event-state&quot;, text: &quot;Context: Mara [TARGET] a aflat [/TARGET] vestea și&quot;···, expectedLabel: &quot;OCCURRENCE&quot;)" computerName="ZEPHYR" duration="00:00:00.1887488" startTime="2026-10-02T13:59:47.5042288+03:00" endTime="2026-10-02T13:59:47.6925992+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="be62c912-d904-4b37-a342-a76ecfbdcd62">
+      <Output>
+        <StdOut>timebank_event_class_ro_sdca.zip | free-ro-event-state =&gt; OCCURRENCE</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3f5b2d40-1a92-4297-a26f-52d54c9298fe" testId="569436d7-6b9e-ba1f-01c4-5b359ed62ff4" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;segment_type_en_sdca.zip&quot;, id: &quot;free-en-habit&quot;, text: &quot;Every spring, villagers gathered at the fountain a&quot;···, expectedLabel: &quot;NAR&quot;)" computerName="ZEPHYR" duration="00:00:00.2003860" startTime="2026-10-02T13:59:47.8759713+03:00" endTime="2026-10-02T13:59:48.0762301+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3f5b2d40-1a92-4297-a26f-52d54c9298fe">
+      <Output>
+        <StdOut>segment_type_en_sdca.zip | free-en-habit =&gt; NAR</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="353a4023-b018-4376-860a-dc65cc9926dc" testId="551a2a36-9280-b53c-9684-0f8d6cbadc16" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_slink_ro_sdca.zip&quot;, id: &quot;free-ro-modal-link&quot;, text: &quot;From: crede\nFrom context: Mara [TARGET] crede [/T&quot;···, expectedLabel: &quot;MODAL&quot;)" computerName="ZEPHYR" duration="00:00:00.1656848" startTime="2026-10-02T13:59:50.1293439+03:00" endTime="2026-10-02T13:59:50.2948192+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="353a4023-b018-4376-860a-dc65cc9926dc">
+      <Output>
+        <StdOut>timebank_slink_ro_sdca.zip | free-ro-modal-link =&gt; MODAL</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a362c546-8e00-4536-9017-3a2601d9ef65" testId="78f99dd0-e531-bd6f-4ad2-d63565f27d54" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_alink_ro_sdca.zip&quot;, id: &quot;free-ro-continuation&quot;, text: &quot;From: a continuat\nFrom context: Ea [TARGET] a con&quot;···, expectedLabel: &quot;CONTINUES&quot;)" computerName="ZEPHYR" duration="00:00:00.1648049" startTime="2026-10-02T13:59:48.2833192+03:00" endTime="2026-10-02T13:59:48.4479842+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a362c546-8e00-4536-9017-3a2601d9ef65">
+      <Output>
+        <StdOut>timebank_alink_ro_sdca.zip | free-ro-continuation =&gt; CONTINUES</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="46c777b5-e417-447b-84f2-2d4e2daead9b" testId="996a579a-6343-1cf1-c124-ea66abce9746" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;segment_type_ro_sdca.zip&quot;, id: &quot;free-ro-memory&quot;, text: &quot;Mult timp după ce a plecat de acasă, Mara și-a ami&quot;···, expectedLabel: &quot;NAR&quot;)" computerName="ZEPHYR" duration="00:00:00.2499802" startTime="2026-10-02T13:59:47.0336268+03:00" endTime="2026-10-02T13:59:47.2834238+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="46c777b5-e417-447b-84f2-2d4e2daead9b">
+      <Output>
+        <StdOut>segment_type_ro_sdca.zip | free-ro-memory =&gt; NAR</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="40a072aa-34f1-4cfe-adfb-f6925512c366" testId="52a6a509-508d-4d79-92bc-f9018f63fd08" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;temporal_relation_ro_sdca.zip&quot;, id: &quot;free-ro-concurrent&quot;, text: &quot;Earlier segment: Ploaia s-a oprit. Relation cue: î&quot;···, expectedLabel: &quot;SIMULTANEOUS&quot;)" computerName="ZEPHYR" duration="00:00:00.2200875" startTime="2026-10-02T13:59:47.2836183+03:00" endTime="2026-10-02T13:59:47.5037730+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="40a072aa-34f1-4cfe-adfb-f6925512c366">
+      <Output>
+        <StdOut>temporal_relation_ro_sdca.zip | free-ro-concurrent =&gt; SIMULTANEOUS</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="93ce4765-e6c6-4315-b8c3-c8efeb4c2c0e" testId="2c8d09e7-9f4c-54b5-a2f2-8885954f8e02" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_event_tense_ro_sdca.zip&quot;, id: &quot;free-ro-future&quot;, text: &quot;Context: Mâine Mara [TARGET] va pleca [/TARGET] sp&quot;···, expectedLabel: &quot;FUTURE&quot;)" computerName="ZEPHYR" duration="00:00:00.1761403" startTime="2026-10-02T13:59:49.4185653+03:00" endTime="2026-10-02T13:59:49.5946506+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93ce4765-e6c6-4315-b8c3-c8efeb4c2c0e">
+      <Output>
+        <StdOut>timebank_event_tense_ro_sdca.zip | free-ro-future =&gt; FUTURE</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f48c4755-9c3c-48a7-921a-7f174c476b07" testId="b379e502-f573-1922-cc53-6635f13b5b18" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;temporal_relation_ro_sdca.zip&quot;, id: &quot;free-ro-retrospective&quot;, text: &quot;Earlier segment: Mara a părăsit satul înainte de r&quot;···, expectedLabel: &quot;SIMULTANEOUS&quot;)" computerName="ZEPHYR" duration="00:00:00.2075307" startTime="2026-10-02T13:59:49.2110577+03:00" endTime="2026-10-02T13:59:49.4183298+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f48c4755-9c3c-48a7-921a-7f174c476b07">
+      <Output>
+        <StdOut>temporal_relation_ro_sdca.zip | free-ro-retrospective =&gt; SIMULTANEOUS</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e063eb70-b144-48e6-83e0-543f659e3e8f" testId="d1415d37-ab91-7a3d-0c83-166e21611735" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_rejects_blank_text(text: null)" computerName="ZEPHYR" duration="00:00:00.1572069" startTime="2026-10-02T13:59:47.5131427+03:00" endTime="2026-10-02T13:59:47.6700830+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e063eb70-b144-48e6-83e0-543f659e3e8f" />
+    <UnitTestResult executionId="152eaa02-720f-40ef-8201-4632d4537653" testId="ce4dd4af-f7fd-ae2e-4b3f-a443e8759527" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;segment_type_ro_sdca.zip&quot;, id: &quot;free-ro-habit&quot;, text: &quot;În fiecare primăvară, sătenii se adunau la fântână&quot;···, expectedLabel: &quot;NAR&quot;)" computerName="ZEPHYR" duration="00:00:00.2107772" startTime="2026-10-02T13:59:48.5988034+03:00" endTime="2026-10-02T13:59:48.8062780+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="152eaa02-720f-40ef-8201-4632d4537653">
+      <Output>
+        <StdOut>segment_type_ro_sdca.zip | free-ro-habit =&gt; NAR</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Independently_loaded_models_return_the_same_prediction" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="337928c5-d49e-20df-849a-179e60c617b7">
+      <Execution id="279cceab-8481-43e1-bce9-40b1877050c2" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Independently_loaded_models_return_the_same_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_slink_ro_sdca.zip&quot;, id: &quot;free-ro-evidential-link&quot;, text: &quot;From: știa\nFrom context: El [TARGET] știa [/TARGE&quot;···, expectedLabel: &quot;EVIDENTIAL&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="5a6f4d66-083c-5c04-a8bd-e3c813022e6f">
+      <Execution id="6edf5e02-1cfa-4747-bf31-6ed22d4e658a" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_loads_saved_model_and_scores_unlabeled_free_text(text: &quot;Tomorrow we will visit the old harbor.&quot;, expectedLabel: &quot;FUTURE&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="c533c027-17be-0745-34bb-c02829eb8808">
+      <Execution id="29252c6f-776c-4ba5-85ed-8d6137374303" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Predict_loads_saved_model_and_scores_unlabeled_free_text" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_event_tense_ro_sdca.zip&quot;, id: &quot;free-ro-future&quot;, text: &quot;Context: Mâine Mara [TARGET] va pleca [/TARGET] sp&quot;···, expectedLabel: &quot;FUTURE&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="2c8d09e7-9f4c-54b5-a2f2-8885954f8e02">
+      <Execution id="93ce4765-e6c6-4315-b8c3-c8efeb4c2c0e" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Constructor_reports_missing_model_path" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="e4ffa501-7a39-2a84-47f2-9051a72f74f6">
+      <Execution id="eb359a55-f249-444b-9d5c-85400fb30793" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Constructor_reports_missing_model_path" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_event_class_ro_sdca.zip&quot;, id: &quot;free-ro-event-opinion&quot;, text: &quot;Context: [TARGET] Cred [/TARGET] că drumul va fi l&quot;···, expectedLabel: &quot;I_STATE&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="30bc8fdc-69bc-c186-c1d2-8c788294e851">
+      <Execution id="e2c116e5-546f-4cd1-9ffc-574b01d1a713" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_timex_type_ro_sdca.zip&quot;, id: &quot;free-ro-duration&quot;, text: &quot;Context: A rămas acolo timp de [TARGET] trei zile &quot;···, expectedLabel: &quot;DURATION&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="eecb1a31-7720-48a6-e872-6f8367808f0d">
+      <Execution id="3f68a5b6-6293-499d-b6d9-69bcd27a9996" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_slink_ro_sdca.zip&quot;, id: &quot;free-ro-modal-link&quot;, text: &quot;From: crede\nFrom context: Mara [TARGET] crede [/T&quot;···, expectedLabel: &quot;MODAL&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="551a2a36-9280-b53c-9684-0f8d6cbadc16">
+      <Execution id="353a4023-b018-4376-860a-dc65cc9926dc" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_alink_ro_sdca.zip&quot;, id: &quot;free-ro-initiation&quot;, text: &quot;From: a început\nFrom context: Ploaia [TARGET] a î&quot;···, expectedLabel: &quot;INITIATES&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="e1909c41-f8eb-ff29-6862-a60927d828b9">
+      <Execution id="9c0f64c6-ef73-49a8-ab14-d10c2b3a0273" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;temporal_relation_en_sdca.zip&quot;, id: &quot;free-en-retrospective&quot;, text: &quot;Earlier segment: Mara left the village before dawn&quot;···, expectedLabel: &quot;AFTER&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="03b26c2a-17a0-a68c-ab33-ee6ff807bf12">
+      <Execution id="95623bff-35ee-4048-bb4e-e4a61a9fd1e8" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_timex_type_ro_sdca.zip&quot;, id: &quot;free-ro-date&quot;, text: &quot;Context: În [TARGET] primăvara trecută [/TARGET], &quot;···, expectedLabel: &quot;DATE&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="18121879-72ed-bf89-5b8f-646f5664e1fe">
+      <Execution id="afcd362a-80f1-4d7c-8c86-6d546696564b" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;temporal_relation_en_sdca.zip&quot;, id: &quot;free-en-concurrent&quot;, text: &quot;Earlier segment: The rain stopped. Relation cue: a&quot;···, expectedLabel: &quot;AFTER&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="0b470208-ade1-4163-1971-4aa30c92bd5b">
+      <Execution id="4cd98c86-9f54-45a1-89ba-2d8ce7bdd877" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_rejects_blank_text(text: null)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="d1415d37-ab91-7a3d-0c83-166e21611735">
+      <Execution id="e063eb70-b144-48e6-83e0-543f659e3e8f" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Predict_rejects_blank_text" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;segment_type_ro_sdca.zip&quot;, id: &quot;free-ro-memory&quot;, text: &quot;Mult timp după ce a plecat de acasă, Mara și-a ami&quot;···, expectedLabel: &quot;NAR&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="996a579a-6343-1cf1-c124-ea66abce9746">
+      <Execution id="46c777b5-e417-447b-84f2-2d4e2daead9b" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_loads_saved_model_and_scores_unlabeled_free_text(text: &quot;Now we visit the old harbor.&quot;, expectedLabel: &quot;PRESENT&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="638eaabd-a652-f578-768e-77364ecddbca">
+      <Execution id="3331d4c0-c272-4f9e-bd95-0d69eb365b94" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Predict_loads_saved_model_and_scores_unlabeled_free_text" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_rejects_blank_text(text: &quot; \t\r\n&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="4503d3cb-7879-4cfb-0f09-a326794ececa">
+      <Execution id="828b28ff-1c96-4a98-8291-33da51654c16" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Predict_rejects_blank_text" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Constructor_rejects_blank_model_path(modelPath: null)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="16b12c2a-9195-1f9c-ac70-626ed53a1755">
+      <Execution id="9c943941-f8c0-4894-94df-870e3166b038" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Constructor_rejects_blank_model_path" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;segment_type_en_sdca.zip&quot;, id: &quot;free-en-habit&quot;, text: &quot;Every spring, villagers gathered at the fountain a&quot;···, expectedLabel: &quot;NAR&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="569436d7-6b9e-ba1f-01c4-5b359ed62ff4">
+      <Execution id="3f5b2d40-1a92-4297-a26f-52d54c9298fe" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;temporal_relation_ro_sdca.zip&quot;, id: &quot;free-ro-retrospective&quot;, text: &quot;Earlier segment: Mara a părăsit satul înainte de r&quot;···, expectedLabel: &quot;SIMULTANEOUS&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="b379e502-f573-1922-cc53-6635f13b5b18">
+      <Execution id="f48c4755-9c3c-48a7-921a-7f174c476b07" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_tlink_ro_sdca.zip&quot;, id: &quot;free-ro-before-link&quot;, text: &quot;From: a plecat\nFrom context: Mara [TARGET] a plec&quot;···, expectedLabel: &quot;AFTER&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="e68354a8-0ca5-baa4-0e84-4a870a7e2780">
+      <Execution id="ea280d0a-00ed-449c-8391-4cca34961870" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_event_class_ro_sdca.zip&quot;, id: &quot;free-ro-event-state&quot;, text: &quot;Context: Mara [TARGET] a aflat [/TARGET] vestea și&quot;···, expectedLabel: &quot;OCCURRENCE&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="d322325d-f2b4-7c89-9da6-16c92d20ad95">
+      <Execution id="be62c912-d904-4b37-a342-a76ecfbdcd62" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_alink_ro_sdca.zip&quot;, id: &quot;free-ro-continuation&quot;, text: &quot;From: a continuat\nFrom context: Ea [TARGET] a con&quot;···, expectedLabel: &quot;CONTINUES&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="78f99dd0-e531-bd6f-4ad2-d63565f27d54">
+      <Execution id="a362c546-8e00-4536-9017-3a2601d9ef65" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;segment_type_ro_sdca.zip&quot;, id: &quot;free-ro-habit&quot;, text: &quot;În fiecare primăvară, sătenii se adunau la fântână&quot;···, expectedLabel: &quot;NAR&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="ce4dd4af-f7fd-ae2e-4b3f-a443e8759527">
+      <Execution id="152eaa02-720f-40ef-8201-4632d4537653" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_rejects_blank_text(text: &quot;&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="f6c8dedc-4e46-28e8-ba22-12e86d6a53b8">
+      <Execution id="282a7ccb-a9b2-4f94-95db-fd52cfccc91a" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Predict_rejects_blank_text" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;segment_type_en_sdca.zip&quot;, id: &quot;free-en-memory&quot;, text: &quot;Years after leaving home, Mara remembered the blue&quot;···, expectedLabel: &quot;REM&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="1f20bb8d-510b-3696-728f-02f298cc1834">
+      <Execution id="6d6a7c34-d7f4-448d-845f-f7962fb1e5b9" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_event_tense_ro_sdca.zip&quot;, id: &quot;free-ro-past&quot;, text: &quot;Context: Ieri Mara [TARGET] a terminat [/TARGET] c&quot;···, expectedLabel: &quot;PAST&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="fc88486b-7fab-27fd-8acb-18bf65383420">
+      <Execution id="715aa1c6-abd3-4291-8348-bb4a06fa5898" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;temporal_relation_ro_sdca.zip&quot;, id: &quot;free-ro-concurrent&quot;, text: &quot;Earlier segment: Ploaia s-a oprit. Relation cue: î&quot;···, expectedLabel: &quot;SIMULTANEOUS&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="52a6a509-508d-4d79-92bc-f9018f63fd08">
+      <Execution id="40a072aa-34f1-4cfe-adfb-f6925512c366" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Constructor_rejects_blank_model_path(modelPath: &quot;&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="ed5d3a83-c97e-9554-4820-e63c01fc30f1">
+      <Execution id="076b6765-9303-4ac9-9d5d-72832e3fbdd8" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Constructor_rejects_blank_model_path" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_loads_saved_model_and_scores_unlabeled_free_text(text: &quot;Yesterday we visited the old harbor.&quot;, expectedLabel: &quot;PAST&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="78d6096f-e6cb-5f78-b7ce-ed70824823b8">
+      <Execution id="4cc39c56-e8da-4fee-9225-3bcbfe624c13" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Predict_loads_saved_model_and_scores_unlabeled_free_text" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Constructor_rejects_blank_model_path(modelPath: &quot; \t\r\n&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="6d4e73a3-9526-fea8-415e-5400dfac4908">
+      <Execution id="bcfe18a7-c693-4d8c-b2ec-f88424d03385" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Constructor_rejects_blank_model_path" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction(modelFile: &quot;timebank_tlink_ro_sdca.zip&quot;, id: &quot;free-ro-after-link&quot;, text: &quot;From: a părăsit\nFrom context: Mara [TARGET] a păr&quot;···, expectedLabel: &quot;AFTER&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tools\tym.modeling.tests\bin\release\net10.0\tym.modeling.tests.dll" id="51bf02eb-6e57-34a9-4f58-e394d7f5a931">
+      <Execution id="f4a2f325-ea76-4fde-801a-b1928e71323a" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tools\Tym.Modeling.Tests\bin\Release\net10.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="18121879-72ed-bf89-5b8f-646f5664e1fe" executionId="afcd362a-80f1-4d7c-8c86-6d546696564b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f20bb8d-510b-3696-728f-02f298cc1834" executionId="6d6a7c34-d7f4-448d-845f-f7962fb1e5b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ed5d3a83-c97e-9554-4820-e63c01fc30f1" executionId="076b6765-9303-4ac9-9d5d-72832e3fbdd8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4ffa501-7a39-2a84-47f2-9051a72f74f6" executionId="eb359a55-f249-444b-9d5c-85400fb30793" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c533c027-17be-0745-34bb-c02829eb8808" executionId="29252c6f-776c-4ba5-85ed-8d6137374303" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="30bc8fdc-69bc-c186-c1d2-8c788294e851" executionId="e2c116e5-546f-4cd1-9ffc-574b01d1a713" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e68354a8-0ca5-baa4-0e84-4a870a7e2780" executionId="ea280d0a-00ed-449c-8391-4cca34961870" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f6c8dedc-4e46-28e8-ba22-12e86d6a53b8" executionId="282a7ccb-a9b2-4f94-95db-fd52cfccc91a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6d4e73a3-9526-fea8-415e-5400dfac4908" executionId="bcfe18a7-c693-4d8c-b2ec-f88424d03385" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0b470208-ade1-4163-1971-4aa30c92bd5b" executionId="4cd98c86-9f54-45a1-89ba-2d8ce7bdd877" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eecb1a31-7720-48a6-e872-6f8367808f0d" executionId="3f68a5b6-6293-499d-b6d9-69bcd27a9996" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="337928c5-d49e-20df-849a-179e60c617b7" executionId="279cceab-8481-43e1-bce9-40b1877050c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4503d3cb-7879-4cfb-0f09-a326794ececa" executionId="828b28ff-1c96-4a98-8291-33da51654c16" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc88486b-7fab-27fd-8acb-18bf65383420" executionId="715aa1c6-abd3-4291-8348-bb4a06fa5898" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="78d6096f-e6cb-5f78-b7ce-ed70824823b8" executionId="4cc39c56-e8da-4fee-9225-3bcbfe624c13" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="51bf02eb-6e57-34a9-4f58-e394d7f5a931" executionId="f4a2f325-ea76-4fde-801a-b1928e71323a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="16b12c2a-9195-1f9c-ac70-626ed53a1755" executionId="9c943941-f8c0-4894-94df-870e3166b038" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="638eaabd-a652-f578-768e-77364ecddbca" executionId="3331d4c0-c272-4f9e-bd95-0d69eb365b94" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="03b26c2a-17a0-a68c-ab33-ee6ff807bf12" executionId="95623bff-35ee-4048-bb4e-e4a61a9fd1e8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e1909c41-f8eb-ff29-6862-a60927d828b9" executionId="9c0f64c6-ef73-49a8-ab14-d10c2b3a0273" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5a6f4d66-083c-5c04-a8bd-e3c813022e6f" executionId="6edf5e02-1cfa-4747-bf31-6ed22d4e658a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d322325d-f2b4-7c89-9da6-16c92d20ad95" executionId="be62c912-d904-4b37-a342-a76ecfbdcd62" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="569436d7-6b9e-ba1f-01c4-5b359ed62ff4" executionId="3f5b2d40-1a92-4297-a26f-52d54c9298fe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="551a2a36-9280-b53c-9684-0f8d6cbadc16" executionId="353a4023-b018-4376-860a-dc65cc9926dc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="78f99dd0-e531-bd6f-4ad2-d63565f27d54" executionId="a362c546-8e00-4536-9017-3a2601d9ef65" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="996a579a-6343-1cf1-c124-ea66abce9746" executionId="46c777b5-e417-447b-84f2-2d4e2daead9b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="52a6a509-508d-4d79-92bc-f9018f63fd08" executionId="40a072aa-34f1-4cfe-adfb-f6925512c366" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c8d09e7-9f4c-54b5-a2f2-8885954f8e02" executionId="93ce4765-e6c6-4315-b8c3-c8efeb4c2c0e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b379e502-f573-1922-cc53-6635f13b5b18" executionId="f48c4755-9c3c-48a7-921a-7f174c476b07" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d1415d37-ab91-7a3d-0c83-166e21611735" executionId="e063eb70-b144-48e6-83e0-543f659e3e8f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ce4dd4af-f7fd-ae2e-4b3f-a443e8759527" executionId="152eaa02-720f-40ef-8201-4632d4537653" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="31" executed="31" passed="31" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.5+1b188a7b0a (64-bit .NET 10.0.12)&#xD;
+[xUnit.net 00:00:00.17]   Discovering: Tym.Modeling.Tests&#xD;
+[xUnit.net 00:00:00.34]   Discovered:  Tym.Modeling.Tests&#xD;
+[xUnit.net 00:00:00.39]   Starting:    Tym.Modeling.Tests&#xD;
+[xUnit.net 00:00:04.62]   Finished:    Tym.Modeling.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

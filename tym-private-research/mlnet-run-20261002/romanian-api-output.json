@@ -1,0 +1,630 @@
+{
+  "id": "f9fe5562e6627528",
+  "model_version": "tym-dotnet-paper-guided-nonllm-provenance-v0.7",
+  "diagram": {
+    "actors": [
+      {
+        "id": "A0",
+        "name": "Narator"
+      },
+      {
+        "id": "A1",
+        "name": "Mara"
+      }
+    ],
+    "locations": [
+      {
+        "id": "L1",
+        "name": "necunoscut",
+        "parent_id": ""
+      },
+      {
+        "id": "L2",
+        "name": "port",
+        "parent_id": ""
+      },
+      {
+        "id": "L3",
+        "name": "urmă",
+        "parent_id": ""
+      }
+    ],
+    "entity_mentions": [
+      {
+        "id": "EM1",
+        "text": "Mara",
+        "label": "PERSON",
+        "source": "capitalized_actor_mention",
+        "span_start": 0,
+        "span_end": 4,
+        "event_id": "EV1"
+      },
+      {
+        "id": "EM2",
+        "text": "port",
+        "label": "LOCATION",
+        "source": "preposition_location_pattern",
+        "span_start": 17,
+        "span_end": 21,
+        "event_id": "EV1"
+      },
+      {
+        "id": "EM3",
+        "text": "mers",
+        "label": "EVENT_ACTION",
+        "source": "verb_pattern",
+        "span_start": 7,
+        "span_end": 11,
+        "event_id": "EV1"
+      },
+      {
+        "id": "EM4",
+        "text": "Mara",
+        "label": "PERSON",
+        "source": "carried_actor_context",
+        "span_start": 23,
+        "span_end": 23,
+        "event_id": "EV2"
+      },
+      {
+        "id": "EM5",
+        "text": "urmă",
+        "label": "LOCATION",
+        "source": "preposition_location_pattern",
+        "span_start": 33,
+        "span_end": 37,
+        "event_id": "EV2"
+      },
+      {
+        "id": "EM6",
+        "text": "Cu ani în urmă",
+        "label": "DATE_TIME",
+        "source": "temporal_expression_pattern",
+        "span_start": 23,
+        "span_end": 37,
+        "event_id": "EV2"
+      },
+      {
+        "id": "EM7",
+        "text": "locuise",
+        "label": "EVENT_ACTION",
+        "source": "verb_pattern",
+        "span_start": 39,
+        "span_end": 46,
+        "event_id": "EV2"
+      },
+      {
+        "id": "EM8",
+        "text": "Mara",
+        "label": "PERSON",
+        "source": "carried_actor_context",
+        "span_start": 55,
+        "span_end": 55,
+        "event_id": "EV3"
+      },
+      {
+        "id": "EM9",
+        "text": "Mâine",
+        "label": "DATE_TIME",
+        "source": "temporal_expression_pattern",
+        "span_start": 55,
+        "span_end": 60,
+        "event_id": "EV3"
+      },
+      {
+        "id": "EM10",
+        "text": "va",
+        "label": "EVENT_ACTION",
+        "source": "verb_pattern",
+        "span_start": 64,
+        "span_end": 66,
+        "event_id": "EV3"
+      }
+    ],
+    "events": [
+      {
+        "id": "EV1",
+        "text": "Mara a mers spre port.",
+        "actors": [
+          "Mara"
+        ],
+        "temporal_anchor": "",
+        "location": "port",
+        "action": "mers",
+        "temporal_category": "Present",
+        "relation_to_previous": "NONE",
+        "relation_cue": "",
+        "relation_evidence": "First event in text order.",
+        "order": 1,
+        "span_start": 0,
+        "span_end": 22,
+        "confidence": 0.75,
+        "classifier": "romanian_rule_event_temporal",
+        "provenance": {
+          "actors": {
+            "source": "capitalized_actor_heuristic",
+            "evidence": "Mara"
+          },
+          "temporal_anchor": {
+            "source": "not_detected",
+            "evidence": "No temporal expression was detected."
+          },
+          "location": {
+            "source": "preposition_location_pattern",
+            "evidence": "port"
+          },
+          "action": {
+            "source": "verb_pattern",
+            "evidence": "mers"
+          },
+          "temporal_category": {
+            "source": "romanian_rule_event_temporal",
+            "evidence": "Predicted Present with confidence 0.75."
+          },
+          "relation": {
+            "source": "text_order_default",
+            "evidence": "First event in text order."
+          }
+        }
+      },
+      {
+        "id": "EV2",
+        "text": "Cu ani în urmă, locuise în sat.",
+        "actors": [
+          "Mara"
+        ],
+        "temporal_anchor": "Cu ani în urmă",
+        "location": "urmă",
+        "action": "locuise",
+        "temporal_category": "Past",
+        "relation_to_previous": "BEFORE",
+        "relation_cue": "Cu ani în urmă",
+        "relation_evidence": "Retrospective cue places this event earlier than the previous event.",
+        "order": 2,
+        "span_start": 23,
+        "span_end": 54,
+        "confidence": 0.75,
+        "classifier": "romanian_rule_event_temporal",
+        "provenance": {
+          "actors": {
+            "source": "previous_event_actor_carry_forward",
+            "evidence": "Mara"
+          },
+          "temporal_anchor": {
+            "source": "temporal_expression_pattern",
+            "evidence": "Cu ani în urmă"
+          },
+          "location": {
+            "source": "preposition_location_pattern",
+            "evidence": "urmă"
+          },
+          "action": {
+            "source": "verb_pattern",
+            "evidence": "locuise"
+          },
+          "temporal_category": {
+            "source": "romanian_rule_event_temporal",
+            "evidence": "Predicted Past with confidence 0.75."
+          },
+          "relation": {
+            "source": "temporal_cue_rule",
+            "evidence": "Retrospective cue places this event earlier than the previous event."
+          }
+        }
+      },
+      {
+        "id": "EV3",
+        "text": "Mâine se va întoarce acasă.",
+        "actors": [
+          "Mara"
+        ],
+        "temporal_anchor": "Mâine",
+        "location": "",
+        "action": "va",
+        "temporal_category": "Future",
+        "relation_to_previous": "IMMEDIATELY_AFTER",
+        "relation_cue": "",
+        "relation_evidence": "No explicit cue; defaulting to text-order adjacency.",
+        "order": 3,
+        "span_start": 55,
+        "span_end": 82,
+        "confidence": 0.75,
+        "classifier": "romanian_rule_event_temporal",
+        "provenance": {
+          "actors": {
+            "source": "previous_event_actor_carry_forward",
+            "evidence": "Mara"
+          },
+          "temporal_anchor": {
+            "source": "temporal_expression_pattern",
+            "evidence": "Mâine"
+          },
+          "location": {
+            "source": "not_detected",
+            "evidence": "No location phrase was detected."
+          },
+          "action": {
+            "source": "verb_pattern",
+            "evidence": "va"
+          },
+          "temporal_category": {
+            "source": "romanian_rule_event_temporal",
+            "evidence": "Predicted Future with confidence 0.75."
+          },
+          "relation": {
+            "source": "text_order_default",
+            "evidence": "No explicit cue; defaulting to text-order adjacency."
+          }
+        }
+      }
+    ],
+    "tracks": [
+      {
+        "id": "TT1",
+        "name": "Mara",
+        "left_endpoint": "START",
+        "right_endpoint": "STOP"
+      },
+      {
+        "id": "TT2",
+        "name": "Mara",
+        "left_endpoint": "START",
+        "right_endpoint": "STOP"
+      },
+      {
+        "id": "TT3",
+        "name": "Mara",
+        "left_endpoint": "START",
+        "right_endpoint": "STOP"
+      }
+    ],
+    "segments": [
+      {
+        "id": "TS1",
+        "text": "Mara a mers spre port.",
+        "track_id": "TT1",
+        "type": "NAR",
+        "perspective": "autor",
+        "text_order": 1,
+        "story_order": 1,
+        "entities": [
+          "Mara"
+        ],
+        "actors": [
+          "Mara"
+        ],
+        "location_id": "L2",
+        "temporal_anchor": "",
+        "temporal_category": "Present",
+        "span_start": 0,
+        "span_end": 22,
+        "event_ids": [
+          "EV1"
+        ],
+        "confidence": 0.75,
+        "classifier": "romanian_rule_segment_type"
+      },
+      {
+        "id": "TS2",
+        "text": "Cu ani în urmă, locuise în sat.",
+        "track_id": "TT2",
+        "type": "NAR",
+        "perspective": "autor",
+        "text_order": 2,
+        "story_order": 1,
+        "entities": [
+          "Mara"
+        ],
+        "actors": [
+          "Mara"
+        ],
+        "location_id": "L3",
+        "temporal_anchor": "Cu ani în urmă",
+        "temporal_category": "Past",
+        "span_start": 23,
+        "span_end": 54,
+        "event_ids": [
+          "EV2"
+        ],
+        "confidence": 0.75,
+        "classifier": "romanian_rule_segment_type"
+      },
+      {
+        "id": "TS3",
+        "text": "Mâine se va întoarce acasă.",
+        "track_id": "TT3",
+        "type": "NAR",
+        "perspective": "autor",
+        "text_order": 3,
+        "story_order": 1,
+        "entities": [
+          "Mara"
+        ],
+        "actors": [
+          "Mara"
+        ],
+        "location_id": "",
+        "temporal_anchor": "Mâine",
+        "temporal_category": "Future",
+        "span_start": 55,
+        "span_end": 82,
+        "event_ids": [
+          "EV3"
+        ],
+        "confidence": 0.75,
+        "classifier": "romanian_rule_segment_type"
+      }
+    ],
+    "endpoints": [],
+    "relations": [
+      {
+        "from_id": "TS2",
+        "rel": "BEFORE",
+        "to_id": "TS1",
+        "cue": "Cu ani în urmă",
+        "evidence": "Retrospective cue places this event earlier than the previous event."
+      },
+      {
+        "from_id": "TT1",
+        "rel": "BEFORE",
+        "to_id": "TT2",
+        "cue": "",
+        "evidence": "Adjacent text segments belong to different time tracks."
+      },
+      {
+        "from_id": "TS2",
+        "rel": "IMMEDIATELY_BEFORE",
+        "to_id": "TS3",
+        "cue": "",
+        "evidence": "No explicit cue; defaulting to text-order adjacency."
+      },
+      {
+        "from_id": "TT2",
+        "rel": "BEFORE",
+        "to_id": "TT3",
+        "cue": "",
+        "evidence": "Adjacent text segments belong to different time tracks."
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "B1",
+        "type": "START",
+        "to_segment_id": "TS1",
+        "track_ids": [
+          "TT1"
+        ],
+        "reason": "First TS in text order."
+      },
+      {
+        "id": "B2",
+        "type": "RUPTURE",
+        "from_segment_id": "TS1",
+        "to_segment_id": "TS2",
+        "track_ids": [
+          "TT1",
+          "TT2"
+        ],
+        "reason": "Adjacent text segments belong to different time tracks."
+      },
+      {
+        "id": "B3",
+        "type": "RUPTURE",
+        "from_segment_id": "TS2",
+        "to_segment_id": "TS3",
+        "track_ids": [
+          "TT2",
+          "TT3"
+        ],
+        "reason": "Adjacent text segments belong to different time tracks."
+      },
+      {
+        "id": "B4",
+        "type": "STOP",
+        "from_segment_id": "TS3",
+        "track_ids": [
+          "TT3"
+        ],
+        "reason": "Last TS in text order."
+      }
+    ],
+    "time_ml": {
+      "events": [
+        {
+          "eid": "e1",
+          "class": "OCCURRENCE",
+          "text": "mers",
+          "span_start": 7,
+          "span_end": 11,
+          "tym_event_id": "EV1"
+        },
+        {
+          "eid": "e2",
+          "class": "OCCURRENCE",
+          "text": "locuise",
+          "span_start": 39,
+          "span_end": 46,
+          "tym_event_id": "EV2"
+        },
+        {
+          "eid": "e3",
+          "class": "OCCURRENCE",
+          "text": "va",
+          "span_start": 64,
+          "span_end": 66,
+          "tym_event_id": "EV3"
+        }
+      ],
+      "timex3": [
+        {
+          "tid": "t1",
+          "type": "DATE",
+          "value": "PAST_REF",
+          "text": "Cu ani în urmă",
+          "span_start": 23,
+          "span_end": 37,
+          "source": "explicit_temporal_expression",
+          "function_in_document": "NONE"
+        },
+        {
+          "tid": "t2",
+          "type": "DATE",
+          "value": "FUTURE_REF",
+          "text": "Mâine",
+          "span_start": 55,
+          "span_end": 60,
+          "source": "explicit_temporal_expression",
+          "function_in_document": "NONE"
+        }
+      ],
+      "signals": [
+        {
+          "sid": "s1",
+          "text": "Cu ani în urmă",
+          "span_start": 23,
+          "span_end": 37,
+          "event_id": "EV2",
+          "relation_hint": "BEFORE"
+        }
+      ],
+      "make_instances": [
+        {
+          "eiid": "ei1",
+          "event_id": "e1",
+          "tense": "PRESENT",
+          "aspect": "NONE",
+          "polarity": "POS",
+          "pos": "VERB",
+          "tym_event_id": "EV1"
+        },
+        {
+          "eiid": "ei2",
+          "event_id": "e2",
+          "tense": "PAST",
+          "aspect": "NONE",
+          "polarity": "POS",
+          "pos": "VERB",
+          "tym_event_id": "EV2"
+        },
+        {
+          "eiid": "ei3",
+          "event_id": "e3",
+          "tense": "FUTURE",
+          "aspect": "NONE",
+          "polarity": "POS",
+          "pos": "VERB",
+          "tym_event_id": "EV3"
+        }
+      ],
+      "tlinks": [
+        {
+          "lid": "l1",
+          "rel_type": "IS_INCLUDED",
+          "event_instance_id": "ei2",
+          "related_to_time": "t1",
+          "origin": "event_temporal_anchor"
+        },
+        {
+          "lid": "l2",
+          "rel_type": "BEFORE",
+          "event_instance_id": "ei2",
+          "related_to_event_instance": "ei1",
+          "signal_id": "s1",
+          "origin": "event_relation_signal"
+        },
+        {
+          "lid": "l3",
+          "rel_type": "IS_INCLUDED",
+          "event_instance_id": "ei3",
+          "related_to_time": "t2",
+          "origin": "event_temporal_anchor"
+        },
+        {
+          "lid": "l4",
+          "rel_type": "IBEFORE",
+          "event_instance_id": "ei2",
+          "related_to_event_instance": "ei3",
+          "origin": "event_text_order"
+        }
+      ]
+    }
+  },
+  "analysis": {
+    "character_count": 82,
+    "event_count": 3,
+    "segment_count": 3,
+    "track_count": 3,
+    "relation_count": 4,
+    "time_ml_event_count": 3,
+    "time_ml_timex_count": 2,
+    "time_ml_tlink_count": 4,
+    "average_event_confidence": 0.75,
+    "average_segment_confidence": 0.75,
+    "segment_types": {
+      "NAR": 3
+    },
+    "temporal_categories": {
+      "Future": 1,
+      "Past": 1,
+      "Present": 1
+    },
+    "relation_types": {
+      "BEFORE": 3,
+      "IMMEDIATELY_BEFORE": 1
+    },
+    "entity_mention_labels": {
+      "EVENT_ACTION": 3,
+      "PERSON": 3,
+      "DATE_TIME": 2,
+      "LOCATION": 2
+    },
+    "provenance_sources": {
+      "romanian_rule_event_temporal": 3,
+      "verb_pattern": 3,
+      "not_detected": 2,
+      "preposition_location_pattern": 2,
+      "previous_event_actor_carry_forward": 2,
+      "temporal_expression_pattern": 2,
+      "text_order_default": 2,
+      "capitalized_actor_heuristic": 1,
+      "temporal_cue_rule": 1
+    },
+    "extraction_sources": [
+      "capitalized_actor_heuristic",
+      "capitalized_actor_mention",
+      "carried_actor_context",
+      "not_detected",
+      "preposition_location_pattern",
+      "previous_event_actor_carry_forward",
+      "romanian_rule_event_temporal",
+      "romanian_rule_segment_type",
+      "temporal_cue_rule",
+      "temporal_expression_pattern",
+      "text_order_default",
+      "verb_pattern"
+    ],
+    "issues": [
+      {
+        "severity": "info",
+        "code": "SEGMENTS_WITHOUT_TIMEX",
+        "message": "1 segment(s) have no explicit temporal anchor.",
+        "evidence": "Temporal anchors are optional in TYM; use TIMEX3 annotations when exact time evidence is needed."
+      }
+    ]
+  },
+  "render": {
+    "format": "svg",
+    "width": 1200,
+    "height": 606,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"606\" viewBox=\"0 0 1200 606\" role=\"img\" aria-label=\"TYM time-yard diagram\"><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><style>text{dominant-baseline:auto}</style><line x1=\"105.0\" y1=\"76.0\" x2=\"1120.0\" y2=\"76.0\" stroke=\"#374151\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"105.0\" y1=\"64.0\" x2=\"105.0\" y2=\"88.0\" stroke=\"#111827\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"113.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" font-weight=\"400\" fill=\"#111827\">TS1</text><line x1=\"443.3\" y1=\"64.0\" x2=\"443.3\" y2=\"88.0\" stroke=\"#111827\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"451.3\" y=\"110.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" font-weight=\"400\" fill=\"#111827\">TS2</text><line x1=\"781.7\" y1=\"64.0\" x2=\"781.7\" y2=\"88.0\" stroke=\"#111827\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"789.7\" y=\"54.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" font-weight=\"400\" fill=\"#111827\">TS3</text><line x1=\"1120.0\" y1=\"64.0\" x2=\"1120.0\" y2=\"88.0\" stroke=\"#111827\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18.0\" y=\"163.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#111827\">TT1: Mara</text><polygon points=\"57.0,146.0 57.0,170.0 79.0,158.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\"/><polygon points=\"298.0,146.0 298.0,170.0 276.0,158.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\"/><line x1=\"105.0\" y1=\"158.0\" x2=\"250.0\" y2=\"158.0\" stroke=\"#111827\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><rect x=\"92.0\" y=\"146.0\" width=\"26.0\" height=\"24.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\" rx=\"2\"/><text x=\"105.0\" y=\"162.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#111827\">TS1</text><line x1=\"250.0\" y1=\"145.0\" x2=\"250.0\" y2=\"171.0\" stroke=\"#111827\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"177.5\" y=\"133.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" font-weight=\"400\" fill=\"#111827\">TS1: Mara a mers spre port.</text><text x=\"18.0\" y=\"249.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#111827\">TT2: Mara</text><polygon points=\"57.0,232.0 57.0,256.0 79.0,244.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\"/><polygon points=\"298.0,232.0 298.0,256.0 276.0,244.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\"/><line x1=\"105.0\" y1=\"244.0\" x2=\"250.0\" y2=\"244.0\" stroke=\"#111827\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><rect x=\"92.0\" y=\"232.0\" width=\"26.0\" height=\"24.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\" rx=\"2\"/><text x=\"105.0\" y=\"248.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#111827\">TS2</text><line x1=\"250.0\" y1=\"231.0\" x2=\"250.0\" y2=\"257.0\" stroke=\"#111827\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"177.5\" y=\"219.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" font-weight=\"400\" fill=\"#111827\">TS2: Cu ani &#238;n urmă, locuise &#238;n sat.</text><text x=\"18.0\" y=\"335.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#111827\">TT3: Mara</text><polygon points=\"57.0,318.0 57.0,342.0 79.0,330.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\"/><polygon points=\"298.0,318.0 298.0,342.0 276.0,330.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\"/><line x1=\"105.0\" y1=\"330.0\" x2=\"250.0\" y2=\"330.0\" stroke=\"#111827\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><rect x=\"92.0\" y=\"318.0\" width=\"26.0\" height=\"24.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\" rx=\"2\"/><text x=\"105.0\" y=\"334.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#111827\">TS3</text><line x1=\"250.0\" y1=\"317.0\" x2=\"250.0\" y2=\"343.0\" stroke=\"#111827\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"177.5\" y=\"305.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" font-weight=\"400\" fill=\"#111827\">TS3: M&#226;ine se va &#238;ntoarce acasă.</text><rect x=\"18.0\" y=\"470.0\" width=\"1164.0\" height=\"112.0\" fill=\"#f9fafb\" stroke=\"#d1d5db\" stroke-width=\"1.2\" rx=\"6\"/><text x=\"36.0\" y=\"495.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#111827\">Legend</text><line x1=\"36.0\" y1=\"514.0\" x2=\"80.0\" y2=\"514.0\" stroke=\"#111827\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"92.0\" y=\"518.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"11\" font-weight=\"400\" fill=\"#111827\">Solid line: narrative continuity</text><line x1=\"617.0\" y1=\"514.0\" x2=\"661.0\" y2=\"514.0\" stroke=\"#111827\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"2 6\"/><text x=\"673.0\" y=\"518.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"11\" font-weight=\"400\" fill=\"#111827\">Dotted line: REM/SUP/GEN/FIC segment</text><polygon points=\"33.0,529.0 33.0,553.0 55.0,541.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\"/><polygon points=\"92.0,529.0 92.0,553.0 70.0,541.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\"/><text x=\"92.0\" y=\"546.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"11\" font-weight=\"400\" fill=\"#111827\">Triangle: track start/stop</text><rect x=\"629.0\" y=\"529.0\" width=\"28.0\" height=\"24.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\" rx=\"2\"/><text x=\"643.0\" y=\"545.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#111827\">TS</text><text x=\"673.0\" y=\"546.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"11\" font-weight=\"400\" fill=\"#111827\">Blue box: TS marker</text><line x1=\"59.0\" y1=\"556.0\" x2=\"59.0\" y2=\"581.0\" stroke=\"#111827\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"92.0\" y=\"574.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"11\" font-weight=\"400\" fill=\"#111827\">Vertical tick: segment boundary</text><text x=\"629.0\" y=\"574.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#111827\">EP</text><text x=\"673.0\" y=\"574.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"11\" font-weight=\"400\" fill=\"#111827\">Endpoint text: JOIN/SPLIT</text></svg>"
+  },
+  "xml": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<TYM>\r\n  <TA-SECTION>\r\n    <TA ID=\"A0\" NAME=\"Narator\" />\r\n    <TA ID=\"A1\" NAME=\"Mara\" />\r\n  </TA-SECTION>\r\n  <TL-SECTION>\r\n    <TL ID=\"L1\" NAME=\"necunoscut\" PARENTID=\"\" />\r\n    <TL ID=\"L2\" NAME=\"port\" PARENTID=\"\" />\r\n    <TL ID=\"L3\" NAME=\"urmă\" PARENTID=\"\" />\r\n  </TL-SECTION>\r\n  <ENTITY-MENTION-SECTION>\r\n    <ENTITY-MENTION ID=\"EM1\" TYPE=\"PERSON\" SOURCE=\"capitalized_actor_mention\" EVENT=\"EV1\" SPANS=\"0~4\" TEXT=\"Mara\" />\r\n    <ENTITY-MENTION ID=\"EM2\" TYPE=\"LOCATION\" SOURCE=\"preposition_location_pattern\" EVENT=\"EV1\" SPANS=\"17~21\" TEXT=\"port\" />\r\n    <ENTITY-MENTION ID=\"EM3\" TYPE=\"EVENT_ACTION\" SOURCE=\"verb_pattern\" EVENT=\"EV1\" SPANS=\"7~11\" TEXT=\"mers\" />\r\n    <ENTITY-MENTION ID=\"EM4\" TYPE=\"PERSON\" SOURCE=\"carried_actor_context\" EVENT=\"EV2\" SPANS=\"23~23\" TEXT=\"Mara\" />\r\n    <ENTITY-MENTION ID=\"EM5\" TYPE=\"LOCATION\" SOURCE=\"preposition_location_pattern\" EVENT=\"EV2\" SPANS=\"33~37\" TEXT=\"urmă\" />\r\n    <ENTITY-MENTION ID=\"EM6\" TYPE=\"DATE_TIME\" SOURCE=\"temporal_expression_pattern\" EVENT=\"EV2\" SPANS=\"23~37\" TEXT=\"Cu ani &#238;n urmă\" />\r\n    <ENTITY-MENTION ID=\"EM7\" TYPE=\"EVENT_ACTION\" SOURCE=\"verb_pattern\" EVENT=\"EV2\" SPANS=\"39~46\" TEXT=\"locuise\" />\r\n    <ENTITY-MENTION ID=\"EM8\" TYPE=\"PERSON\" SOURCE=\"carried_actor_context\" EVENT=\"EV3\" SPANS=\"55~55\" TEXT=\"Mara\" />\r\n    <ENTITY-MENTION ID=\"EM9\" TYPE=\"DATE_TIME\" SOURCE=\"temporal_expression_pattern\" EVENT=\"EV3\" SPANS=\"55~60\" TEXT=\"M&#226;ine\" />\r\n    <ENTITY-MENTION ID=\"EM10\" TYPE=\"EVENT_ACTION\" SOURCE=\"verb_pattern\" EVENT=\"EV3\" SPANS=\"64~66\" TEXT=\"va\" />\r\n  </ENTITY-MENTION-SECTION>\r\n  <EVENT-SECTION>\r\n    <EVENT ID=\"EV1\" SPANS=\"0~22\" ACTORS=\"A1\" ACTOR-SOURCE=\"capitalized_actor_heuristic\" ACTOR-EVIDENCE=\"Mara\" LOCATION=\"L2\" LOCATION-SOURCE=\"preposition_location_pattern\" LOCATION-EVIDENCE=\"port\" TEMPORAL-ANCHOR=\"\" TEMPORAL-SOURCE=\"not_detected\" TEMPORAL-EVIDENCE=\"No temporal expression was detected.\" TENSE=\"Present\" TENSE-SOURCE=\"romanian_rule_event_temporal\" TENSE-EVIDENCE=\"Predicted Present with confidence 0.75.\" ACTION=\"mers\" ACTION-SOURCE=\"verb_pattern\" ACTION-EVIDENCE=\"mers\" REL-PREV=\"NONE\" REL-CUE=\"\" REL-SOURCE=\"text_order_default\" REL-EVIDENCE=\"First event in text order.\" ORDER=\"1\" TEXT=\"Mara a mers spre port.\" />\r\n    <EVENT ID=\"EV2\" SPANS=\"23~54\" ACTORS=\"A1\" ACTOR-SOURCE=\"previous_event_actor_carry_forward\" ACTOR-EVIDENCE=\"Mara\" LOCATION=\"L3\" LOCATION-SOURCE=\"preposition_location_pattern\" LOCATION-EVIDENCE=\"urmă\" TEMPORAL-ANCHOR=\"Cu ani &#238;n urmă\" TEMPORAL-SOURCE=\"temporal_expression_pattern\" TEMPORAL-EVIDENCE=\"Cu ani &#238;n urmă\" TENSE=\"Past\" TENSE-SOURCE=\"romanian_rule_event_temporal\" TENSE-EVIDENCE=\"Predicted Past with confidence 0.75.\" ACTION=\"locuise\" ACTION-SOURCE=\"verb_pattern\" ACTION-EVIDENCE=\"locuise\" REL-PREV=\"BEFORE\" REL-CUE=\"Cu ani &#238;n urmă\" REL-SOURCE=\"temporal_cue_rule\" REL-EVIDENCE=\"Retrospective cue places this event earlier than the previous event.\" ORDER=\"2\" TEXT=\"Cu ani &#238;n urmă, locuise &#238;n sat.\" />\r\n    <EVENT ID=\"EV3\" SPANS=\"55~82\" ACTORS=\"A1\" ACTOR-SOURCE=\"previous_event_actor_carry_forward\" ACTOR-EVIDENCE=\"Mara\" LOCATION=\"L1\" LOCATION-SOURCE=\"not_detected\" LOCATION-EVIDENCE=\"No location phrase was detected.\" TEMPORAL-ANCHOR=\"M&#226;ine\" TEMPORAL-SOURCE=\"temporal_expression_pattern\" TEMPORAL-EVIDENCE=\"M&#226;ine\" TENSE=\"Future\" TENSE-SOURCE=\"romanian_rule_event_temporal\" TENSE-EVIDENCE=\"Predicted Future with confidence 0.75.\" ACTION=\"va\" ACTION-SOURCE=\"verb_pattern\" ACTION-EVIDENCE=\"va\" REL-PREV=\"IMMEDIATELY_AFTER\" REL-CUE=\"\" REL-SOURCE=\"text_order_default\" REL-EVIDENCE=\"No explicit cue; defaulting to text-order adjacency.\" ORDER=\"3\" TEXT=\"M&#226;ine se va &#238;ntoarce acasă.\" />\r\n  </EVENT-SECTION>\r\n  <TIMEML-SECTION>\r\n    <EVENT eid=\"e1\" class=\"OCCURRENCE\" tymEventId=\"EV1\" spans=\"7~11\">mers</EVENT>\r\n    <EVENT eid=\"e2\" class=\"OCCURRENCE\" tymEventId=\"EV2\" spans=\"39~46\">locuise</EVENT>\r\n    <EVENT eid=\"e3\" class=\"OCCURRENCE\" tymEventId=\"EV3\" spans=\"64~66\">va</EVENT>\r\n    <TIMEX3 tid=\"t1\" type=\"DATE\" value=\"PAST_REF\" functionInDocument=\"NONE\" source=\"explicit_temporal_expression\" spans=\"23~37\">Cu ani &#238;n urmă</TIMEX3>\r\n    <TIMEX3 tid=\"t2\" type=\"DATE\" value=\"FUTURE_REF\" functionInDocument=\"NONE\" source=\"explicit_temporal_expression\" spans=\"55~60\">M&#226;ine</TIMEX3>\r\n    <SIGNAL sid=\"s1\" eventId=\"EV2\" relationHint=\"BEFORE\" spans=\"23~37\">Cu ani &#238;n urmă</SIGNAL>\r\n    <MAKEINSTANCE eiid=\"ei1\" eventID=\"e1\" tense=\"PRESENT\" aspect=\"NONE\" polarity=\"POS\" pos=\"VERB\" tymEventId=\"EV1\" />\r\n    <MAKEINSTANCE eiid=\"ei2\" eventID=\"e2\" tense=\"PAST\" aspect=\"NONE\" polarity=\"POS\" pos=\"VERB\" tymEventId=\"EV2\" />\r\n    <MAKEINSTANCE eiid=\"ei3\" eventID=\"e3\" tense=\"FUTURE\" aspect=\"NONE\" polarity=\"POS\" pos=\"VERB\" tymEventId=\"EV3\" />\r\n    <TLINK lid=\"l1\" relType=\"IS_INCLUDED\" eventInstanceID=\"ei2\" relatedToEventInstance=\"\" timeID=\"\" relatedToTime=\"t1\" signalID=\"\" origin=\"event_temporal_anchor\" />\r\n    <TLINK lid=\"l2\" relType=\"BEFORE\" eventInstanceID=\"ei2\" relatedToEventInstance=\"ei1\" timeID=\"\" relatedToTime=\"\" signalID=\"s1\" origin=\"event_relation_signal\" />\r\n    <TLINK lid=\"l3\" relType=\"IS_INCLUDED\" eventInstanceID=\"ei3\" relatedToEventInstance=\"\" timeID=\"\" relatedToTime=\"t2\" signalID=\"\" origin=\"event_temporal_anchor\" />\r\n    <TLINK lid=\"l4\" relType=\"IBEFORE\" eventInstanceID=\"ei2\" relatedToEventInstance=\"ei3\" timeID=\"\" relatedToTime=\"\" signalID=\"\" origin=\"event_text_order\" />\r\n  </TIMEML-SECTION>\r\n  <TT-SECTION>\r\n    <TT ID=\"TT1\" NAME=\"Mara\" LEFT-EP=\"START\" RIGHT-EP=\"STOP\" />\r\n    <TT ID=\"TT2\" NAME=\"Mara\" LEFT-EP=\"START\" RIGHT-EP=\"STOP\" />\r\n    <TT ID=\"TT3\" NAME=\"Mara\" LEFT-EP=\"START\" RIGHT-EP=\"STOP\" />\r\n  </TT-SECTION>\r\n  <TIME-SECTION>\r\n    <TREL ID=\"TI1\" FROM=\"TS2\" REL=\"BEFORE\" TO=\"TS1\" CUE=\"Cu ani &#238;n urmă\" EVIDENCE=\"Retrospective cue places this event earlier than the previous event.\" />\r\n    <TIME ID=\"TI2\" FROM=\"TT1\" REL=\"BEFORE\" TO=\"TT2\" CUE=\"\" EVIDENCE=\"Adjacent text segments belong to different time tracks.\" />\r\n    <TREL ID=\"TI3\" FROM=\"TS2\" REL=\"IMMEDIATELY-BEFORE\" TO=\"TS3\" CUE=\"\" EVIDENCE=\"No explicit cue; defaulting to text-order adjacency.\" />\r\n    <TIME ID=\"TI4\" FROM=\"TT2\" REL=\"BEFORE\" TO=\"TT3\" CUE=\"\" EVIDENCE=\"Adjacent text segments belong to different time tracks.\" />\r\n  </TIME-SECTION>\r\n  <EP-SECTION>\r\n  </EP-SECTION>\r\n  <POINT-SECTION>\r\n    <POINT ID=\"B1\" TYPE=\"START\" FROM-TS=\"\" TO-TS=\"TS1\" TRACKS=\"TT1\" REASON=\"First TS in text order.\" />\r\n    <POINT ID=\"B2\" TYPE=\"RUPTURE\" FROM-TS=\"TS1\" TO-TS=\"TS2\" TRACKS=\"TT1 TT2\" REASON=\"Adjacent text segments belong to different time tracks.\" />\r\n    <POINT ID=\"B3\" TYPE=\"RUPTURE\" FROM-TS=\"TS2\" TO-TS=\"TS3\" TRACKS=\"TT2 TT3\" REASON=\"Adjacent text segments belong to different time tracks.\" />\r\n    <POINT ID=\"B4\" TYPE=\"STOP\" FROM-TS=\"TS3\" TO-TS=\"\" TRACKS=\"TT3\" REASON=\"Last TS in text order.\" />\r\n  </POINT-SECTION>\r\n  <BODY>\r\n    <TS ID=\"TS1\" IN-TT=\"TT1\" SPANS=\"0~22\" ACTORS=\"A1\" LOCATION=\"L2\" NAME=\"TS1\" TYPE=\"NAR\" TST=\"Present\" TIME=\"\" PER=\"autor\" EVENTS=\"EV1\">Mara a mers spre port.</TS>\r\n    <TS ID=\"TS2\" IN-TT=\"TT2\" SPANS=\"23~54\" ACTORS=\"A1\" LOCATION=\"L3\" NAME=\"TS2\" TYPE=\"NAR\" TST=\"Past\" TIME=\"Cu ani &#238;n urmă\" PER=\"autor\" EVENTS=\"EV2\">Cu ani &#238;n urmă, locuise &#238;n sat.</TS>\r\n    <TS ID=\"TS3\" IN-TT=\"TT3\" SPANS=\"55~82\" ACTORS=\"A1\" LOCATION=\"L1\" NAME=\"TS3\" TYPE=\"NAR\" TST=\"Future\" TIME=\"M&#226;ine\" PER=\"autor\" EVENTS=\"EV3\">M&#226;ine se va &#238;ntoarce acasă.</TS>\r\n  </BODY>\r\n</TYM>\r\n",
+  "warnings": [
+    "Time segment types follow the paper labels: NAR, REM, SUP, GEN, and FIC.",
+    "The XML output follows the paper notation: TT-SECTION, TIME-SECTION, EP-SECTION, and inline TS tags.",
+    "The diagram includes a TimeML-style layer with EVENT, TIMEX3, SIGNAL, MAKEINSTANCE, and TLINK annotations.",
+    "Romanian extraction uses the paper's single-author perspective baseline; speaker and focalizer changes are future work.",
+    "Romanian extraction uses non-LLM rule profiles for Romanian entities, temporal cues, tense, and TimeML-like annotations.",
+    "Romanian mode intentionally avoids the English ML.NET classifiers; train Romanian annotated TYM/TimeML data before using a Romanian model."
+  ]
+}

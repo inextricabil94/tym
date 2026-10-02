@@ -1,0 +1,17 @@
+﻿{
+  "status": "predicted",
+  "model_path": "C:\\Users\\serba\\Documents\\ChatGPT\\PhD\\tym-private-research\\mlnet-run-20261002\\timebank_slink_ro_sdca.zip",
+  "input_rows": 2,
+  "predictions": [
+    {
+      "id": "free-ro-modal-link",
+      "text": "From: crede\nFrom context: Mara [TARGET] crede [/TARGET] c\u0103 drumul va fi lung.\nSignal: c\u0103\nTo: va fi\nTo context: Mara crede c\u0103 drumul [TARGET] va fi [/TARGET] lung.",
+      "predicted_label": "MODAL"
+    },
+    {
+      "id": "free-ro-evidential-link",
+      "text": "From: \u0219tia\nFrom context: El [TARGET] \u0219tia [/TARGET] c\u0103 trenul \u00EEnt\u00E2rziase.\nSignal: c\u0103\nTo: \u00EEnt\u00E2rziase\nTo context: El \u0219tia c\u0103 trenul [TARGET] \u00EEnt\u00E2rziase [/TARGET].",
+      "predicted_label": "EVIDENTIAL"
+    }
+  ]
+}

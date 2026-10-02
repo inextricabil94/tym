@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "model_id": "timebank_timex_type_ro_structured",
+  "task": "timebank_timex_type",
+  "language": "ro",
+  "input_format": "structured_target_v1",
+  "trainer": "SdcaMaximumEntropy",
+  "featurizer": "ML.NET FeaturizeText per structured channel, concatenated",
+  "feature_channels": [
+    "TargetContext",
+    "TargetMention"
+  ],
+  "seed": 42,
+  "maximum_iterations": 100,
+  "training_rows": 1144,
+  "labels": [
+    "DATE",
+    "DURATION",
+    "SET",
+    "TIME"
+  ],
+  "source_types": [
+    "provided_annotation"
+  ],
+  "source_groups": [
+    "ro-timebank-isotimeml"
+  ],
+  "document_count": 157,
+  "input_sha256": "4d37e1a0fc48e8dd06a89c04e541c19fbb4cc0b999818221c7965866dfbfd880",
+  "model_sha256": "d506881dba7f7f7230447dcf00a0d888892c4a049e9912d8f7f7466f25fb46d9",
+  "framework": "ML.NET 5.0.0 / .NET 10",
+  "trained_utc": "2026-10-02T10:58:55.92052+00:00",
+  "research_limit": "Full-data exploratory classifier conditional on supplied target mentions or ordered endpoints. Provided annotations have unknown adjudication status. No training-set accuracy or book-gold claim is made."
+}

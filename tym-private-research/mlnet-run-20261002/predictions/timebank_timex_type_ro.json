@@ -1,0 +1,17 @@
+﻿{
+  "status": "predicted",
+  "model_path": "C:\\Users\\serba\\Documents\\ChatGPT\\PhD\\tym-private-research\\mlnet-run-20261002\\timebank_timex_type_ro_sdca.zip",
+  "input_rows": 2,
+  "predictions": [
+    {
+      "id": "free-ro-date",
+      "text": "Context: \u00CEn [TARGET] prim\u0103vara trecut\u0103 [/TARGET], Mara a sosit la Ia\u0219i.\nTime expression: prim\u0103vara trecut\u0103",
+      "predicted_label": "DATE"
+    },
+    {
+      "id": "free-ro-duration",
+      "text": "Context: A r\u0103mas acolo timp de [TARGET] trei zile [/TARGET].\nTime expression: trei zile",
+      "predicted_label": "DURATION"
+    }
+  ]
+}

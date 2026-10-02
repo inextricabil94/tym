@@ -1,0 +1,17 @@
+﻿{
+  "status": "predicted",
+  "model_path": "C:\\Users\\serba\\Documents\\ChatGPT\\PhD\\tym-private-research\\mlnet-run-20261002\\temporal_relation_en_sdca.zip",
+  "input_rows": 2,
+  "predictions": [
+    {
+      "id": "free-en-retrospective",
+      "text": "Earlier segment: Mara left the village before dawn. Relation cue: years later. Later segment: She remembered the journey.",
+      "predicted_label": "AFTER"
+    },
+    {
+      "id": "free-en-concurrent",
+      "text": "Earlier segment: The rain stopped. Relation cue: at the same time. Later segment: The ferry reached the harbor.",
+      "predicted_label": "AFTER"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+﻿{
+  "status": "trained",
+  "task": "timebank_alink",
+  "language": "ro",
+  "training_rows": 199,
+  "labels": [
+    "CONTINUES",
+    "CULMINATES",
+    "INITIATES",
+    "REINITIATES",
+    "TERMINATES"
+  ],
+  "source_types": [
+    "provided_annotation"
+  ],
+  "model_path": "C:\\Users\\serba\\Documents\\ChatGPT\\PhD\\tym-private-research\\mlnet-run-20261002\\timebank_alink_ro_sdca.zip",
+  "model_format": "ML.NET .zip"
+}

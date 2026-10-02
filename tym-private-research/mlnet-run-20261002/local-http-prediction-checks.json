@@ -1,0 +1,122 @@
+[
+  {
+    "id": "free-en-memory",
+    "predicted_label": "REM",
+    "model_id": "segment_type_en",
+    "matched_snapshot": true
+  },
+  {
+    "id": "free-en-habit",
+    "predicted_label": "NAR",
+    "model_id": "segment_type_en",
+    "matched_snapshot": true
+  },
+  {
+    "id": "free-ro-memory",
+    "predicted_label": "NAR",
+    "model_id": "segment_type_ro",
+    "matched_snapshot": true
+  },
+  {
+    "id": "free-ro-habit",
+    "predicted_label": "NAR",
+    "model_id": "segment_type_ro",
+    "matched_snapshot": true
+  },
+  {
+    "id": "free-en-retrospective",
+    "predicted_label": "AFTER",
+    "model_id": "temporal_relation_en",
+    "matched_snapshot": true
+  },
+  {
+    "id": "free-en-concurrent",
+    "predicted_label": "AFTER",
+    "model_id": "temporal_relation_en",
+    "matched_snapshot": true
+  },
+  {
+    "id": "free-ro-retrospective",
+    "predicted_label": "SIMULTANEOUS",
+    "model_id": "temporal_relation_ro",
+    "matched_snapshot": true
+  },
+  {
+    "id": "free-ro-concurrent",
+    "predicted_label": "SIMULTANEOUS",
+    "model_id": "temporal_relation_ro",
+    "matched_snapshot": true
+  },
+  {
+    "id": "free-ro-initiation",
+    "predicted_label": "INITIATES",
+    "model_id": "timebank_alink_ro",
+    "matched_snapshot": true
+  },
+  {
+    "id": "free-ro-continuation",
+    "predicted_label": "CONTINUES",
+    "model_id": "timebank_alink_ro",
+    "matched_snapshot": true
+  },
+  {
+    "id": "free-ro-event-state",
+    "predicted_label": "OCCURRENCE",
+    "model_id": "timebank_event_class_ro",
+    "matched_snapshot": true
+  },
+  {
+    "id": "free-ro-event-opinion",
+    "predicted_label": "I_STATE",
+    "model_id": "timebank_event_class_ro",
+    "matched_snapshot": true
+  },
+  {
+    "id": "free-ro-future",
+    "predicted_label": "FUTURE",
+    "model_id": "timebank_event_tense_ro",
+    "matched_snapshot": true
+  },
+  {
+    "id": "free-ro-past",
+    "predicted_label": "PAST",
+    "model_id": "timebank_event_tense_ro",
+    "matched_snapshot": true
+  },
+  {
+    "id": "free-ro-modal-link",
+    "predicted_label": "MODAL",
+    "model_id": "timebank_slink_ro",
+    "matched_snapshot": true
+  },
+  {
+    "id": "free-ro-evidential-link",
+    "predicted_label": "EVIDENTIAL",
+    "model_id": "timebank_slink_ro",
+    "matched_snapshot": true
+  },
+  {
+    "id": "free-ro-date",
+    "predicted_label": "DATE",
+    "model_id": "timebank_timex_type_ro",
+    "matched_snapshot": true
+  },
+  {
+    "id": "free-ro-duration",
+    "predicted_label": "DURATION",
+    "model_id": "timebank_timex_type_ro",
+    "matched_snapshot": true
+  },
+  {
+    "id": "free-ro-before-link",
+    "predicted_label": "AFTER",
+    "model_id": "timebank_tlink_ro",
+    "matched_snapshot": true
+  },
+  {
+    "id": "free-ro-after-link",
+    "predicted_label": "AFTER",
+    "model_id": "timebank_tlink_ro",
+    "matched_snapshot": true
+  }
+]

@@ -1,0 +1,17 @@
+﻿{
+  "status": "predicted",
+  "model_path": "C:\\Users\\serba\\Documents\\ChatGPT\\PhD\\tym-private-research\\mlnet-run-20261002\\timebank_event_tense_ro_sdca.zip",
+  "input_rows": 2,
+  "predictions": [
+    {
+      "id": "free-ro-future",
+      "text": "Context: M\u00E2ine Mara [TARGET] va pleca [/TARGET] spre munte.\nEvent: va pleca",
+      "predicted_label": "FUTURE"
+    },
+    {
+      "id": "free-ro-past",
+      "text": "Context: Ieri Mara [TARGET] a terminat [/TARGET] cartea.\nEvent: a terminat",
+      "predicted_label": "PAST"
+    }
+  ]
+}

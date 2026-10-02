@@ -1,0 +1,17 @@
+﻿{
+  "status": "predicted",
+  "model_path": "C:\\Users\\serba\\Documents\\ChatGPT\\PhD\\tym-private-research\\mlnet-run-20261002\\timebank_alink_ro_sdca.zip",
+  "input_rows": 2,
+  "predictions": [
+    {
+      "id": "free-ro-initiation",
+      "text": "From: a \u00EEnceput\nFrom context: Ploaia [TARGET] a \u00EEnceput [/TARGET] s\u0103 cad\u0103.\nSignal: s\u0103\nTo: cad\u0103\nTo context: Ploaia a \u00EEnceput s\u0103 [TARGET] cad\u0103 [/TARGET].",
+      "predicted_label": "INITIATES"
+    },
+    {
+      "id": "free-ro-continuation",
+      "text": "From: a continuat\nFrom context: Ea [TARGET] a continuat [/TARGET] s\u0103 citeasc\u0103.\nSignal: s\u0103\nTo: citeasc\u0103\nTo context: Ea a continuat s\u0103 [TARGET] citeasc\u0103 [/TARGET].",
+      "predicted_label": "CONTINUES"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+﻿{
+  "status": "predicted",
+  "model_path": "C:\\Users\\serba\\Documents\\ChatGPT\\PhD\\tym-private-research\\mlnet-run-20261002\\timebank_event_class_ro_sdca.zip",
+  "input_rows": 2,
+  "predictions": [
+    {
+      "id": "free-ro-event-state",
+      "text": "Context: Mara [TARGET] a aflat [/TARGET] vestea \u0219i a z\u00E2mbit.\nEvent: a aflat",
+      "predicted_label": "OCCURRENCE"
+    },
+    {
+      "id": "free-ro-event-opinion",
+      "text": "Context: [TARGET] Cred [/TARGET] c\u0103 drumul va fi lung.\nEvent: Cred",
+      "predicted_label": "I_STATE"
+    }
+  ]
+}

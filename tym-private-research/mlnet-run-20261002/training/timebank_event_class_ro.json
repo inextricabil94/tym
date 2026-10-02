@@ -1,0 +1,20 @@
+﻿{
+  "status": "trained",
+  "task": "timebank_event_class",
+  "language": "ro",
+  "training_rows": 5947,
+  "labels": [
+    "ASPECTUAL",
+    "I_ACTION",
+    "I_STATE",
+    "OCCURRENCE",
+    "PERCEPTION",
+    "REPORTING",
+    "STATE"
+  ],
+  "source_types": [
+    "provided_annotation"
+  ],
+  "model_path": "C:\\Users\\serba\\Documents\\ChatGPT\\PhD\\tym-private-research\\mlnet-run-20261002\\timebank_event_class_ro_sdca.zip",
+  "model_format": "ML.NET .zip"
+}

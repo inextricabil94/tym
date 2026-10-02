@@ -1,0 +1,34 @@
+﻿{
+  "schema_version": 1,
+  "task": "timebank_event_class",
+  "language": "ro",
+  "trainer": "SdcaMaximumEntropy",
+  "featurizer": "ML.NET FeaturizeText",
+  "seed": 42,
+  "training_rows": 5947,
+  "labels": [
+    "ASPECTUAL",
+    "I_ACTION",
+    "I_STATE",
+    "OCCURRENCE",
+    "PERCEPTION",
+    "REPORTING",
+    "STATE"
+  ],
+  "source_types": [
+    "provided_annotation"
+  ],
+  "source_groups": [
+    "ro-timebank-isotimeml"
+  ],
+  "document_count": 157,
+  "research_limit": "Exploratory training only: provided annotations have unknown adjudication status. No held-out generalization claim is supported.",
+  "synthetic_provenance": {
+    "rows": 0,
+    "rows_with_parent": 0,
+    "phenomenon_counts": {},
+    "transformation_counts": {},
+    "generator_version_counts": {}
+  },
+  "model_sha256": "91ed077679e30aaa5831b28c15cfec2043dfd24307bb4ede4832d7ee1f3adac6"
+}

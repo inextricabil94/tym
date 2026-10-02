@@ -1,0 +1,17 @@
+﻿{
+  "status": "predicted",
+  "model_path": "C:\\Users\\serba\\Documents\\ChatGPT\\PhD\\tym-private-research\\mlnet-run-20261002\\timebank_tlink_ro_sdca.zip",
+  "input_rows": 2,
+  "predictions": [
+    {
+      "id": "free-ro-before-link",
+      "text": "From: a plecat\nFrom context: Mara [TARGET] a plecat [/TARGET] din ora\u0219 \u00EEnainte de r\u0103s\u0103rit.\nSignal: \u00EEnainte\nTo: a ajuns\nTo context: C\u0103l\u0103torul [TARGET] a ajuns [/TARGET] la munte \u00EEn aceea\u0219i zi.",
+      "predicted_label": "AFTER"
+    },
+    {
+      "id": "free-ro-after-link",
+      "text": "From: a p\u0103r\u0103sit\nFrom context: Mara [TARGET] a p\u0103r\u0103sit [/TARGET] satul.\nSignal: dup\u0103\nTo: s-a \u00EEntors\nTo context: Ea [TARGET] s-a \u00EEntors [/TARGET] acas\u0103 dou\u0103 zile mai t\u00E2rziu.",
+      "predicted_label": "AFTER"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "tym-corpus-api-serban",
+  "url": "https://tym-corpus-api-serban.livelyrock-2726c024.eastus.azurecontainerapps.io",
+  "revision": "tym-corpus-api-serban--hds3t7a",
+  "provisioning_state": "Succeeded",
+  "running_status": "Running",
+  "image": "ca0e9fe87ad1acr.azurecr.io/tym-corpus-api:research-20261002-v1"
+}

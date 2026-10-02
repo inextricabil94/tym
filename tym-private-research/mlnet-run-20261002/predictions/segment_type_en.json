@@ -1,0 +1,17 @@
+﻿{
+  "status": "predicted",
+  "model_path": "C:\\Users\\serba\\Documents\\ChatGPT\\PhD\\tym-private-research\\mlnet-run-20261002\\segment_type_en_sdca.zip",
+  "input_rows": 2,
+  "predictions": [
+    {
+      "id": "free-en-memory",
+      "text": "Years after leaving home, Mara remembered the blue room and the letter her brother had left.",
+      "predicted_label": "REM"
+    },
+    {
+      "id": "free-en-habit",
+      "text": "Every spring, villagers gathered at the fountain and retold the same story.",
+      "predicted_label": "NAR"
+    }
+  ]
+}

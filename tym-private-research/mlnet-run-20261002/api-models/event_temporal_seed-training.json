@@ -1,0 +1,16 @@
+﻿{
+  "status": "trained",
+  "task": "event_temporal",
+  "language": "en",
+  "training_rows": 24,
+  "labels": [
+    "Future",
+    "Past",
+    "Present"
+  ],
+  "source_types": [
+    "synthetic_seed"
+  ],
+  "model_path": "C:\\Users\\serba\\Documents\\ChatGPT\\PhD\\tym-private-research\\mlnet-run-20261002\\api-models\\event_temporal_en.zip",
+  "model_format": "ML.NET .zip"
+}

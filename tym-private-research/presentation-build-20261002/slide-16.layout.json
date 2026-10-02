@@ -1,0 +1,436 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/qfldqn",
+    "id": "qfldqn",
+    "slide": 16,
+    "layoutId": "c69ef7e8-07f8-4aab-a3cc-a4f23b1abfde",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Arial"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "c69ef7e8-07f8-4aab-a3cc-a4f23b1abfde",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qxcryp47",
+      "id": "1",
+      "bbox": [
+        72,
+        44,
+        1136,
+        100
+      ],
+      "geometry": "rect",
+      "text": "Independent evaluation and next experiments",
+      "textPreview": "Independent evaluation and next experiments",
+      "resolvedFontSize": 44,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 44,
+        "typeface": "Arial",
+        "color": "#142D43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Independent evaluation and next experiments"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Independent evaluation and next experiments",
+          "resolvedTextStyle": {
+            "fontSize": 44,
+            "typeface": "Arial",
+            "color": "#142D43",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Independent evaluation and next experiments",
+              "fontSize": 44,
+              "typeface": "Arial",
+              "color": "#142D43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d0nq943y",
+      "id": "2",
+      "bbox": [
+        72,
+        175,
+        1136,
+        385
+      ],
+      "geometry": "rect",
+      "text": "Collect adjudicated annotations from independent narratives in both languages.\nKeep parallel translations, chapters from one work and synthetic descendants in the same split group.\nReport accuracy, macro F1 and per-class precision/recall. Add segment-boundary and temporal-graph evaluation.\nCompare the lexical baseline with contextual and sequence models after implementing and evaluating them.",
+      "textPreview": "Collect adjudicated annotations from independent narratives in both languages. | Keep parallel translations, chapters from one work and s...",
+      "resolvedFontSize": 28,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 28,
+        "typeface": "Arial",
+        "color": "#19364A",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 7,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• Collect adjudicated annotations from independent narratives in both languages."
+          },
+          {
+            "index": 2,
+            "text": "• Keep parallel translations, chapters from one work and synthetic descendants in the"
+          },
+          {
+            "index": 3,
+            "text": "same split group."
+          },
+          {
+            "index": 4,
+            "text": "• Report accuracy, macro F1 and per-class precision/recall. Add segment-boundary and"
+          },
+          {
+            "index": 5,
+            "text": "temporal-graph evaluation."
+          },
+          {
+            "index": 6,
+            "text": "• Compare the lexical baseline with contextual and sequence models after implementing"
+          },
+          {
+            "index": 7,
+            "text": "and evaluating them."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Collect adjudicated annotations from independent narratives in both languages.",
+          "bulletCharacter": "•",
+          "marginLeft": 228600,
+          "indent": -114300,
+          "spaceAfter": 1800,
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "#19364A",
+            "verticalAlignment": "top",
+            "wrap": "square",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Collect adjudicated annotations from independent narratives in both languages.",
+              "anchor": 1,
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "#19364A",
+              "verticalAlignment": "top",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Keep parallel translations, chapters from one work and synthetic descendants in the same split group.",
+          "bulletCharacter": "•",
+          "marginLeft": 228600,
+          "indent": -114300,
+          "spaceAfter": 1800,
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "#19364A",
+            "verticalAlignment": "top",
+            "wrap": "square",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Keep parallel translations, chapters from one work and synthetic descendants in the same split group.",
+              "anchor": 1,
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "#19364A",
+              "verticalAlignment": "top",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Report accuracy, macro F1 and per-class precision/recall. Add segment-boundary and temporal-graph evaluation.",
+          "bulletCharacter": "•",
+          "marginLeft": 228600,
+          "indent": -114300,
+          "spaceAfter": 1800,
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "#19364A",
+            "verticalAlignment": "top",
+            "wrap": "square",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Report accuracy, macro F1 and per-class precision/recall. Add segment-boundary and temporal-graph evaluation.",
+              "anchor": 1,
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "#19364A",
+              "verticalAlignment": "top",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "text": "Compare the lexical baseline with contextual and sequence models after implementing and evaluating them.",
+          "bulletCharacter": "•",
+          "marginLeft": 228600,
+          "indent": -114300,
+          "spaceAfter": 1800,
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "#19364A",
+            "verticalAlignment": "top",
+            "wrap": "square",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Compare the lexical baseline with contextual and sequence models after implementing and evaluating them.",
+              "anchor": 1,
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "#19364A",
+              "verticalAlignment": "top",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cze90zmd",
+      "id": "3",
+      "bbox": [
+        72,
+        598,
+        1110,
+        65
+      ],
+      "geometry": "rect",
+      "text": "Human gold is the prerequisite for a generalization claim",
+      "textPreview": "Human gold is the prerequisite for a generalization claim",
+      "resolvedFontSize": 28,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 28,
+        "typeface": "Arial",
+        "color": "#167D8D",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Human gold is the prerequisite for a generalization claim"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Human gold is the prerequisite for a generalization claim",
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "typeface": "Arial",
+            "color": "#167D8D",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Human gold is the prerequisite for a generalization claim",
+              "fontSize": 28,
+              "typeface": "Arial",
+              "color": "#167D8D",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="ed76344d-2b90-43dc-8227-70f183fae4ed" name="serba@ZEPHYR 2026-10-02 14:13:55" runUser="Zephyr\CodexSandboxOffline" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-02T14:13:55.7143085+03:00" queuing="2026-10-02T14:13:55.7143089+03:00" start="2026-10-02T14:13:54.2391355+03:00" finish="2026-10-02T14:13:57.6722276+03:00" />
+  <TestSettings name="default" id="038d4577-0e29-4e35-b443-b1a7bb4cc570">
+    <Deployment runDeploymentRoot="serba_ZEPHYR_2026-10-02_14_13_55" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="8899b5bc-11f0-4894-a040-2bf1783bd1b8" testId="ba8a9938-fb86-862c-6416-dfe4c95f7878" testName="Tym.Research.Tests.CorpusPreparationTests.External_entity_documents_are_rejected" computerName="ZEPHYR" duration="00:00:00.0022991" startTime="2026-10-02T14:13:55.6637417+03:00" endTime="2026-10-02T14:13:55.6638463+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8899b5bc-11f0-4894-a040-2bf1783bd1b8" />
+    <UnitTestResult executionId="cb1275d6-9b17-46d6-a128-0f046e8e24fa" testId="f559ea5f-3ff5-2197-e975-f0c070e3f0eb" testName="Tym.Research.Tests.CorpusPreparationTests.Timebank_mentions_and_link_endpoints_are_target_marked" computerName="ZEPHYR" duration="00:00:00.0349767" startTime="2026-10-02T14:13:55.5754154+03:00" endTime="2026-10-02T14:13:55.5915629+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cb1275d6-9b17-46d6-a128-0f046e8e24fa" />
+    <UnitTestResult executionId="c11a6b75-f0fe-4e1f-8f25-356d5a98a1c0" testId="bc40d479-cbc9-3701-9efc-86eeb4493953" testName="Tym.Research.Tests.CorpusPreparationTests.A_single_parallel_work_cannot_supply_document_validation_folds" computerName="ZEPHYR" duration="00:00:00.0004325" startTime="2026-10-02T14:13:55.6625460+03:00" endTime="2026-10-02T14:13:55.6626486+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c11a6b75-f0fe-4e1f-8f25-356d5a98a1c0" />
+    <UnitTestResult executionId="0f0e7a85-5ded-4b28-b0ec-027660111388" testId="262c53dd-d153-afee-a3a3-b878de683c85" testName="Tym.Research.Tests.CorpusPreparationTests.Annotated_xml_preserves_tasks_and_provided_status" computerName="ZEPHYR" duration="00:00:00.0016754" startTime="2026-10-02T14:13:55.6645085+03:00" endTime="2026-10-02T14:13:55.6659503+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0f0e7a85-5ded-4b28-b0ec-027660111388" />
+    <UnitTestResult executionId="fc247531-d133-48bf-b98e-76015c021afb" testId="b6450e8e-ae92-9214-c75f-91571159de74" testName="Tym.Research.Tests.CorpusPreparationTests.Malformed_annotation_rows_are_rejected(xml: &quot;&lt;TAGS&gt;&lt;TS ID='s1' TYPE='narration' SPANS='0~0' TEX&quot;···)" computerName="ZEPHYR" duration="00:00:00.0021537" startTime="2026-10-02T14:13:55.5989831+03:00" endTime="2026-10-02T14:13:55.5995121+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fc247531-d133-48bf-b98e-76015c021afb" />
+    <UnitTestResult executionId="43e40349-26a6-4a82-82b0-2b3fae27fe8e" testId="ce3d7f4f-13bc-7c9f-1e1b-3154a9482f46" testName="Tym.Research.Tests.CorpusPreparationTests.Offline_entity_table_accepts_identical_definitions_and_rejects_conflicts" computerName="ZEPHYR" duration="00:00:00.0027859" startTime="2026-10-02T14:13:55.6692326+03:00" endTime="2026-10-02T14:13:55.6718280+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="43e40349-26a6-4a82-82b0-2b3fae27fe8e" />
+    <UnitTestResult executionId="520ccf3e-9dc5-4b27-8ce2-5fdf8364fa4e" testId="9a95b8f3-fa45-1408-f39d-4331988ea5c9" testName="Tym.Research.Tests.CorpusPreparationTests.Duplicate_signal_ids_skip_affected_links" computerName="ZEPHYR" duration="00:00:00.0013218" startTime="2026-10-02T14:13:55.6752660+03:00" endTime="2026-10-02T14:13:55.6754105+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="520ccf3e-9dc5-4b27-8ce2-5fdf8364fa4e" />
+    <UnitTestResult executionId="6094011c-7aed-437c-855d-9bd25105761e" testId="9546cbe4-4f1f-4807-da4c-49d4c43563b2" testName="Tym.Research.Tests.CorpusPreparationTests.Zip_paths_are_rejected_without_extracting(entryName: &quot;../outside.txt&quot;)" computerName="ZEPHYR" duration="00:00:00.0005418" startTime="2026-10-02T14:13:55.6037163+03:00" endTime="2026-10-02T14:13:55.6039732+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6094011c-7aed-437c-855d-9bd25105761e" />
+    <UnitTestResult executionId="2cee9d5c-5493-4658-81db-bb861e2852f2" testId="613a9683-1ab1-4483-d7cc-b66c90719b84" testName="Tym.Research.Tests.CorpusPreparationTests.Zip_paths_are_rejected_without_extracting(entryName: &quot;Books\\outside.txt&quot;)" computerName="ZEPHYR" duration="00:00:00.0000936" startTime="2026-10-02T14:13:55.6041148+03:00" endTime="2026-10-02T14:13:55.6041769+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2cee9d5c-5493-4658-81db-bb861e2852f2" />
+    <UnitTestResult executionId="4b2d9ab5-bb29-4b4c-82b5-0eaa9f0a510f" testId="6746fc50-bf11-0840-77d7-82f66449758e" testName="Tym.Research.Tests.CorpusPreparationTests.Malformed_annotation_rows_are_rejected(xml: &quot;&lt;TAGS&gt;&lt;TS ID='s1' TYPE='narration' SPANS='0~5' TEX&quot;···)" computerName="ZEPHYR" duration="00:00:00.0001414" startTime="2026-10-02T14:13:55.5997697+03:00" endTime="2026-10-02T14:13:55.5998671+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4b2d9ab5-bb29-4b4c-82b5-0eaa9f0a510f" />
+    <UnitTestResult executionId="4cfc6e85-5f39-47ec-9df8-99c65f2030de" testId="3d79ee9b-fb17-4f6c-26a4-ae5e2b643300" testName="Tym.Research.Tests.CorpusPreparationTests.Malformed_annotation_rows_are_rejected(xml: &quot;&lt;TAGS&gt;&lt;TS ID='s1' TYPE='wrong' SPANS='0~5' TEXT='h&quot;···)" computerName="ZEPHYR" duration="00:00:00.0056530" startTime="2026-10-02T14:13:55.5929960+03:00" endTime="2026-10-02T14:13:55.5972912+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4cfc6e85-5f39-47ec-9df8-99c65f2030de" />
+    <UnitTestResult executionId="ff4df690-61ea-445d-bfd1-727d32fe2d1a" testId="ee9e2802-7367-b40b-3160-c185a0560000" testName="Tym.Research.Tests.CorpusPreparationTests.Zip_paths_are_rejected_without_extracting(entryName: &quot;C:/outside.txt&quot;)" computerName="ZEPHYR" duration="00:00:00.0034961" startTime="2026-10-02T14:13:55.6001388+03:00" endTime="2026-10-02T14:13:55.6033675+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff4df690-61ea-445d-bfd1-727d32fe2d1a" />
+    <UnitTestResult executionId="e9c0d952-b7c4-4940-b251-4f936b5e3b16" testId="62c3cc08-bfc3-dc69-9756-25c74932ce6b" testName="Tym.Research.Tests.CorpusPreparationTests.Duplicate_document_components_never_cross_folds" computerName="ZEPHYR" duration="00:00:00.0018131" startTime="2026-10-02T14:13:55.6629571+03:00" endTime="2026-10-02T14:13:55.6630632+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e9c0d952-b7c4-4940-b251-4f936b5e3b16" />
+    <UnitTestResult executionId="c20c12c9-80c8-49a9-979b-791d96359a02" testId="f7035cc6-7049-8639-3c93-62474501cfc0" testName="Tym.Research.Tests.PrivateBookModelTests.Five_book_passages_receive_reproducible_unlabeled_cluster_assignments" computerName="ZEPHYR" duration="00:00:01.3011861" startTime="2026-10-02T14:13:55.6835742+03:00" endTime="2026-10-02T14:13:56.9836159+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c20c12c9-80c8-49a9-979b-791d96359a02">
+      <Output>
+        <StdOut>Private book document 20000-de-leghe-sub-mari-jules-verne: lexical cluster 3; not a semantic class.&#xD;
+Private book document arta-tacerii-b-blanchard: lexical cluster 2; not a semantic class.&#xD;
+Private book document camil-petrescu-ultima-noapte-de-dragoste-intaia-noapte-de-razboi: lexical cluster 3; not a semantic class.&#xD;
+Private book document morometii-vol-1-marin-preda: lexical cluster 1; not a semantic class.&#xD;
+Private book document morometii-vol-2-marin-preda: lexical cluster 1; not a semantic class.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d97f19f2-40eb-4d5b-9441-6c64580eff9a" testId="a78c5528-ef70-1e0c-715e-46724a084d9a" testName="Tym.Research.Tests.CorpusPreparationTests.Book_encoding_and_document_groups_remain_explicit" computerName="ZEPHYR" duration="00:00:00.0005426" startTime="2026-10-02T14:13:55.6633376+03:00" endTime="2026-10-02T14:13:55.6634464+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d97f19f2-40eb-4d5b-9441-6c64580eff9a" />
+    <UnitTestResult executionId="646665dd-485f-4a1b-9a8b-0ee04ce0b9df" testId="f30843b0-969c-c6a3-a0e5-c8cbc372933a" testName="Tym.Research.Tests.CorpusPreparationTests.Macro_f1_includes_unrecovered_rare_labels" computerName="ZEPHYR" duration="00:00:00.0219758" startTime="2026-10-02T14:13:55.5010887+03:00" endTime="2026-10-02T14:13:55.5570497+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="646665dd-485f-4a1b-9a8b-0ee04ce0b9df" />
+    <UnitTestResult executionId="66409feb-f3a0-4b3e-9823-332291208eb6" testId="1246cde3-9855-d91d-eade-782faab7f534" testName="Tym.Research.Tests.CorpusPreparationTests.Unlabeled_passages_are_deduplicated_and_bounded" computerName="ZEPHYR" duration="00:00:00.0145327" startTime="2026-10-02T14:13:55.6641266+03:00" endTime="2026-10-02T14:13:55.6642485+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="66409feb-f3a0-4b3e-9823-332291208eb6" />
+    <UnitTestResult executionId="0c720008-ba7b-4059-921a-8d50cb882699" testId="75ceb257-d6d8-705a-704f-d888eeeb7234" testName="Tym.Research.Tests.CorpusPreparationTests.Structured_link_features_preserve_endpoint_direction_without_using_labels" computerName="ZEPHYR" duration="00:00:00.0028826" startTime="2026-10-02T14:13:55.6662888+03:00" endTime="2026-10-02T14:13:55.6689260+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0c720008-ba7b-4059-921a-8d50cb882699" />
+    <UnitTestResult executionId="ab32997e-6dc8-49c2-90ac-4f86df407590" testId="01eddfa0-15ce-16c8-5c71-f009f87f1be6" testName="Tym.Research.Tests.PrivateBookModelTests.Five_book_passages_receive_valid_narrative_model_labels" computerName="ZEPHYR" duration="00:00:00.5805618" startTime="2026-10-02T14:13:56.9839431+03:00" endTime="2026-10-02T14:13:57.5643372+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ab32997e-6dc8-49c2-90ac-4f86df407590">
+      <Output>
+        <StdOut>Private book document 20000-de-leghe-sub-mari-jules-verne: segment label NAR (unlabeled input; no correctness claim).&#xD;
+Private book document arta-tacerii-b-blanchard: segment label NAR (unlabeled input; no correctness claim).&#xD;
+Private book document camil-petrescu-ultima-noapte-de-dragoste-intaia-noapte-de-razboi: segment label NAR (unlabeled input; no correctness claim).&#xD;
+Private book document morometii-vol-1-marin-preda: segment label NAR (unlabeled input; no correctness claim).&#xD;
+Private book document morometii-vol-2-marin-preda: segment label NAR (unlabeled input; no correctness claim).</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4d7c826b-d3aa-4198-85ef-8e8358c1bdbd" testId="f7da8b65-df27-8443-935d-26ad36ccfb2f" testName="Tym.Research.Tests.PrivateBookModelTests.Attached_archive_has_the_recorded_book_and_chapter_groups" computerName="ZEPHYR" duration="00:00:00.1713864" startTime="2026-10-02T14:13:55.5036663+03:00" endTime="2026-10-02T14:13:55.6829738+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d7c826b-d3aa-4198-85ef-8e8358c1bdbd">
+      <Output>
+        <StdOut>Books.zip: 25 chapter/volume source files; 13 document groups; all private texts readable.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="88375257-ef1c-42fc-a6f2-3d50c82b51a0" testId="ed9f9f5f-56ea-6c3e-d2dc-95ec3d9e769c" testName="Tym.Research.Tests.CorpusPreparationTests.Split_assignments_are_independent_of_input_row_order" computerName="ZEPHYR" duration="00:00:00.0399494" startTime="2026-10-02T14:13:55.6617482+03:00" endTime="2026-10-02T14:13:55.6618865+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88375257-ef1c-42fc-a6f2-3d50c82b51a0" />
+    <UnitTestResult executionId="1f83feae-5ab2-4b09-b460-e1b7d497086e" testId="46a8579f-2232-33cd-c239-4cd690f8157d" testName="Tym.Research.Tests.CorpusPreparationTests.Private_book_chunks_and_samples_keep_surrogate_pairs_intact" computerName="ZEPHYR" duration="00:00:00.0010004" startTime="2026-10-02T14:13:55.6757644+03:00" endTime="2026-10-02T14:13:55.6758780+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f83feae-5ab2-4b09-b460-e1b7d497086e" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Tym.Research.Tests.CorpusPreparationTests.Duplicate_signal_ids_skip_affected_links" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="9a95b8f3-fa45-1408-f39d-4331988ea5c9">
+      <Execution id="520ccf3e-9dc5-4b27-8ce2-5fdf8364fa4e" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.CorpusPreparationTests" name="Duplicate_signal_ids_skip_affected_links" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.CorpusPreparationTests.Malformed_annotation_rows_are_rejected(xml: &quot;&lt;TAGS&gt;&lt;TS ID='s1' TYPE='wrong' SPANS='0~5' TEXT='h&quot;···)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="3d79ee9b-fb17-4f6c-26a4-ae5e2b643300">
+      <Execution id="4cfc6e85-5f39-47ec-9df8-99c65f2030de" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.CorpusPreparationTests" name="Malformed_annotation_rows_are_rejected" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.CorpusPreparationTests.Structured_link_features_preserve_endpoint_direction_without_using_labels" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="75ceb257-d6d8-705a-704f-d888eeeb7234">
+      <Execution id="0c720008-ba7b-4059-921a-8d50cb882699" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.CorpusPreparationTests" name="Structured_link_features_preserve_endpoint_direction_without_using_labels" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.CorpusPreparationTests.Annotated_xml_preserves_tasks_and_provided_status" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="262c53dd-d153-afee-a3a3-b878de683c85">
+      <Execution id="0f0e7a85-5ded-4b28-b0ec-027660111388" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.CorpusPreparationTests" name="Annotated_xml_preserves_tasks_and_provided_status" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.CorpusPreparationTests.Private_book_chunks_and_samples_keep_surrogate_pairs_intact" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="46a8579f-2232-33cd-c239-4cd690f8157d">
+      <Execution id="1f83feae-5ab2-4b09-b460-e1b7d497086e" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.CorpusPreparationTests" name="Private_book_chunks_and_samples_keep_surrogate_pairs_intact" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.CorpusPreparationTests.Zip_paths_are_rejected_without_extracting(entryName: &quot;../outside.txt&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="9546cbe4-4f1f-4807-da4c-49d4c43563b2">
+      <Execution id="6094011c-7aed-437c-855d-9bd25105761e" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.CorpusPreparationTests" name="Zip_paths_are_rejected_without_extracting" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.PrivateBookModelTests.Five_book_passages_receive_valid_narrative_model_labels" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="01eddfa0-15ce-16c8-5c71-f009f87f1be6">
+      <Execution id="ab32997e-6dc8-49c2-90ac-4f86df407590" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.PrivateBookModelTests" name="Five_book_passages_receive_valid_narrative_model_labels" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.CorpusPreparationTests.Malformed_annotation_rows_are_rejected(xml: &quot;&lt;TAGS&gt;&lt;TS ID='s1' TYPE='narration' SPANS='0~5' TEX&quot;···)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="6746fc50-bf11-0840-77d7-82f66449758e">
+      <Execution id="4b2d9ab5-bb29-4b4c-82b5-0eaa9f0a510f" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.CorpusPreparationTests" name="Malformed_annotation_rows_are_rejected" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.CorpusPreparationTests.Split_assignments_are_independent_of_input_row_order" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="ed9f9f5f-56ea-6c3e-d2dc-95ec3d9e769c">
+      <Execution id="88375257-ef1c-42fc-a6f2-3d50c82b51a0" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.CorpusPreparationTests" name="Split_assignments_are_independent_of_input_row_order" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.CorpusPreparationTests.External_entity_documents_are_rejected" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="ba8a9938-fb86-862c-6416-dfe4c95f7878">
+      <Execution id="8899b5bc-11f0-4894-a040-2bf1783bd1b8" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.CorpusPreparationTests" name="External_entity_documents_are_rejected" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.CorpusPreparationTests.A_single_parallel_work_cannot_supply_document_validation_folds" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="bc40d479-cbc9-3701-9efc-86eeb4493953">
+      <Execution id="c11a6b75-f0fe-4e1f-8f25-356d5a98a1c0" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.CorpusPreparationTests" name="A_single_parallel_work_cannot_supply_document_validation_folds" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.CorpusPreparationTests.Zip_paths_are_rejected_without_extracting(entryName: &quot;C:/outside.txt&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="ee9e2802-7367-b40b-3160-c185a0560000">
+      <Execution id="ff4df690-61ea-445d-bfd1-727d32fe2d1a" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.CorpusPreparationTests" name="Zip_paths_are_rejected_without_extracting" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.PrivateBookModelTests.Attached_archive_has_the_recorded_book_and_chapter_groups" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="f7da8b65-df27-8443-935d-26ad36ccfb2f">
+      <Execution id="4d7c826b-d3aa-4198-85ef-8e8358c1bdbd" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.PrivateBookModelTests" name="Attached_archive_has_the_recorded_book_and_chapter_groups" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.CorpusPreparationTests.Book_encoding_and_document_groups_remain_explicit" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="a78c5528-ef70-1e0c-715e-46724a084d9a">
+      <Execution id="d97f19f2-40eb-4d5b-9441-6c64580eff9a" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.CorpusPreparationTests" name="Book_encoding_and_document_groups_remain_explicit" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.CorpusPreparationTests.Duplicate_document_components_never_cross_folds" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="62c3cc08-bfc3-dc69-9756-25c74932ce6b">
+      <Execution id="e9c0d952-b7c4-4940-b251-4f936b5e3b16" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.CorpusPreparationTests" name="Duplicate_document_components_never_cross_folds" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.PrivateBookModelTests.Five_book_passages_receive_reproducible_unlabeled_cluster_assignments" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="f7035cc6-7049-8639-3c93-62474501cfc0">
+      <Execution id="c20c12c9-80c8-49a9-979b-791d96359a02" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.PrivateBookModelTests" name="Five_book_passages_receive_reproducible_unlabeled_cluster_assignments" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.CorpusPreparationTests.Unlabeled_passages_are_deduplicated_and_bounded" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="1246cde3-9855-d91d-eade-782faab7f534">
+      <Execution id="66409feb-f3a0-4b3e-9823-332291208eb6" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.CorpusPreparationTests" name="Unlabeled_passages_are_deduplicated_and_bounded" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.CorpusPreparationTests.Zip_paths_are_rejected_without_extracting(entryName: &quot;Books\\outside.txt&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="613a9683-1ab1-4483-d7cc-b66c90719b84">
+      <Execution id="2cee9d5c-5493-4658-81db-bb861e2852f2" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.CorpusPreparationTests" name="Zip_paths_are_rejected_without_extracting" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.CorpusPreparationTests.Offline_entity_table_accepts_identical_definitions_and_rejects_conflicts" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="ce3d7f4f-13bc-7c9f-1e1b-3154a9482f46">
+      <Execution id="43e40349-26a6-4a82-82b0-2b3fae27fe8e" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.CorpusPreparationTests" name="Offline_entity_table_accepts_identical_definitions_and_rejects_conflicts" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.CorpusPreparationTests.Timebank_mentions_and_link_endpoints_are_target_marked" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="f559ea5f-3ff5-2197-e975-f0c070e3f0eb">
+      <Execution id="cb1275d6-9b17-46d6-a128-0f046e8e24fa" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.CorpusPreparationTests" name="Timebank_mentions_and_link_endpoints_are_target_marked" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.CorpusPreparationTests.Macro_f1_includes_unrecovered_rare_labels" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="f30843b0-969c-c6a3-a0e5-c8cbc372933a">
+      <Execution id="646665dd-485f-4a1b-9a8b-0ee04ce0b9df" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.CorpusPreparationTests" name="Macro_f1_includes_unrecovered_rare_labels" />
+    </UnitTest>
+    <UnitTest name="Tym.Research.Tests.CorpusPreparationTests.Malformed_annotation_rows_are_rejected(xml: &quot;&lt;TAGS&gt;&lt;TS ID='s1' TYPE='narration' SPANS='0~0' TEX&quot;···)" storage="c:\users\serba\documents\chatgpt\phd\tym-corpus-app\tests\tym.research.tests\bin\release\net10.0\tym.research.tests.dll" id="b6450e8e-ae92-9214-c75f-91571159de74">
+      <Execution id="fc247531-d133-48bf-b98e-76015c021afb" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-corpus-app\tests\Tym.Research.Tests\bin\Release\net10.0\Tym.Research.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Research.Tests.CorpusPreparationTests" name="Malformed_annotation_rows_are_rejected" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="ba8a9938-fb86-862c-6416-dfe4c95f7878" executionId="8899b5bc-11f0-4894-a040-2bf1783bd1b8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f559ea5f-3ff5-2197-e975-f0c070e3f0eb" executionId="cb1275d6-9b17-46d6-a128-0f046e8e24fa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bc40d479-cbc9-3701-9efc-86eeb4493953" executionId="c11a6b75-f0fe-4e1f-8f25-356d5a98a1c0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="262c53dd-d153-afee-a3a3-b878de683c85" executionId="0f0e7a85-5ded-4b28-b0ec-027660111388" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b6450e8e-ae92-9214-c75f-91571159de74" executionId="fc247531-d133-48bf-b98e-76015c021afb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ce3d7f4f-13bc-7c9f-1e1b-3154a9482f46" executionId="43e40349-26a6-4a82-82b0-2b3fae27fe8e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a95b8f3-fa45-1408-f39d-4331988ea5c9" executionId="520ccf3e-9dc5-4b27-8ce2-5fdf8364fa4e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9546cbe4-4f1f-4807-da4c-49d4c43563b2" executionId="6094011c-7aed-437c-855d-9bd25105761e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="613a9683-1ab1-4483-d7cc-b66c90719b84" executionId="2cee9d5c-5493-4658-81db-bb861e2852f2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6746fc50-bf11-0840-77d7-82f66449758e" executionId="4b2d9ab5-bb29-4b4c-82b5-0eaa9f0a510f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3d79ee9b-fb17-4f6c-26a4-ae5e2b643300" executionId="4cfc6e85-5f39-47ec-9df8-99c65f2030de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ee9e2802-7367-b40b-3160-c185a0560000" executionId="ff4df690-61ea-445d-bfd1-727d32fe2d1a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="62c3cc08-bfc3-dc69-9756-25c74932ce6b" executionId="e9c0d952-b7c4-4940-b251-4f936b5e3b16" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f7035cc6-7049-8639-3c93-62474501cfc0" executionId="c20c12c9-80c8-49a9-979b-791d96359a02" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a78c5528-ef70-1e0c-715e-46724a084d9a" executionId="d97f19f2-40eb-4d5b-9441-6c64580eff9a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f30843b0-969c-c6a3-a0e5-c8cbc372933a" executionId="646665dd-485f-4a1b-9a8b-0ee04ce0b9df" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1246cde3-9855-d91d-eade-782faab7f534" executionId="66409feb-f3a0-4b3e-9823-332291208eb6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="75ceb257-d6d8-705a-704f-d888eeeb7234" executionId="0c720008-ba7b-4059-921a-8d50cb882699" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="01eddfa0-15ce-16c8-5c71-f009f87f1be6" executionId="ab32997e-6dc8-49c2-90ac-4f86df407590" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f7da8b65-df27-8443-935d-26ad36ccfb2f" executionId="4d7c826b-d3aa-4198-85ef-8e8358c1bdbd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ed9f9f5f-56ea-6c3e-d2dc-95ec3d9e769c" executionId="88375257-ef1c-42fc-a6f2-3d50c82b51a0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="46a8579f-2232-33cd-c239-4cd690f8157d" executionId="1f83feae-5ab2-4b09-b460-e1b7d497086e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="22" executed="22" passed="22" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.5+1b188a7b0a (64-bit .NET 10.0.12)&#xD;
+[xUnit.net 00:00:00.16]   Discovering: Tym.Research.Tests&#xD;
+[xUnit.net 00:00:00.26]   Discovered:  Tym.Research.Tests&#xD;
+[xUnit.net 00:00:00.30]   Starting:    Tym.Research.Tests&#xD;
+[xUnit.net 00:00:02.41]   Finished:    Tym.Research.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

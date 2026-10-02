@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="b56c61f1-e871-4e30-b024-0fe013e6dc5f" name="serba@ZEPHYR 2026-10-02 02:14:31" runUser="Zephyr\CodexSandboxOffline" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-02T02:14:31.9353533+03:00" queuing="2026-10-02T02:14:31.9353538+03:00" start="2026-10-02T02:14:29.8335710+03:00" finish="2026-10-02T02:14:32.1793045+03:00" />
+  <TestSettings name="default" id="1d749461-f65e-4aaf-a916-4ebe583adf0f">
+    <Deployment runDeploymentRoot="serba_ZEPHYR_2026-10-02_02_14_31" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="f4de2b4f-4ff4-4ef2-b17a-b58512fc28a1" testId="78d6096f-e6cb-5f78-b7ce-ed70824823b8" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_loads_saved_model_and_scores_unlabeled_free_text(text: &quot;Yesterday we visited the old harbor.&quot;, expectedLabel: &quot;PAST&quot;)" computerName="ZEPHYR" duration="00:00:00.2100893" startTime="2026-10-02T02:14:31.1286607+03:00" endTime="2026-10-02T02:14:31.3376271+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4de2b4f-4ff4-4ef2-b17a-b58512fc28a1">
+      <Output>
+        <StdOut>Synthetic demo model | Yesterday we visited the old harbor. =&gt; PAST</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a5d42f64-69c3-496c-97c7-41d65a78741c" testId="638eaabd-a652-f578-768e-77364ecddbca" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_loads_saved_model_and_scores_unlabeled_free_text(text: &quot;Now we visit the old harbor.&quot;, expectedLabel: &quot;PRESENT&quot;)" computerName="ZEPHYR" duration="00:00:00.1040952" startTime="2026-10-02T02:14:31.4397589+03:00" endTime="2026-10-02T02:14:31.5437187+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5d42f64-69c3-496c-97c7-41d65a78741c">
+      <Output>
+        <StdOut>Synthetic demo model | Now we visit the old harbor. =&gt; PRESENT</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a9330401-2d05-474f-81d0-ceec87e5eb1f" testId="4503d3cb-7879-4cfb-0f09-a326794ececa" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_rejects_blank_text(text: &quot; \t\r\n&quot;)" computerName="ZEPHYR" duration="00:00:00.1268805" startTime="2026-10-02T02:14:31.5439164+03:00" endTime="2026-10-02T02:14:31.6706906+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9330401-2d05-474f-81d0-ceec87e5eb1f" />
+    <UnitTestResult executionId="3dd8be2b-d332-4f30-b93c-b70e5e0f7255" testId="d3bc397a-eaf1-6027-d6dc-1a79b7b7e687" testName="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction" computerName="ZEPHYR" duration="00:00:00.0010000" startTime="2026-10-02T02:14:30.5864549+03:00" endTime="2026-10-02T02:14:30.5883795+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3dd8be2b-d332-4f30-b93c-b70e5e0f7255">
+      <Output>
+        <ErrorInfo>
+          <Message>Set TYM_PRIVATE_MODEL_DIR to the local directory containing the private corpus-trained ML.NET models.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a31b1688-3530-4f5e-8836-8ecaa94e89cd" testId="16b12c2a-9195-1f9c-ac70-626ed53a1755" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Constructor_rejects_blank_model_path(modelPath: null)" computerName="ZEPHYR" duration="00:00:00.0003753" startTime="2026-10-02T02:14:31.8990233+03:00" endTime="2026-10-02T02:14:31.8991216+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a31b1688-3530-4f5e-8836-8ecaa94e89cd" />
+    <UnitTestResult executionId="3287588b-c4d9-462b-9e41-c95412c77bc6" testId="337928c5-d49e-20df-849a-179e60c617b7" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Independently_loaded_models_return_the_same_prediction" computerName="ZEPHYR" duration="00:00:00.1989840" startTime="2026-10-02T02:14:31.8998915+03:00" endTime="2026-10-02T02:14:32.0984664+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3287588b-c4d9-462b-9e41-c95412c77bc6" />
+    <UnitTestResult executionId="059352bc-c5f9-47a4-a897-e13b4466bbc9" testId="f6c8dedc-4e46-28e8-ba22-12e86d6a53b8" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_rejects_blank_text(text: &quot;&quot;)" computerName="ZEPHYR" duration="00:00:00.1059605" startTime="2026-10-02T02:14:31.7927178+03:00" endTime="2026-10-02T02:14:31.8985384+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="059352bc-c5f9-47a4-a897-e13b4466bbc9" />
+    <UnitTestResult executionId="2558d555-446a-4f90-9837-904a9399a20a" testId="e4ffa501-7a39-2a84-47f2-9051a72f74f6" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Constructor_reports_missing_model_path" computerName="ZEPHYR" duration="00:00:00.0063115" startTime="2026-10-02T02:14:31.1106411+03:00" endTime="2026-10-02T02:14:31.1274975+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2558d555-446a-4f90-9837-904a9399a20a" />
+    <UnitTestResult executionId="a1be6a55-db94-4d20-bcd8-269d6ce42f3c" testId="d1415d37-ab91-7a3d-0c83-166e21611735" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_rejects_blank_text(text: null)" computerName="ZEPHYR" duration="00:00:00.1216113" startTime="2026-10-02T02:14:31.6710812+03:00" endTime="2026-10-02T02:14:31.7924069+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a1be6a55-db94-4d20-bcd8-269d6ce42f3c" />
+    <UnitTestResult executionId="2c8e8db5-0d20-4d75-bc25-6de4829e40d9" testId="6d4e73a3-9526-fea8-415e-5400dfac4908" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Constructor_rejects_blank_model_path(modelPath: &quot; \t\r\n&quot;)" computerName="ZEPHYR" duration="00:00:00.0000310" startTime="2026-10-02T02:14:31.8995939+03:00" endTime="2026-10-02T02:14:31.8996773+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2c8e8db5-0d20-4d75-bc25-6de4829e40d9" />
+    <UnitTestResult executionId="4d0e4582-9479-49d3-be4b-308014447442" testId="c533c027-17be-0745-34bb-c02829eb8808" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_loads_saved_model_and_scores_unlabeled_free_text(text: &quot;Tomorrow we will visit the old harbor.&quot;, expectedLabel: &quot;FUTURE&quot;)" computerName="ZEPHYR" duration="00:00:00.1020052" startTime="2026-10-02T02:14:31.3383361+03:00" endTime="2026-10-02T02:14:31.4395474+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d0e4582-9479-49d3-be4b-308014447442">
+      <Output>
+        <StdOut>Synthetic demo model | Tomorrow we will visit the old harbor. =&gt; FUTURE</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8459c02a-2e90-4d7e-8f4c-d6847b9a9e24" testId="ed5d3a83-c97e-9554-4820-e63c01fc30f1" testName="Tym.Modeling.Tests.TextModelPredictorUnitTests.Constructor_rejects_blank_model_path(modelPath: &quot;&quot;)" computerName="ZEPHYR" duration="00:00:00.0001823" startTime="2026-10-02T02:14:31.8993292+03:00" endTime="2026-10-02T02:14:31.8994267+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8459c02a-2e90-4d7e-8f4c-d6847b9a9e24" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Constructor_rejects_blank_model_path(modelPath: &quot; \t\r\n&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-api\tools\tym.modeling.tests\bin\debug\net9.0\tym.modeling.tests.dll" id="6d4e73a3-9526-fea8-415e-5400dfac4908">
+      <Execution id="2c8e8db5-0d20-4d75-bc25-6de4829e40d9" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-api\tools\Tym.Modeling.Tests\bin\Debug\net9.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Constructor_rejects_blank_model_path" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Constructor_rejects_blank_model_path(modelPath: &quot;&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-api\tools\tym.modeling.tests\bin\debug\net9.0\tym.modeling.tests.dll" id="ed5d3a83-c97e-9554-4820-e63c01fc30f1">
+      <Execution id="8459c02a-2e90-4d7e-8f4c-d6847b9a9e24" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-api\tools\Tym.Modeling.Tests\bin\Debug\net9.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Constructor_rejects_blank_model_path" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Independently_loaded_models_return_the_same_prediction" storage="c:\users\serba\documents\chatgpt\phd\tym-api\tools\tym.modeling.tests\bin\debug\net9.0\tym.modeling.tests.dll" id="337928c5-d49e-20df-849a-179e60c617b7">
+      <Execution id="3287588b-c4d9-462b-9e41-c95412c77bc6" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-api\tools\Tym.Modeling.Tests\bin\Debug\net9.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Independently_loaded_models_return_the_same_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Constructor_rejects_blank_model_path(modelPath: null)" storage="c:\users\serba\documents\chatgpt\phd\tym-api\tools\tym.modeling.tests\bin\debug\net9.0\tym.modeling.tests.dll" id="16b12c2a-9195-1f9c-ac70-626ed53a1755">
+      <Execution id="a31b1688-3530-4f5e-8836-8ecaa94e89cd" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-api\tools\Tym.Modeling.Tests\bin\Debug\net9.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Constructor_rejects_blank_model_path" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction" storage="c:\users\serba\documents\chatgpt\phd\tym-api\tools\tym.modeling.tests\bin\debug\net9.0\tym.modeling.tests.dll" id="d3bc397a-eaf1-6027-d6dc-1a79b7b7e687">
+      <Execution id="3dd8be2b-d332-4f30-b93c-b70e5e0f7255" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-api\tools\Tym.Modeling.Tests\bin\Debug\net9.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.CorpusModelPredictionTests" name="Trained_model_returns_the_recorded_free_text_prediction" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_rejects_blank_text(text: &quot; \t\r\n&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-api\tools\tym.modeling.tests\bin\debug\net9.0\tym.modeling.tests.dll" id="4503d3cb-7879-4cfb-0f09-a326794ececa">
+      <Execution id="a9330401-2d05-474f-81d0-ceec87e5eb1f" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-api\tools\Tym.Modeling.Tests\bin\Debug\net9.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Predict_rejects_blank_text" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_loads_saved_model_and_scores_unlabeled_free_text(text: &quot;Yesterday we visited the old harbor.&quot;, expectedLabel: &quot;PAST&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-api\tools\tym.modeling.tests\bin\debug\net9.0\tym.modeling.tests.dll" id="78d6096f-e6cb-5f78-b7ce-ed70824823b8">
+      <Execution id="f4de2b4f-4ff4-4ef2-b17a-b58512fc28a1" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-api\tools\Tym.Modeling.Tests\bin\Debug\net9.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Predict_loads_saved_model_and_scores_unlabeled_free_text" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_rejects_blank_text(text: null)" storage="c:\users\serba\documents\chatgpt\phd\tym-api\tools\tym.modeling.tests\bin\debug\net9.0\tym.modeling.tests.dll" id="d1415d37-ab91-7a3d-0c83-166e21611735">
+      <Execution id="a1be6a55-db94-4d20-bcd8-269d6ce42f3c" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-api\tools\Tym.Modeling.Tests\bin\Debug\net9.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Predict_rejects_blank_text" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_rejects_blank_text(text: &quot;&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-api\tools\tym.modeling.tests\bin\debug\net9.0\tym.modeling.tests.dll" id="f6c8dedc-4e46-28e8-ba22-12e86d6a53b8">
+      <Execution id="059352bc-c5f9-47a4-a897-e13b4466bbc9" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-api\tools\Tym.Modeling.Tests\bin\Debug\net9.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Predict_rejects_blank_text" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Constructor_reports_missing_model_path" storage="c:\users\serba\documents\chatgpt\phd\tym-api\tools\tym.modeling.tests\bin\debug\net9.0\tym.modeling.tests.dll" id="e4ffa501-7a39-2a84-47f2-9051a72f74f6">
+      <Execution id="2558d555-446a-4f90-9837-904a9399a20a" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-api\tools\Tym.Modeling.Tests\bin\Debug\net9.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Constructor_reports_missing_model_path" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_loads_saved_model_and_scores_unlabeled_free_text(text: &quot;Tomorrow we will visit the old harbor.&quot;, expectedLabel: &quot;FUTURE&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-api\tools\tym.modeling.tests\bin\debug\net9.0\tym.modeling.tests.dll" id="c533c027-17be-0745-34bb-c02829eb8808">
+      <Execution id="4d0e4582-9479-49d3-be4b-308014447442" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-api\tools\Tym.Modeling.Tests\bin\Debug\net9.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Predict_loads_saved_model_and_scores_unlabeled_free_text" />
+    </UnitTest>
+    <UnitTest name="Tym.Modeling.Tests.TextModelPredictorUnitTests.Predict_loads_saved_model_and_scores_unlabeled_free_text(text: &quot;Now we visit the old harbor.&quot;, expectedLabel: &quot;PRESENT&quot;)" storage="c:\users\serba\documents\chatgpt\phd\tym-api\tools\tym.modeling.tests\bin\debug\net9.0\tym.modeling.tests.dll" id="638eaabd-a652-f578-768e-77364ecddbca">
+      <Execution id="a5d42f64-69c3-496c-97c7-41d65a78741c" />
+      <TestMethod codeBase="C:\Users\serba\Documents\ChatGPT\PhD\tym-api\tools\Tym.Modeling.Tests\bin\Debug\net9.0\Tym.Modeling.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="Tym.Modeling.Tests.TextModelPredictorUnitTests" name="Predict_loads_saved_model_and_scores_unlabeled_free_text" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="78d6096f-e6cb-5f78-b7ce-ed70824823b8" executionId="f4de2b4f-4ff4-4ef2-b17a-b58512fc28a1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="638eaabd-a652-f578-768e-77364ecddbca" executionId="a5d42f64-69c3-496c-97c7-41d65a78741c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4503d3cb-7879-4cfb-0f09-a326794ececa" executionId="a9330401-2d05-474f-81d0-ceec87e5eb1f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d3bc397a-eaf1-6027-d6dc-1a79b7b7e687" executionId="3dd8be2b-d332-4f30-b93c-b70e5e0f7255" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="16b12c2a-9195-1f9c-ac70-626ed53a1755" executionId="a31b1688-3530-4f5e-8836-8ecaa94e89cd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="337928c5-d49e-20df-849a-179e60c617b7" executionId="3287588b-c4d9-462b-9e41-c95412c77bc6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f6c8dedc-4e46-28e8-ba22-12e86d6a53b8" executionId="059352bc-c5f9-47a4-a897-e13b4466bbc9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4ffa501-7a39-2a84-47f2-9051a72f74f6" executionId="2558d555-446a-4f90-9837-904a9399a20a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d1415d37-ab91-7a3d-0c83-166e21611735" executionId="a1be6a55-db94-4d20-bcd8-269d6ce42f3c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6d4e73a3-9526-fea8-415e-5400dfac4908" executionId="2c8e8db5-0d20-4d75-bc25-6de4829e40d9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c533c027-17be-0745-34bb-c02829eb8808" executionId="4d0e4582-9479-49d3-be4b-308014447442" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ed5d3a83-c97e-9554-4820-e63c01fc30f1" executionId="8459c02a-2e90-4d7e-8f4c-d6847b9a9e24" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="12" executed="11" passed="11" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.5+1b188a7b0a (64-bit .NET 9.0.20)&#xD;
+[xUnit.net 00:00:00.09]   Discovering: Tym.Modeling.Tests&#xD;
+[xUnit.net 00:00:00.16]   Discovered:  Tym.Modeling.Tests&#xD;
+[xUnit.net 00:00:00.18]   Starting:    Tym.Modeling.Tests&#xD;
+[xUnit.net 00:00:00.21]       Set TYM_PRIVATE_MODEL_DIR to the local directory containing the private corpus-trained ML.NET models.&#xD;
+Test 'Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction' was skipped in the test run.&#xD;
+[xUnit.net 00:00:01.73]   Finished:    Tym.Modeling.Tests&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="ZEPHYR" outcome="Warning" timestamp="2026-10-02T02:14:30.5897486+03:00">
+        <Text>[xUnit.net 00:00:00.21]     Tym.Modeling.Tests.CorpusModelPredictionTests.Trained_model_returns_the_recorded_free_text_prediction [SKIP]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

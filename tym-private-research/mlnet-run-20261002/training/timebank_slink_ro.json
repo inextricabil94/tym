@@ -1,0 +1,19 @@
+﻿{
+  "status": "trained",
+  "task": "timebank_slink",
+  "language": "ro",
+  "training_rows": 2133,
+  "labels": [
+    "CONDITIONAL",
+    "COUNTER_FACTIVE",
+    "EVIDENTIAL",
+    "FACTIVE",
+    "MODAL",
+    "NEG_EVIDENTIAL"
+  ],
+  "source_types": [
+    "provided_annotation"
+  ],
+  "model_path": "C:\\Users\\serba\\Documents\\ChatGPT\\PhD\\tym-private-research\\mlnet-run-20261002\\timebank_slink_ro_sdca.zip",
+  "model_format": "ML.NET .zip"
+}

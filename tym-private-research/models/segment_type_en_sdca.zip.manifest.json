@@ -1,0 +1,27 @@
+﻿{
+  "schema_version": 1,
+  "task": "segment_type",
+  "language": "en",
+  "trainer": "SdcaMaximumEntropy",
+  "featurizer": "ML.NET FeaturizeText",
+  "seed": 42,
+  "training_rows": 376,
+  "labels": [
+    "FIC",
+    "GEN",
+    "NAR",
+    "REM"
+  ],
+  "source_types": [
+    "provided_annotation"
+  ],
+  "research_limit": "Exploratory training only: provided annotations have unknown adjudication status and cover one parallel story. No generalization claim is supported.",
+  "synthetic_provenance": {
+    "rows": 0,
+    "rows_with_parent": 0,
+    "phenomenon_counts": {},
+    "transformation_counts": {},
+    "generator_version_counts": {}
+  },
+  "model_sha256": "cd8f2ed78264a192a97fb53d3bba1fcdf68475c694ef5541095937e370c328f0"
+}

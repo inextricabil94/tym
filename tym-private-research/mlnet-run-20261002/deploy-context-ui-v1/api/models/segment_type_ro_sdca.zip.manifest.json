@@ -1,0 +1,31 @@
+﻿{
+  "schema_version": 1,
+  "task": "segment_type",
+  "language": "ro",
+  "trainer": "SdcaMaximumEntropy",
+  "featurizer": "ML.NET FeaturizeText",
+  "seed": 42,
+  "training_rows": 375,
+  "labels": [
+    "FIC",
+    "GEN",
+    "NAR",
+    "REM"
+  ],
+  "source_types": [
+    "provided_annotation"
+  ],
+  "source_groups": [
+    "provided-hln-motiw-narrative"
+  ],
+  "document_count": 1,
+  "research_limit": "Exploratory training only: provided annotations have unknown adjudication status. No held-out generalization claim is supported.",
+  "synthetic_provenance": {
+    "rows": 0,
+    "rows_with_parent": 0,
+    "phenomenon_counts": {},
+    "transformation_counts": {},
+    "generator_version_counts": {}
+  },
+  "model_sha256": "71813f28dca1ac50b45d8c6a90e1cf48847397de37afe7443c642f17e9f98101"
+}

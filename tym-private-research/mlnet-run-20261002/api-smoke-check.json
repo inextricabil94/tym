@@ -1,0 +1,156 @@
+[
+  {
+    "analysis": {
+      "character_count": 106,
+      "event_count": 3,
+      "segment_count": 3,
+      "track_count": 2,
+      "relation_count": 3,
+      "time_ml_event_count": 3,
+      "time_ml_timex_count": 2,
+      "time_ml_tlink_count": 4,
+      "average_event_confidence": 0.659,
+      "average_segment_confidence": 0.959,
+      "segment_types": {
+        "NAR": 3
+      },
+      "temporal_categories": {
+        "Past": 2,
+        "Future": 1
+      },
+      "relation_types": {
+        "BEFORE": 2,
+        "IMMEDIATELY_BEFORE": 1
+      },
+      "entity_mention_labels": {
+        "EVENT_ACTION": 3,
+        "PERSON": 3,
+        "DATE_TIME": 2,
+        "LOCATION": 1
+      },
+      "provenance_sources": {
+        "not_detected": 3,
+        "verb_pattern": 3,
+        "mlnet_trained_model": 2,
+        "previous_event_actor_carry_forward": 2,
+        "temporal_expression_pattern": 2,
+        "text_order_default": 2,
+        "capitalized_actor_heuristic": 1,
+        "heuristic_fallback_explicit_tense": 1,
+        "preposition_location_pattern": 1,
+        "temporal_cue_rule": 1
+      },
+      "extraction_sources": [
+        "capitalized_actor_heuristic",
+        "capitalized_actor_mention",
+        "carried_actor_context",
+        "heuristic_fallback_explicit_tense",
+        "mlnet_trained_model",
+        "not_detected",
+        "preposition_location_pattern",
+        "previous_event_actor_carry_forward",
+        "temporal_cue_rule",
+        "temporal_expression_pattern",
+        "text_order_default",
+        "verb_pattern"
+      ],
+      "issues": [
+        {
+          "severity": "info",
+          "code": "SEGMENTS_WITHOUT_TIMEX",
+          "message": "1 segment(s) have no explicit temporal anchor.",
+          "evidence": "Temporal anchors are optional in TYM; use TIMEX3 annotations when exact time evidence is needed."
+        }
+      ]
+    },
+    "sample": "english",
+    "json_fields": [
+      "id",
+      "model_version",
+      "diagram",
+      "analysis",
+      "render",
+      "xml",
+      "warnings"
+    ],
+    "xml_characters": 6847,
+    "svg_characters": 6182
+  },
+  {
+    "analysis": {
+      "character_count": 82,
+      "event_count": 3,
+      "segment_count": 3,
+      "track_count": 3,
+      "relation_count": 4,
+      "time_ml_event_count": 3,
+      "time_ml_timex_count": 2,
+      "time_ml_tlink_count": 4,
+      "average_event_confidence": 0.75,
+      "average_segment_confidence": 0.75,
+      "segment_types": {
+        "NAR": 3
+      },
+      "temporal_categories": {
+        "Future": 1,
+        "Past": 1,
+        "Present": 1
+      },
+      "relation_types": {
+        "BEFORE": 3,
+        "IMMEDIATELY_BEFORE": 1
+      },
+      "entity_mention_labels": {
+        "EVENT_ACTION": 3,
+        "PERSON": 3,
+        "DATE_TIME": 2,
+        "LOCATION": 2
+      },
+      "provenance_sources": {
+        "romanian_rule_event_temporal": 3,
+        "verb_pattern": 3,
+        "not_detected": 2,
+        "preposition_location_pattern": 2,
+        "previous_event_actor_carry_forward": 2,
+        "temporal_expression_pattern": 2,
+        "text_order_default": 2,
+        "capitalized_actor_heuristic": 1,
+        "temporal_cue_rule": 1
+      },
+      "extraction_sources": [
+        "capitalized_actor_heuristic",
+        "capitalized_actor_mention",
+        "carried_actor_context",
+        "not_detected",
+        "preposition_location_pattern",
+        "previous_event_actor_carry_forward",
+        "romanian_rule_event_temporal",
+        "romanian_rule_segment_type",
+        "temporal_cue_rule",
+        "temporal_expression_pattern",
+        "text_order_default",
+        "verb_pattern"
+      ],
+      "issues": [
+        {
+          "severity": "info",
+          "code": "SEGMENTS_WITHOUT_TIMEX",
+          "message": "1 segment(s) have no explicit temporal anchor.",
+          "evidence": "Temporal anchors are optional in TYM; use TIMEX3 annotations when exact time evidence is needed."
+        }
+      ]
+    },
+    "sample": "romanian",
+    "json_fields": [
+      "id",
+      "model_version",
+      "diagram",
+      "analysis",
+      "render",
+      "xml",
+      "warnings"
+    ],
+    "xml_characters": 7387,
+    "svg_characters": 6538
+  }
+]

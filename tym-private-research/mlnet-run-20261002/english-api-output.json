@@ -1,0 +1,592 @@
+{
+  "id": "64e565444917c978",
+  "model_version": "tym-dotnet-paper-guided-nonllm-provenance-v0.7",
+  "diagram": {
+    "actors": [
+      {
+        "id": "A0",
+        "name": "Narrator"
+      },
+      {
+        "id": "A1",
+        "name": "Mara"
+      }
+    ],
+    "locations": [
+      {
+        "id": "L1",
+        "name": "unknown",
+        "parent_id": ""
+      },
+      {
+        "id": "L2",
+        "name": "the village",
+        "parent_id": ""
+      }
+    ],
+    "entity_mentions": [
+      {
+        "id": "EM1",
+        "text": "Mara",
+        "label": "PERSON",
+        "source": "capitalized_actor_mention",
+        "span_start": 0,
+        "span_end": 4,
+        "event_id": "EV1"
+      },
+      {
+        "id": "EM2",
+        "text": "walked",
+        "label": "EVENT_ACTION",
+        "source": "verb_pattern",
+        "span_start": 5,
+        "span_end": 11,
+        "event_id": "EV1"
+      },
+      {
+        "id": "EM3",
+        "text": "Mara",
+        "label": "PERSON",
+        "source": "carried_actor_context",
+        "span_start": 31,
+        "span_end": 31,
+        "event_id": "EV2"
+      },
+      {
+        "id": "EM4",
+        "text": "the village",
+        "label": "LOCATION",
+        "source": "preposition_location_pattern",
+        "span_start": 63,
+        "span_end": 74,
+        "event_id": "EV2"
+      },
+      {
+        "id": "EM5",
+        "text": "Years earlier",
+        "label": "DATE_TIME",
+        "source": "temporal_expression_pattern",
+        "span_start": 31,
+        "span_end": 44,
+        "event_id": "EV2"
+      },
+      {
+        "id": "EM6",
+        "text": "lived",
+        "label": "EVENT_ACTION",
+        "source": "verb_pattern",
+        "span_start": 54,
+        "span_end": 59,
+        "event_id": "EV2"
+      },
+      {
+        "id": "EM7",
+        "text": "Mara",
+        "label": "PERSON",
+        "source": "carried_actor_context",
+        "span_start": 76,
+        "span_end": 76,
+        "event_id": "EV3"
+      },
+      {
+        "id": "EM8",
+        "text": "Tomorrow",
+        "label": "DATE_TIME",
+        "source": "temporal_expression_pattern",
+        "span_start": 76,
+        "span_end": 84,
+        "event_id": "EV3"
+      },
+      {
+        "id": "EM9",
+        "text": "will",
+        "label": "EVENT_ACTION",
+        "source": "verb_pattern",
+        "span_start": 89,
+        "span_end": 93,
+        "event_id": "EV3"
+      }
+    ],
+    "events": [
+      {
+        "id": "EV1",
+        "text": "Mara walked toward the harbor.",
+        "actors": [
+          "Mara"
+        ],
+        "temporal_anchor": "",
+        "location": "",
+        "action": "walked",
+        "temporal_category": "Past",
+        "relation_to_previous": "NONE",
+        "relation_cue": "",
+        "relation_evidence": "First event in text order.",
+        "order": 1,
+        "span_start": 0,
+        "span_end": 30,
+        "confidence": 0,
+        "classifier": "heuristic_fallback_explicit_tense",
+        "provenance": {
+          "actors": {
+            "source": "capitalized_actor_heuristic",
+            "evidence": "Mara"
+          },
+          "temporal_anchor": {
+            "source": "not_detected",
+            "evidence": "No temporal expression was detected."
+          },
+          "location": {
+            "source": "not_detected",
+            "evidence": "No location phrase was detected."
+          },
+          "action": {
+            "source": "verb_pattern",
+            "evidence": "walked"
+          },
+          "temporal_category": {
+            "source": "heuristic_fallback_explicit_tense",
+            "evidence": "Predicted Past with confidence 0."
+          },
+          "relation": {
+            "source": "text_order_default",
+            "evidence": "First event in text order."
+          }
+        }
+      },
+      {
+        "id": "EV2",
+        "text": "Years earlier, she had lived in the village.",
+        "actors": [
+          "Mara"
+        ],
+        "temporal_anchor": "Years earlier",
+        "location": "the village",
+        "action": "lived",
+        "temporal_category": "Past",
+        "relation_to_previous": "BEFORE",
+        "relation_cue": "Years earlier",
+        "relation_evidence": "Retrospective cue places this event earlier than the previous event.",
+        "order": 2,
+        "span_start": 31,
+        "span_end": 75,
+        "confidence": 0.9822,
+        "classifier": "mlnet_trained_model",
+        "provenance": {
+          "actors": {
+            "source": "previous_event_actor_carry_forward",
+            "evidence": "Mara"
+          },
+          "temporal_anchor": {
+            "source": "temporal_expression_pattern",
+            "evidence": "Years earlier"
+          },
+          "location": {
+            "source": "preposition_location_pattern",
+            "evidence": "the village"
+          },
+          "action": {
+            "source": "verb_pattern",
+            "evidence": "lived"
+          },
+          "temporal_category": {
+            "source": "mlnet_trained_model",
+            "evidence": "Predicted Past with confidence 0.982."
+          },
+          "relation": {
+            "source": "temporal_cue_rule",
+            "evidence": "Retrospective cue places this event earlier than the previous event."
+          }
+        }
+      },
+      {
+        "id": "EV3",
+        "text": "Tomorrow she will return home.",
+        "actors": [
+          "Mara"
+        ],
+        "temporal_anchor": "Tomorrow",
+        "location": "",
+        "action": "will",
+        "temporal_category": "Future",
+        "relation_to_previous": "IMMEDIATELY_AFTER",
+        "relation_cue": "",
+        "relation_evidence": "No explicit cue; defaulting to text-order adjacency.",
+        "order": 3,
+        "span_start": 76,
+        "span_end": 106,
+        "confidence": 0.994,
+        "classifier": "mlnet_trained_model",
+        "provenance": {
+          "actors": {
+            "source": "previous_event_actor_carry_forward",
+            "evidence": "Mara"
+          },
+          "temporal_anchor": {
+            "source": "temporal_expression_pattern",
+            "evidence": "Tomorrow"
+          },
+          "location": {
+            "source": "not_detected",
+            "evidence": "No location phrase was detected."
+          },
+          "action": {
+            "source": "verb_pattern",
+            "evidence": "will"
+          },
+          "temporal_category": {
+            "source": "mlnet_trained_model",
+            "evidence": "Predicted Future with confidence 0.994."
+          },
+          "relation": {
+            "source": "text_order_default",
+            "evidence": "No explicit cue; defaulting to text-order adjacency."
+          }
+        }
+      }
+    ],
+    "tracks": [
+      {
+        "id": "TT1",
+        "name": "Mara",
+        "left_endpoint": "START",
+        "right_endpoint": "STOP"
+      },
+      {
+        "id": "TT2",
+        "name": "Mara",
+        "left_endpoint": "START",
+        "right_endpoint": "STOP"
+      }
+    ],
+    "segments": [
+      {
+        "id": "TS1",
+        "text": "Mara walked toward the harbor.",
+        "track_id": "TT1",
+        "type": "NAR",
+        "perspective": "author",
+        "text_order": 1,
+        "story_order": 1,
+        "entities": [
+          "Mara"
+        ],
+        "actors": [
+          "Mara"
+        ],
+        "location_id": "L1",
+        "temporal_anchor": "",
+        "temporal_category": "Past",
+        "span_start": 0,
+        "span_end": 30,
+        "event_ids": [
+          "EV1"
+        ],
+        "confidence": 0.9659,
+        "classifier": "mlnet_trained_model"
+      },
+      {
+        "id": "TS2",
+        "text": "Years earlier, she had lived in the village.",
+        "track_id": "TT1",
+        "type": "NAR",
+        "perspective": "author",
+        "text_order": 2,
+        "story_order": 2,
+        "entities": [
+          "Mara"
+        ],
+        "actors": [
+          "Mara"
+        ],
+        "location_id": "L2",
+        "temporal_anchor": "Years earlier",
+        "temporal_category": "Past",
+        "span_start": 31,
+        "span_end": 75,
+        "event_ids": [
+          "EV2"
+        ],
+        "confidence": 0.9541,
+        "classifier": "mlnet_trained_model"
+      },
+      {
+        "id": "TS3",
+        "text": "Tomorrow she will return home.",
+        "track_id": "TT2",
+        "type": "NAR",
+        "perspective": "author",
+        "text_order": 3,
+        "story_order": 1,
+        "entities": [
+          "Mara"
+        ],
+        "actors": [
+          "Mara"
+        ],
+        "location_id": "L1",
+        "temporal_anchor": "Tomorrow",
+        "temporal_category": "Future",
+        "span_start": 76,
+        "span_end": 106,
+        "event_ids": [
+          "EV3"
+        ],
+        "confidence": 0.9563,
+        "classifier": "mlnet_trained_model"
+      }
+    ],
+    "endpoints": [],
+    "relations": [
+      {
+        "from_id": "TS2",
+        "rel": "BEFORE",
+        "to_id": "TS1",
+        "cue": "Years earlier",
+        "evidence": "Retrospective cue places this event earlier than the previous event."
+      },
+      {
+        "from_id": "TS2",
+        "rel": "IMMEDIATELY_BEFORE",
+        "to_id": "TS3",
+        "cue": "",
+        "evidence": "No explicit cue; defaulting to text-order adjacency."
+      },
+      {
+        "from_id": "TT1",
+        "rel": "BEFORE",
+        "to_id": "TT2",
+        "cue": "",
+        "evidence": "Adjacent text segments belong to different time tracks."
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "B1",
+        "type": "START",
+        "to_segment_id": "TS1",
+        "track_ids": [
+          "TT1"
+        ],
+        "reason": "First TS in text order."
+      },
+      {
+        "id": "B2",
+        "type": "RUPTURE",
+        "from_segment_id": "TS2",
+        "to_segment_id": "TS3",
+        "track_ids": [
+          "TT1",
+          "TT2"
+        ],
+        "reason": "Adjacent text segments belong to different time tracks."
+      },
+      {
+        "id": "B3",
+        "type": "STOP",
+        "from_segment_id": "TS3",
+        "track_ids": [
+          "TT2"
+        ],
+        "reason": "Last TS in text order."
+      }
+    ],
+    "time_ml": {
+      "events": [
+        {
+          "eid": "e1",
+          "class": "OCCURRENCE",
+          "text": "walked",
+          "span_start": 5,
+          "span_end": 11,
+          "tym_event_id": "EV1"
+        },
+        {
+          "eid": "e2",
+          "class": "I_STATE",
+          "text": "lived",
+          "span_start": 54,
+          "span_end": 59,
+          "tym_event_id": "EV2"
+        },
+        {
+          "eid": "e3",
+          "class": "OCCURRENCE",
+          "text": "will",
+          "span_start": 89,
+          "span_end": 93,
+          "tym_event_id": "EV3"
+        }
+      ],
+      "timex3": [
+        {
+          "tid": "t1",
+          "type": "DATE",
+          "value": "PAST_REF",
+          "text": "Years earlier",
+          "span_start": 31,
+          "span_end": 44,
+          "source": "explicit_temporal_expression",
+          "function_in_document": "NONE"
+        },
+        {
+          "tid": "t2",
+          "type": "DATE",
+          "value": "FUTURE_REF",
+          "text": "Tomorrow",
+          "span_start": 76,
+          "span_end": 84,
+          "source": "explicit_temporal_expression",
+          "function_in_document": "NONE"
+        }
+      ],
+      "signals": [
+        {
+          "sid": "s1",
+          "text": "Years earlier",
+          "span_start": 31,
+          "span_end": 44,
+          "event_id": "EV2",
+          "relation_hint": "BEFORE"
+        }
+      ],
+      "make_instances": [
+        {
+          "eiid": "ei1",
+          "event_id": "e1",
+          "tense": "PAST",
+          "aspect": "NONE",
+          "polarity": "POS",
+          "pos": "VERB",
+          "tym_event_id": "EV1"
+        },
+        {
+          "eiid": "ei2",
+          "event_id": "e2",
+          "tense": "PAST",
+          "aspect": "PERFECTIVE",
+          "polarity": "POS",
+          "pos": "VERB",
+          "tym_event_id": "EV2"
+        },
+        {
+          "eiid": "ei3",
+          "event_id": "e3",
+          "tense": "FUTURE",
+          "aspect": "NONE",
+          "polarity": "POS",
+          "pos": "VERB",
+          "tym_event_id": "EV3"
+        }
+      ],
+      "tlinks": [
+        {
+          "lid": "l1",
+          "rel_type": "IS_INCLUDED",
+          "event_instance_id": "ei2",
+          "related_to_time": "t1",
+          "origin": "event_temporal_anchor"
+        },
+        {
+          "lid": "l2",
+          "rel_type": "BEFORE",
+          "event_instance_id": "ei2",
+          "related_to_event_instance": "ei1",
+          "signal_id": "s1",
+          "origin": "event_relation_signal"
+        },
+        {
+          "lid": "l3",
+          "rel_type": "IS_INCLUDED",
+          "event_instance_id": "ei3",
+          "related_to_time": "t2",
+          "origin": "event_temporal_anchor"
+        },
+        {
+          "lid": "l4",
+          "rel_type": "IBEFORE",
+          "event_instance_id": "ei2",
+          "related_to_event_instance": "ei3",
+          "origin": "event_text_order"
+        }
+      ]
+    }
+  },
+  "analysis": {
+    "character_count": 106,
+    "event_count": 3,
+    "segment_count": 3,
+    "track_count": 2,
+    "relation_count": 3,
+    "time_ml_event_count": 3,
+    "time_ml_timex_count": 2,
+    "time_ml_tlink_count": 4,
+    "average_event_confidence": 0.659,
+    "average_segment_confidence": 0.959,
+    "segment_types": {
+      "NAR": 3
+    },
+    "temporal_categories": {
+      "Past": 2,
+      "Future": 1
+    },
+    "relation_types": {
+      "BEFORE": 2,
+      "IMMEDIATELY_BEFORE": 1
+    },
+    "entity_mention_labels": {
+      "EVENT_ACTION": 3,
+      "PERSON": 3,
+      "DATE_TIME": 2,
+      "LOCATION": 1
+    },
+    "provenance_sources": {
+      "not_detected": 3,
+      "verb_pattern": 3,
+      "mlnet_trained_model": 2,
+      "previous_event_actor_carry_forward": 2,
+      "temporal_expression_pattern": 2,
+      "text_order_default": 2,
+      "capitalized_actor_heuristic": 1,
+      "heuristic_fallback_explicit_tense": 1,
+      "preposition_location_pattern": 1,
+      "temporal_cue_rule": 1
+    },
+    "extraction_sources": [
+      "capitalized_actor_heuristic",
+      "capitalized_actor_mention",
+      "carried_actor_context",
+      "heuristic_fallback_explicit_tense",
+      "mlnet_trained_model",
+      "not_detected",
+      "preposition_location_pattern",
+      "previous_event_actor_carry_forward",
+      "temporal_cue_rule",
+      "temporal_expression_pattern",
+      "text_order_default",
+      "verb_pattern"
+    ],
+    "issues": [
+      {
+        "severity": "info",
+        "code": "SEGMENTS_WITHOUT_TIMEX",
+        "message": "1 segment(s) have no explicit temporal anchor.",
+        "evidence": "Temporal anchors are optional in TYM; use TIMEX3 annotations when exact time evidence is needed."
+      }
+    ]
+  },
+  "render": {
+    "format": "svg",
+    "width": 1200,
+    "height": 520,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"520\" viewBox=\"0 0 1200 520\" role=\"img\" aria-label=\"TYM time-yard diagram\"><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><style>text{dominant-baseline:auto}</style><line x1=\"105.0\" y1=\"76.0\" x2=\"1120.0\" y2=\"76.0\" stroke=\"#374151\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"105.0\" y1=\"64.0\" x2=\"105.0\" y2=\"88.0\" stroke=\"#111827\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"113.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" font-weight=\"400\" fill=\"#111827\">TS1</text><line x1=\"443.3\" y1=\"64.0\" x2=\"443.3\" y2=\"88.0\" stroke=\"#111827\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"451.3\" y=\"110.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" font-weight=\"400\" fill=\"#111827\">TS2</text><line x1=\"781.7\" y1=\"64.0\" x2=\"781.7\" y2=\"88.0\" stroke=\"#111827\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"789.7\" y=\"54.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" font-weight=\"400\" fill=\"#111827\">TS3</text><line x1=\"1120.0\" y1=\"64.0\" x2=\"1120.0\" y2=\"88.0\" stroke=\"#111827\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"18.0\" y=\"163.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#111827\">TT1: Mara</text><polygon points=\"57.0,146.0 57.0,170.0 79.0,158.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\"/><polygon points=\"443.0,146.0 443.0,170.0 421.0,158.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\"/><line x1=\"105.0\" y1=\"158.0\" x2=\"250.0\" y2=\"158.0\" stroke=\"#111827\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><rect x=\"92.0\" y=\"146.0\" width=\"26.0\" height=\"24.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\" rx=\"2\"/><text x=\"105.0\" y=\"162.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#111827\">TS1</text><line x1=\"250.0\" y1=\"145.0\" x2=\"250.0\" y2=\"171.0\" stroke=\"#111827\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"177.5\" y=\"133.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" font-weight=\"400\" fill=\"#111827\">TS1: Mara walked toward the harbor.</text><line x1=\"250.0\" y1=\"158.0\" x2=\"395.0\" y2=\"158.0\" stroke=\"#111827\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><rect x=\"237.0\" y=\"146.0\" width=\"26.0\" height=\"24.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\" rx=\"2\"/><text x=\"250.0\" y=\"162.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#111827\">TS2</text><line x1=\"395.0\" y1=\"145.0\" x2=\"395.0\" y2=\"171.0\" stroke=\"#111827\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"322.5\" y=\"196.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" font-weight=\"400\" fill=\"#111827\">TS2: Years earlier, she had lived in the village.</text><text x=\"18.0\" y=\"249.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#111827\">TT2: Mara</text><polygon points=\"57.0,232.0 57.0,256.0 79.0,244.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\"/><polygon points=\"298.0,232.0 298.0,256.0 276.0,244.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\"/><line x1=\"105.0\" y1=\"244.0\" x2=\"250.0\" y2=\"244.0\" stroke=\"#111827\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><rect x=\"92.0\" y=\"232.0\" width=\"26.0\" height=\"24.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\" rx=\"2\"/><text x=\"105.0\" y=\"248.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#111827\">TS3</text><line x1=\"250.0\" y1=\"231.0\" x2=\"250.0\" y2=\"257.0\" stroke=\"#111827\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"177.5\" y=\"219.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" font-weight=\"400\" fill=\"#111827\">TS3: Tomorrow she will return home.</text><rect x=\"18.0\" y=\"384.0\" width=\"1164.0\" height=\"112.0\" fill=\"#f9fafb\" stroke=\"#d1d5db\" stroke-width=\"1.2\" rx=\"6\"/><text x=\"36.0\" y=\"409.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#111827\">Legend</text><line x1=\"36.0\" y1=\"428.0\" x2=\"80.0\" y2=\"428.0\" stroke=\"#111827\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"92.0\" y=\"432.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"11\" font-weight=\"400\" fill=\"#111827\">Solid line: narrative continuity</text><line x1=\"617.0\" y1=\"428.0\" x2=\"661.0\" y2=\"428.0\" stroke=\"#111827\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"2 6\"/><text x=\"673.0\" y=\"432.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"11\" font-weight=\"400\" fill=\"#111827\">Dotted line: REM/SUP/GEN/FIC segment</text><polygon points=\"33.0,443.0 33.0,467.0 55.0,455.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\"/><polygon points=\"92.0,443.0 92.0,467.0 70.0,455.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\"/><text x=\"92.0\" y=\"460.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"11\" font-weight=\"400\" fill=\"#111827\">Triangle: track start/stop</text><rect x=\"629.0\" y=\"443.0\" width=\"28.0\" height=\"24.0\" fill=\"#dbeafe\" stroke=\"#111827\" stroke-width=\"1.5\" rx=\"2\"/><text x=\"643.0\" y=\"459.0\" text-anchor=\"middle\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#111827\">TS</text><text x=\"673.0\" y=\"460.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"11\" font-weight=\"400\" fill=\"#111827\">Blue box: TS marker</text><line x1=\"59.0\" y1=\"470.0\" x2=\"59.0\" y2=\"495.0\" stroke=\"#111827\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"92.0\" y=\"488.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"11\" font-weight=\"400\" fill=\"#111827\">Vertical tick: segment boundary</text><text x=\"629.0\" y=\"488.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#111827\">EP</text><text x=\"673.0\" y=\"488.0\" text-anchor=\"start\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"11\" font-weight=\"400\" fill=\"#111827\">Endpoint text: JOIN/SPLIT</text></svg>"
+  },
+  "xml": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<TYM>\r\n  <TA-SECTION>\r\n    <TA ID=\"A0\" NAME=\"Narrator\" />\r\n    <TA ID=\"A1\" NAME=\"Mara\" />\r\n  </TA-SECTION>\r\n  <TL-SECTION>\r\n    <TL ID=\"L1\" NAME=\"unknown\" PARENTID=\"\" />\r\n    <TL ID=\"L2\" NAME=\"the village\" PARENTID=\"\" />\r\n  </TL-SECTION>\r\n  <ENTITY-MENTION-SECTION>\r\n    <ENTITY-MENTION ID=\"EM1\" TYPE=\"PERSON\" SOURCE=\"capitalized_actor_mention\" EVENT=\"EV1\" SPANS=\"0~4\" TEXT=\"Mara\" />\r\n    <ENTITY-MENTION ID=\"EM2\" TYPE=\"EVENT_ACTION\" SOURCE=\"verb_pattern\" EVENT=\"EV1\" SPANS=\"5~11\" TEXT=\"walked\" />\r\n    <ENTITY-MENTION ID=\"EM3\" TYPE=\"PERSON\" SOURCE=\"carried_actor_context\" EVENT=\"EV2\" SPANS=\"31~31\" TEXT=\"Mara\" />\r\n    <ENTITY-MENTION ID=\"EM4\" TYPE=\"LOCATION\" SOURCE=\"preposition_location_pattern\" EVENT=\"EV2\" SPANS=\"63~74\" TEXT=\"the village\" />\r\n    <ENTITY-MENTION ID=\"EM5\" TYPE=\"DATE_TIME\" SOURCE=\"temporal_expression_pattern\" EVENT=\"EV2\" SPANS=\"31~44\" TEXT=\"Years earlier\" />\r\n    <ENTITY-MENTION ID=\"EM6\" TYPE=\"EVENT_ACTION\" SOURCE=\"verb_pattern\" EVENT=\"EV2\" SPANS=\"54~59\" TEXT=\"lived\" />\r\n    <ENTITY-MENTION ID=\"EM7\" TYPE=\"PERSON\" SOURCE=\"carried_actor_context\" EVENT=\"EV3\" SPANS=\"76~76\" TEXT=\"Mara\" />\r\n    <ENTITY-MENTION ID=\"EM8\" TYPE=\"DATE_TIME\" SOURCE=\"temporal_expression_pattern\" EVENT=\"EV3\" SPANS=\"76~84\" TEXT=\"Tomorrow\" />\r\n    <ENTITY-MENTION ID=\"EM9\" TYPE=\"EVENT_ACTION\" SOURCE=\"verb_pattern\" EVENT=\"EV3\" SPANS=\"89~93\" TEXT=\"will\" />\r\n  </ENTITY-MENTION-SECTION>\r\n  <EVENT-SECTION>\r\n    <EVENT ID=\"EV1\" SPANS=\"0~30\" ACTORS=\"A1\" ACTOR-SOURCE=\"capitalized_actor_heuristic\" ACTOR-EVIDENCE=\"Mara\" LOCATION=\"L1\" LOCATION-SOURCE=\"not_detected\" LOCATION-EVIDENCE=\"No location phrase was detected.\" TEMPORAL-ANCHOR=\"\" TEMPORAL-SOURCE=\"not_detected\" TEMPORAL-EVIDENCE=\"No temporal expression was detected.\" TENSE=\"Past\" TENSE-SOURCE=\"heuristic_fallback_explicit_tense\" TENSE-EVIDENCE=\"Predicted Past with confidence 0.\" ACTION=\"walked\" ACTION-SOURCE=\"verb_pattern\" ACTION-EVIDENCE=\"walked\" REL-PREV=\"NONE\" REL-CUE=\"\" REL-SOURCE=\"text_order_default\" REL-EVIDENCE=\"First event in text order.\" ORDER=\"1\" TEXT=\"Mara walked toward the harbor.\" />\r\n    <EVENT ID=\"EV2\" SPANS=\"31~75\" ACTORS=\"A1\" ACTOR-SOURCE=\"previous_event_actor_carry_forward\" ACTOR-EVIDENCE=\"Mara\" LOCATION=\"L2\" LOCATION-SOURCE=\"preposition_location_pattern\" LOCATION-EVIDENCE=\"the village\" TEMPORAL-ANCHOR=\"Years earlier\" TEMPORAL-SOURCE=\"temporal_expression_pattern\" TEMPORAL-EVIDENCE=\"Years earlier\" TENSE=\"Past\" TENSE-SOURCE=\"mlnet_trained_model\" TENSE-EVIDENCE=\"Predicted Past with confidence 0.982.\" ACTION=\"lived\" ACTION-SOURCE=\"verb_pattern\" ACTION-EVIDENCE=\"lived\" REL-PREV=\"BEFORE\" REL-CUE=\"Years earlier\" REL-SOURCE=\"temporal_cue_rule\" REL-EVIDENCE=\"Retrospective cue places this event earlier than the previous event.\" ORDER=\"2\" TEXT=\"Years earlier, she had lived in the village.\" />\r\n    <EVENT ID=\"EV3\" SPANS=\"76~106\" ACTORS=\"A1\" ACTOR-SOURCE=\"previous_event_actor_carry_forward\" ACTOR-EVIDENCE=\"Mara\" LOCATION=\"L1\" LOCATION-SOURCE=\"not_detected\" LOCATION-EVIDENCE=\"No location phrase was detected.\" TEMPORAL-ANCHOR=\"Tomorrow\" TEMPORAL-SOURCE=\"temporal_expression_pattern\" TEMPORAL-EVIDENCE=\"Tomorrow\" TENSE=\"Future\" TENSE-SOURCE=\"mlnet_trained_model\" TENSE-EVIDENCE=\"Predicted Future with confidence 0.994.\" ACTION=\"will\" ACTION-SOURCE=\"verb_pattern\" ACTION-EVIDENCE=\"will\" REL-PREV=\"IMMEDIATELY_AFTER\" REL-CUE=\"\" REL-SOURCE=\"text_order_default\" REL-EVIDENCE=\"No explicit cue; defaulting to text-order adjacency.\" ORDER=\"3\" TEXT=\"Tomorrow she will return home.\" />\r\n  </EVENT-SECTION>\r\n  <TIMEML-SECTION>\r\n    <EVENT eid=\"e1\" class=\"OCCURRENCE\" tymEventId=\"EV1\" spans=\"5~11\">walked</EVENT>\r\n    <EVENT eid=\"e2\" class=\"I_STATE\" tymEventId=\"EV2\" spans=\"54~59\">lived</EVENT>\r\n    <EVENT eid=\"e3\" class=\"OCCURRENCE\" tymEventId=\"EV3\" spans=\"89~93\">will</EVENT>\r\n    <TIMEX3 tid=\"t1\" type=\"DATE\" value=\"PAST_REF\" functionInDocument=\"NONE\" source=\"explicit_temporal_expression\" spans=\"31~44\">Years earlier</TIMEX3>\r\n    <TIMEX3 tid=\"t2\" type=\"DATE\" value=\"FUTURE_REF\" functionInDocument=\"NONE\" source=\"explicit_temporal_expression\" spans=\"76~84\">Tomorrow</TIMEX3>\r\n    <SIGNAL sid=\"s1\" eventId=\"EV2\" relationHint=\"BEFORE\" spans=\"31~44\">Years earlier</SIGNAL>\r\n    <MAKEINSTANCE eiid=\"ei1\" eventID=\"e1\" tense=\"PAST\" aspect=\"NONE\" polarity=\"POS\" pos=\"VERB\" tymEventId=\"EV1\" />\r\n    <MAKEINSTANCE eiid=\"ei2\" eventID=\"e2\" tense=\"PAST\" aspect=\"PERFECTIVE\" polarity=\"POS\" pos=\"VERB\" tymEventId=\"EV2\" />\r\n    <MAKEINSTANCE eiid=\"ei3\" eventID=\"e3\" tense=\"FUTURE\" aspect=\"NONE\" polarity=\"POS\" pos=\"VERB\" tymEventId=\"EV3\" />\r\n    <TLINK lid=\"l1\" relType=\"IS_INCLUDED\" eventInstanceID=\"ei2\" relatedToEventInstance=\"\" timeID=\"\" relatedToTime=\"t1\" signalID=\"\" origin=\"event_temporal_anchor\" />\r\n    <TLINK lid=\"l2\" relType=\"BEFORE\" eventInstanceID=\"ei2\" relatedToEventInstance=\"ei1\" timeID=\"\" relatedToTime=\"\" signalID=\"s1\" origin=\"event_relation_signal\" />\r\n    <TLINK lid=\"l3\" relType=\"IS_INCLUDED\" eventInstanceID=\"ei3\" relatedToEventInstance=\"\" timeID=\"\" relatedToTime=\"t2\" signalID=\"\" origin=\"event_temporal_anchor\" />\r\n    <TLINK lid=\"l4\" relType=\"IBEFORE\" eventInstanceID=\"ei2\" relatedToEventInstance=\"ei3\" timeID=\"\" relatedToTime=\"\" signalID=\"\" origin=\"event_text_order\" />\r\n  </TIMEML-SECTION>\r\n  <TT-SECTION>\r\n    <TT ID=\"TT1\" NAME=\"Mara\" LEFT-EP=\"START\" RIGHT-EP=\"STOP\" />\r\n    <TT ID=\"TT2\" NAME=\"Mara\" LEFT-EP=\"START\" RIGHT-EP=\"STOP\" />\r\n  </TT-SECTION>\r\n  <TIME-SECTION>\r\n    <TREL ID=\"TI1\" FROM=\"TS2\" REL=\"BEFORE\" TO=\"TS1\" CUE=\"Years earlier\" EVIDENCE=\"Retrospective cue places this event earlier than the previous event.\" />\r\n    <TREL ID=\"TI2\" FROM=\"TS2\" REL=\"IMMEDIATELY-BEFORE\" TO=\"TS3\" CUE=\"\" EVIDENCE=\"No explicit cue; defaulting to text-order adjacency.\" />\r\n    <TIME ID=\"TI3\" FROM=\"TT1\" REL=\"BEFORE\" TO=\"TT2\" CUE=\"\" EVIDENCE=\"Adjacent text segments belong to different time tracks.\" />\r\n  </TIME-SECTION>\r\n  <EP-SECTION>\r\n  </EP-SECTION>\r\n  <POINT-SECTION>\r\n    <POINT ID=\"B1\" TYPE=\"START\" FROM-TS=\"\" TO-TS=\"TS1\" TRACKS=\"TT1\" REASON=\"First TS in text order.\" />\r\n    <POINT ID=\"B2\" TYPE=\"RUPTURE\" FROM-TS=\"TS2\" TO-TS=\"TS3\" TRACKS=\"TT1 TT2\" REASON=\"Adjacent text segments belong to different time tracks.\" />\r\n    <POINT ID=\"B3\" TYPE=\"STOP\" FROM-TS=\"TS3\" TO-TS=\"\" TRACKS=\"TT2\" REASON=\"Last TS in text order.\" />\r\n  </POINT-SECTION>\r\n  <BODY>\r\n    <TS ID=\"TS1\" IN-TT=\"TT1\" SPANS=\"0~30\" ACTORS=\"A1\" LOCATION=\"L1\" NAME=\"TS1\" TYPE=\"NAR\" TST=\"Past\" TIME=\"\" PER=\"author\" EVENTS=\"EV1\">Mara walked toward the harbor.</TS>\r\n    <TS ID=\"TS2\" IN-TT=\"TT1\" SPANS=\"31~75\" ACTORS=\"A1\" LOCATION=\"L2\" NAME=\"TS2\" TYPE=\"NAR\" TST=\"Past\" TIME=\"Years earlier\" PER=\"author\" EVENTS=\"EV2\">Years earlier, she had lived in the village.</TS>\r\n    <TS ID=\"TS3\" IN-TT=\"TT2\" SPANS=\"76~106\" ACTORS=\"A1\" LOCATION=\"L1\" NAME=\"TS3\" TYPE=\"NAR\" TST=\"Future\" TIME=\"Tomorrow\" PER=\"author\" EVENTS=\"EV3\">Tomorrow she will return home.</TS>\r\n  </BODY>\r\n</TYM>\r\n",
+  "warnings": [
+    "Time segment types follow the paper labels: NAR, REM, SUP, GEN, and FIC.",
+    "The XML output follows the paper notation: TT-SECTION, TIME-SECTION, EP-SECTION, and inline TS tags.",
+    "The diagram includes a TimeML-style layer with EVENT, TIMEX3, SIGNAL, MAKEINSTANCE, and TLINK annotations.",
+    "Narrative perspective uses the paper's single-author baseline; speaker and focalizer changes are future work.",
+    "English extraction uses non-LLM rules plus ML.NET classifiers for event temporal category and TS type.",
+    "At least one classifier used a saved ML.NET artifact. Evaluate it on document-held-out, human-adjudicated data before making performance claims."
+  ]
+}

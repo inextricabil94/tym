@@ -1,0 +1,683 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/jwndxs",
+    "id": "jwndxs",
+    "slide": 13,
+    "layoutId": "c69ef7e8-07f8-4aab-a3cc-a4f23b1abfde",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Arial"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "c69ef7e8-07f8-4aab-a3cc-a4f23b1abfde",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/uh8nylkb",
+      "id": "1",
+      "bbox": [
+        72,
+        44,
+        1136,
+        100
+      ],
+      "geometry": "rect",
+      "text": "Selected free-text predictions",
+      "textPreview": "Selected free-text predictions",
+      "resolvedFontSize": 44,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 44,
+        "typeface": "Arial",
+        "color": "#142D43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Selected free-text predictions"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Selected free-text predictions",
+          "resolvedTextStyle": {
+            "fontSize": 44,
+            "typeface": "Arial",
+            "color": "#142D43",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Selected free-text predictions",
+              "fontSize": 44,
+              "typeface": "Arial",
+              "color": "#142D43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/c36twnu5",
+      "id": "2",
+      "bbox": [
+        72,
+        168,
+        1136,
+        410
+      ],
+      "text": "Input cue or mention | Task | Prediction\nMara remembered the blue room | TYM segment, English | REM\nMâine Mara va pleca spre munte | TimeBank tense | FUTURE\nprimăvara trecută | TimeBank TIMEX type | DATE\ntrei zile | TimeBank TIMEX type | DURATION\nPloaia a început să cadă | TimeBank ALINK | INITIATES",
+      "textPreview": "Input cue or mention | Task | Prediction | Mara remembered the blue room | TYM segment, English | REM | Mâine Mara va pleca spre munte | ...",
+      "rows": 6,
+      "cols": 3,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            72,
+            168,
+            570,
+            68.33
+          ],
+          "text": "Input cue or mention",
+          "textPreview": "Input cue or mention",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Input cue or mention",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Input cue or mention"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            642,
+            168,
+            350,
+            68.33
+          ],
+          "text": "Task",
+          "textPreview": "Task",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Task",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Task"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "column": 3,
+          "bbox": [
+            992,
+            168,
+            216,
+            68.33
+          ],
+          "text": "Prediction",
+          "textPreview": "Prediction",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Prediction",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Prediction"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            72,
+            236.33,
+            570,
+            68.33
+          ],
+          "text": "Mara remembered the blue room",
+          "textPreview": "Mara remembered the blue room",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Mara remembered the blue room",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Mara remembered the blue room"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            642,
+            236.33,
+            350,
+            68.33
+          ],
+          "text": "TYM segment, English",
+          "textPreview": "TYM segment, English",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "TYM segment, English",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "TYM segment, English"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "column": 3,
+          "bbox": [
+            992,
+            236.33,
+            216,
+            68.33
+          ],
+          "text": "REM",
+          "textPreview": "REM",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "REM",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "REM"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            72,
+            304.67,
+            570,
+            68.33
+          ],
+          "text": "Mâine Mara va pleca spre munte",
+          "textPreview": "Mâine Mara va pleca spre munte",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Mâine Mara va pleca spre munte",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Mâine Mara va pleca spre munte"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            642,
+            304.67,
+            350,
+            68.33
+          ],
+          "text": "TimeBank tense",
+          "textPreview": "TimeBank tense",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "TimeBank tense",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "TimeBank tense"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "column": 3,
+          "bbox": [
+            992,
+            304.67,
+            216,
+            68.33
+          ],
+          "text": "FUTURE",
+          "textPreview": "FUTURE",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "FUTURE",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "FUTURE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            72,
+            373,
+            570,
+            68.33
+          ],
+          "text": "primăvara trecută",
+          "textPreview": "primăvara trecută",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "primăvara trecută",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "primăvara trecută"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            642,
+            373,
+            350,
+            68.33
+          ],
+          "text": "TimeBank TIMEX type",
+          "textPreview": "TimeBank TIMEX type",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "TimeBank TIMEX type",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "TimeBank TIMEX type"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 4,
+          "column": 3,
+          "bbox": [
+            992,
+            373,
+            216,
+            68.33
+          ],
+          "text": "DATE",
+          "textPreview": "DATE",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "DATE",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "DATE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "row": 5,
+          "column": 1,
+          "bbox": [
+            72,
+            441.33,
+            570,
+            68.33
+          ],
+          "text": "trei zile",
+          "textPreview": "trei zile",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "trei zile",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "trei zile"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "row": 5,
+          "column": 2,
+          "bbox": [
+            642,
+            441.33,
+            350,
+            68.33
+          ],
+          "text": "TimeBank TIMEX type",
+          "textPreview": "TimeBank TIMEX type",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "TimeBank TIMEX type",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "TimeBank TIMEX type"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "row": 5,
+          "column": 3,
+          "bbox": [
+            992,
+            441.33,
+            216,
+            68.33
+          ],
+          "text": "DURATION",
+          "textPreview": "DURATION",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "DURATION",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "DURATION"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "row": 6,
+          "column": 1,
+          "bbox": [
+            72,
+            509.67,
+            570,
+            68.33
+          ],
+          "text": "Ploaia a început să cadă",
+          "textPreview": "Ploaia a început să cadă",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Ploaia a început să cadă",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Ploaia a început să cadă"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 17,
+          "row": 6,
+          "column": 2,
+          "bbox": [
+            642,
+            509.67,
+            350,
+            68.33
+          ],
+          "text": "TimeBank ALINK",
+          "textPreview": "TimeBank ALINK",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "TimeBank ALINK",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "TimeBank ALINK"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 18,
+          "row": 6,
+          "column": 3,
+          "bbox": [
+            992,
+            509.67,
+            216,
+            68.33
+          ],
+          "text": "INITIATES",
+          "textPreview": "INITIATES",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "INITIATES",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "INITIATES"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g3q50v21",
+      "id": "3",
+      "bbox": [
+        72,
+        633,
+        1136,
+        62
+      ],
+      "geometry": "rect",
+      "text": "These authored examples show outputs of the ten saved baseline classifiers. They carry no adjudicated gold labels.",
+      "textPreview": "These authored examples show outputs of the ten saved baseline classifiers. They carry no adjudicated gold labels.",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Arial",
+        "color": "#536979",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "These authored examples show outputs of the ten saved baseline classifiers. They carry no adjudicated gold labels."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "These authored examples show outputs of the ten saved baseline classifiers. They carry no adjudicated gold labels.",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Arial",
+            "color": "#536979"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "These authored examples show outputs of the ten saved baseline classifiers. They carry no adjudicated gold labels.",
+              "fontSize": 21,
+              "typeface": "Arial",
+              "color": "#536979"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

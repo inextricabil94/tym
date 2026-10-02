@@ -1,0 +1,515 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/8j79jt",
+    "id": "8j79jt",
+    "slide": 15,
+    "layoutId": "c69ef7e8-07f8-4aab-a3cc-a4f23b1abfde",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Arial"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "c69ef7e8-07f8-4aab-a3cc-a4f23b1abfde",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/u10zatgj",
+      "id": "1",
+      "bbox": [
+        72,
+        44,
+        1136,
+        100
+      ],
+      "geometry": "rect",
+      "text": "Narrative annotation workbench",
+      "textPreview": "Narrative annotation workbench",
+      "resolvedFontSize": 44,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 44,
+        "typeface": "Arial",
+        "color": "#142D43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Narrative annotation workbench"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Narrative annotation workbench",
+          "resolvedTextStyle": {
+            "fontSize": 44,
+            "typeface": "Arial",
+            "color": "#142D43",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Narrative annotation workbench",
+              "fontSize": 44,
+              "typeface": "Arial",
+              "color": "#142D43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/wvitkf21",
+      "id": "2",
+      "bbox": [
+        72,
+        162,
+        1136,
+        430
+      ],
+      "text": "Layer | Implemented behavior\nImmutable source | Half-open UTF-16 spans and source hash\nSeparate normalized corpus input from reviewer text\nTyped review | TS, TIMEX and relation editors\nActor, location and perspective fields with evidence\nTemporal anchors | Explicit document creation time and local cues\nNo server-date substitution\nGraph views and checks | Review supplied directed edges and simultaneous groups\nPreserve partial order without forced adjacency or causality",
+      "textPreview": "Layer | Implemented behavior | Immutable source | Half-open UTF-16 spans and source hash | Separate normalized corpus input from reviewer...",
+      "rows": 5,
+      "cols": 2,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            72,
+            162,
+            285,
+            86
+          ],
+          "text": "Layer",
+          "textPreview": "Layer",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Layer",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Layer"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            357,
+            162,
+            851,
+            86
+          ],
+          "text": "Implemented behavior",
+          "textPreview": "Implemented behavior",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Implemented behavior",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Implemented behavior"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            72,
+            248,
+            285,
+            86
+          ],
+          "text": "Immutable source",
+          "textPreview": "Immutable source",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Immutable source",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Immutable source"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            357,
+            248,
+            851,
+            86
+          ],
+          "text": "Half-open UTF-16 spans and source hash\nSeparate normalized corpus input from reviewer text",
+          "textPreview": "Half-open UTF-16 spans and source hash | Separate normalized corpus input from reviewer text",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Half-open UTF-16 spans and source hash",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Half-open UTF-16 spans and source hash"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "Separate normalized corpus input from reviewer text",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Separate normalized corpus input from reviewer text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            72,
+            334,
+            285,
+            86
+          ],
+          "text": "Typed review",
+          "textPreview": "Typed review",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Typed review",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Typed review"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            357,
+            334,
+            851,
+            86
+          ],
+          "text": "TS, TIMEX and relation editors\nActor, location and perspective fields with evidence",
+          "textPreview": "TS, TIMEX and relation editors | Actor, location and perspective fields with evidence",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "TS, TIMEX and relation editors",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "TS, TIMEX and relation editors"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "Actor, location and perspective fields with evidence",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Actor, location and perspective fields with evidence"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            72,
+            420,
+            285,
+            86
+          ],
+          "text": "Temporal anchors",
+          "textPreview": "Temporal anchors",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Temporal anchors",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Temporal anchors"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            357,
+            420,
+            851,
+            86
+          ],
+          "text": "Explicit document creation time and local cues\nNo server-date substitution",
+          "textPreview": "Explicit document creation time and local cues | No server-date substitution",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Explicit document creation time and local cues",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Explicit document creation time and local cues"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "No server-date substitution",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "No server-date substitution"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 5,
+          "column": 1,
+          "bbox": [
+            72,
+            506,
+            285,
+            86
+          ],
+          "text": "Graph views and checks",
+          "textPreview": "Graph views and checks",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Graph views and checks",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Graph views and checks"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 5,
+          "column": 2,
+          "bbox": [
+            357,
+            506,
+            851,
+            86
+          ],
+          "text": "Review supplied directed edges and simultaneous groups\nPreserve partial order without forced adjacency or causality",
+          "textPreview": "Review supplied directed edges and simultaneous groups | Preserve partial order without forced adjacency or causality",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Review supplied directed edges and simultaneous groups",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Review supplied directed edges and simultaneous groups"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "Preserve partial order without forced adjacency or causality",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Preserve partial order without forced adjacency or causality"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wnihcjyp",
+      "id": "3",
+      "bbox": [
+        72,
+        633,
+        1136,
+        62
+      ],
+      "geometry": "rect",
+      "text": "Draft analysis proposes annotations. Human adjudication and end-to-end extraction evaluation remain future work.",
+      "textPreview": "Draft analysis proposes annotations. Human adjudication and end-to-end extraction evaluation remain future work.",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Arial",
+        "color": "#536979",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Draft analysis proposes annotations. Human adjudication and end-to-end extraction evaluation remain future work."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Draft analysis proposes annotations. Human adjudication and end-to-end extraction evaluation remain future work.",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Arial",
+            "color": "#536979"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Draft analysis proposes annotations. Human adjudication and end-to-end extraction evaluation remain future work.",
+              "fontSize": 21,
+              "typeface": "Arial",
+              "color": "#536979"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

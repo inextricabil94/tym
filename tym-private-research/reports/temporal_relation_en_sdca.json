@@ -1,0 +1,18 @@
+﻿{
+  "status": "trained",
+  "task": "temporal_relation",
+  "language": "en",
+  "training_rows": 382,
+  "labels": [
+    "AFTER",
+    "BEFORE",
+    "IMMEDIATELY_AFTER",
+    "IMMEDIATELY_BEFORE",
+    "SIMULTANEOUS"
+  ],
+  "source_types": [
+    "provided_annotation"
+  ],
+  "model_path": "C:\\Users\\serba\\Documents\\ChatGPT\\PhD\\tym-private-research\\models\\temporal_relation_en_sdca.zip",
+  "model_format": "ML.NET .zip"
+}

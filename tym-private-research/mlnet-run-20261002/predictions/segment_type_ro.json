@@ -1,0 +1,17 @@
+﻿{
+  "status": "predicted",
+  "model_path": "C:\\Users\\serba\\Documents\\ChatGPT\\PhD\\tym-private-research\\mlnet-run-20261002\\segment_type_ro_sdca.zip",
+  "input_rows": 2,
+  "predictions": [
+    {
+      "id": "free-ro-memory",
+      "text": "Mult timp dup\u0103 ce a plecat de acas\u0103, Mara \u0219i-a amintit de camera albastr\u0103 \u0219i de scrisoarea pe care o l\u0103sase fratele ei.",
+      "predicted_label": "NAR"
+    },
+    {
+      "id": "free-ro-habit",
+      "text": "\u00CEn fiecare prim\u0103var\u0103, s\u0103tenii se adunau la f\u00E2nt\u00E2n\u0103 \u0219i spuneau aceea\u0219i poveste.",
+      "predicted_label": "NAR"
+    }
+  ]
+}

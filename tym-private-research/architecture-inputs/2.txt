@@ -1,0 +1,352 @@
+===PAGE 1===
+4289742176896 Practical Results for General Models of Temporal, Spatial and Semantic Text Processing The 3rd PhD
+report Boghiu Șerban Paul Faculty of Computer Science “Alexandru Ioan Cuza” University of Iași
+serban.boghiu@info.uaic.ro Abstract —This report presents the practical results obtained in the development of a
+technology that supports the Time Yards Model. Time segmentation is realised using CNNs. Different techniques and
+results are presented in comparison, underlining their main strengths and weaknesses. Keywords—formalism, time,
+temporality, named entity recognition, geoparsing, recurrent neural network, natural text processing I. M OTIVATION
+The main focus of the research described in this paper is to offer a technical solution that implements the Time
+Yards Model (TYM), which means to put in evidence time tracks in a book text. This paper has as a ground foundation
+an already manually annotated novel that is used to train a Convolutional Neural Network (CNN) in order to identify
+time tracks. Several text processing techniques are described and a comparison between different text processing
+frameworks is made. A few approaches regarding time segmentations are proposed and evaluated. II. D EFINITIONS The
+following definitions clarify terms frequently used in TYM and which will be referred to repeatedly in this report.
+A. Events The notion of event is close to that described in TimeML (Pustejovsky, 2005), being mainly attributed to
+verbs and deverbatives. Syntactically, an event is realised at the level of a clause of a sentence, i.e. a word
+sequence around a main active verb or a verb compound. Semantically, an event mainly exposes an action in which a
+verb is surrounded by roles, such as agent, recipient, etc., whose syntactic realisations in the clause are:
+subject, direct object, obliques, etc. Although not always explicitly expressed, events are positioned on the story
+time axis, either reported to time moments or intervals (year, month, week, day, hour, Christmas, Thanksgiving,
+etc.), or to other events, and then, they can be simultaneous, partially intersecting, placed before or after - see
+(Allen, 1994). However, in many cases there is no concrete positioning of an event with respect to a temporal
+expression denoting a date or a moment or to another event. As such, events that make up the semantic content of a
+
+===PAGE 2===
+book can be considered as being partially ordered on the story time axis. Further, usually, in events entities are
+involved. These can be book characters, objects, abstract ideas, etc. In TYM, persons (characters of a book) are of
+particular interest. They fulfil different verb roles, some being more important than others. In our analysis we
+are concerned mainly with the semantic roles of agents and recipients (i.e. fulfilling syntactic positions of
+subjects, direct object and indirect object with respect to a main verb. B. Time Segments (TSs) At the basis of our
+model conceptualising a practical approach towards for TYM and of central focus in this paper is the notion of Time
+Segment (TS), which, conforming to (Cristea & Macovei, 2017; Macovei, 2021), also detailed in (Boghiu, 2020),
+represents a continuous span of the book text or a sequence of clauses observing three constraints: the unity of
+time, of characters and of perspective. The unity of time refers to the fact that the time span on the story time
+axis of the events that make up the TS are either synchronous or are contiguous in their time sequentiality. The
+unity of characters refers to the fact that the characters fulfilling the main roles (agent, recipient) are the
+constant all along the TS. The unity of perspective refers to the fact that the events constituting the TS are told
+by the same narrator (the author or one of the book characters). C. Time Tracks (TTs) By slightly reinterpreting
+the original definitions (Cristea & Macovei, 2017; Macovei, 2021), a TT can be described as a maximal, sequence of
+time segments partially ordered with respect to the story time axis, in which a stable set of characters is
+involved and whose stories are told from a unique perspective. The restriction of being maximal refers to the story
+time axis: a time track should include the “destiny” of a set of characters extended to the whole span of the book
+text. The restriction referring to a stable set of characters is a selectional restriction and not one that touches
+the semantic content of the text, because it is known that, in a text, characters meet and separate, interfere and
+split continuously during the development of the story. As such, a multitude of time tracks could be interrogated
+about a text, with respect to different sets of characters there involved and, in particular, a time track can be
+searched for only one book hero. The notion of time track has a lot in common with that of narrative thread and, by
+following just one character, one can perceive this hero’s involvement in other characters’ destinies, as depicted
+by the author. Let’s notice also that the sequence of TSs constituting a TT may leave uncovered stretches of time
+on the story time axis, therefore unknown developments from the destinies of the corresponding characters, segments
+of time in their told lives about which the narrator does not say anything. As said, each TT is attached to a
+specific set of characters and a certain narrator. Along one TT attached to a declared set of characters , specific
+points can be put in evidence: - the start point : its leftmost point on the story time axis. This is where the
+characters in the declared set are mentioned together for the first time in the novel, - the end point : its
+rightmost point on the story time axis. This is where the characters in the declared set are mentioned together for
+the last time in the novel: - a split point of a TT: an interior point within the time span of the novel story in
+which the current TT is interrupted for the reason that its specific set of characters split, at least one
+
+===PAGE 3===
+character from the set exiting the set. A specific type of split point, which we will call an interruption point ,
+refers to situations where the author temporally interrupts the narration on the specific set of characters. As
+such, a split point of a TT attached to one character only is always an interruption point, because it represents a
+point on the story time axis where the author interrupts the narration about that particular character; - a merge
+point : an interior point within the time span of the novel story in which the current TT meets another TT specific
+to another set of characters. This represents a point in the story where the set of characters specific to the
+current TT meet with at least another character. A specific type of merge point, which we will call a restore point
+, refers to situations where an interrupted narration on the specific set of characters is restored. III. A S
+YNOPSIS OF THE P ROCESSING P URSUIT The logical pursuit in implementing this model is as follows: 1). identify
+events, which is to find clause boundaries; 2). put in evidence temporal relations, either of an event with respect
+to a fixed temporal borne or between events; 3). put in evidence the set of characters (person type entities)
+participating in an event; 4). put in evidence the perspective from which a certain event is told; 5). identify
+time segment boundaries, as a continuous sequence (in the length of the text) of events in which the time flows
+sequentially and/or is stationary; 6). detect the TT of a given set of characters (as dictated by the user), in two
+steps: make a selection among the detected set of TSs for those which include the given set and reorder this
+selected set of TSs with respect to their time spans. In the following, we will briefly describe each of these
+steps from an implementation point of view. A. Event Segmentation Events are the main brick in composing time
+segments. At the level of the text, an event is offered by a syntactic construct built around a verb, in which
+proper nouns, personal pronouns, etc. participate in the position of subject, direct objects and other syntactic
+roles. In order to detect basic structures such as events, the processes of tokenization and POS-tagging are
+realized for each sentence using the NLTK framework 1 , being immediately followed by chunking. The tokens are
+characterised by their part of speeches, while chunking offers the possibility to define patterns that make up
+constituents of the structure of the event. Such patterns are described in more detail in chapter IV. Event
+detection comes after performing the preprocessing phase, where we extract all the needed information in order to
+build a basic event (character, temporal expression, location, action). All events must have a set of characters
+assigned, which can be specifically mentioned in the sentence, deduced by a coreference resolution module, or
+inferred based on heuristics. When no character of type person is mentioned in an event, considering the same set
+of characters as of the previous event in sequence, can be a successful heuristics, which we have adopted. Same
+logic is applied for temporal expressions. They must be fully anchored (by specific temporal expressions of type
+date, moment, etc.) or they 1 https://www.nltk.org/
+
+===PAGE 4===
+take over the last identified temporal anchor from previous events (the current event will be immediately after the
+previous one on a time axis). Events are detected in an initial phase using patterns for chunking, but they go
+through a second test where key words from the specific list of conjunctions are identified in the sentence. A
+third test is made when no conjunction is found, but many verbs were present in the sentence. In this case
+delimiter punctuation signs are identified, such as: , , . , - , … , ; . If no such sign is identified, the events
+are splitted in the close proximity of the second verb. The described steps only apply for sentences with multiple
+verbs. In cases where a sentence contains only one verb then a single event equal to the whole sentence is
+extracted. This algorithm for detecting event in multiple verb sentences can be described by the following
+pseudocode: 1: chunks = GetChunks(sentence) 2: if(chunks.length > 0) 3: SplitEventsByConjInChunks(chunks); 4: else
+if (ConjFromListFound(sentence)) 5: SplitEventsByConjInList(sentence); 6: else if (PunctSignFound(sentence)) 7:
+SplitEventsByPunctSign(sentence); 8: else SplitEventsByVerbs(sentence); B. Identifying temporal relations Once the
+events are individualised, they should be placed in temporal order. Important clues in establishing relations of
+time precedence or succession between events are given by the subordinating conjunctions. They provide a transition
+between two ideas in the same sentence that always indicates a temporal relationship, a spatial relationship or a
+cause to effect relationship. Temporal expressions associated prove to be very helpful in identifying temporal
+anchoring of events. There are more cases to consider in time-anchoring the current event 2 : - If the current
+event contains a temporal expression of type interval, then this event should be attributed inside this temporal
+interval, as in the following example: 1. Last week John played tennis with Bill. Unit 1 describes an event which
+is temporally anchored by the interval-type temporal expression last week . - If no temporal expression is
+contained in the current event, the time of the event is considered to be contingent or immediately following the
+one of the previous event, as in the following example: 1. Last week John played tennis with Bill. 2. He won by 3
+to 2 . Here the event is unit 2 follows the one in unit 1. On the other hand, coordinating and correlative
+conjunctions are used to connect events of the same importance, which are usually simultaneous. Conjunctive adverbs
+may not necessarily express space or time relationships between events, but are clues indicating their belonging to
+the same TS. The considered levels of annotation are referring to: - phrase annotation (in an incipient phase); -
+lexical and morphological annotation (as revealed by a tokenizer, a lemmatizer and a POS-tagger); - time annotation
+as revealed by packages such as Duckling, SUTime and others. The mentioned conjunctions are used to connect
+temporal events and to offer more significance to isolated temporal expressions found by libraries. 2 This list
+should be extended.
+
+===PAGE 5===
+A complete list of used conjunctions can be found in Table 1. Table 1. Conjunctions used to link events.
+Subordinating conjunctions after, although, as, as soon as, because, before, by the time, even if, even though,
+every time, if, in case, now that, once, since, so that, than, the first time, unless, until, when, whenever,
+whether or not, while, why Coordinating conjunction for, and, nor, but, or, yet, so Correlative conjunction as/as,
+both/and, either/or, hardly/when, if/then, just as/so, neither/nor, not only/but also, no sooner/than, not/but,
+rather/than, scarcely/ when, what with/and, whether/or Conjunctive adverbs additionally, again, almost, anyway, as
+a result, in addition, besides, certainly, comparatively, consequently, contrarily, comparatively, consequently,
+conversely, elsewhere, equally, eventually, finally, further, furthermore, elsewhere, hence, henceforth, however C.
+Identifying characters mentioned in events Identification of characters involved in events is in direct connection
+with the TS constraint called unity of characters . This task can be realised as a cooperation of more components,
+among which the recognition of name entities and anaphora resolution is of primary importance. An event should have
+a character or a set of characters associated with it, which can be identified through a series of Named Entity
+Recognition frameworks, described in detail in chapter IV. If no such entity is found, the coreference resolution
+module should be called, in order to resolve other types of nominal expressions, which could mention the characters
+involved in the event. To accomplish the Named Entity Recognition (NER) task, a few libraries are used, with the
+focus on the entity of type person. Here we can mention ANNIE from GATE (Cunningham et. al, 2002), SpaCy 3 and
+OpenNLP 4 . Unlike ANNIE GATE, which is specialized in the English language only, SpaCy offers support for at least
+64 languages, including the Romanian language. OpenNLP also offers support for processing texts in a few languages,
+but Romanian unfortunately isn’t one of them, the main focus being on English. They all offer mostly the same
+functions, such as tokenization, POS tagging, sentence segmentation, lemmatization, named entity recognition etc.
+The only difference is in the volume of training data offered and in the response time (NER may be more time
+consuming depending on the amount of data available to search). An anaphora resolution resolver must also be used
+in order to recognise coreference chains of persons. For this task we used ANNIE GATE, which provides the
+Pronominal Coreference module, based on a JAPE grammar formalism. The text must be passed through a preprocessing
+phase where it is splitted in sentences and for each one a list of persons, organisations and locations is
+extracted using the NER tool they also 4 https://opennlp.apache.org/docs/1.9.2/manual/opennlp.html 3
+https://spacy.io/
+
+===PAGE 6===
+provide. Information about the gender of each named entity is taken into consideration, as well as if it is a
+pleonastic “it“ coreference, in order to ensure the best match. Once identification of entity mentions of type
+persons is performed, linking them to clauses (therefore identifying the involvements of those characters in
+events) is a simple assignment task. Once this is done, the unity of character constraint can be considered solved.
+D. Perspective identification The unity of perspective aims to identify the narrator of a certain event and to
+impose a boundary to the time segment where the perspective changes. The perspective is usually attributed to the
+author or one of the characters participating in the story. For simplification reasons, in this study we will
+ignore the constraint that mentions the unity of perspective, therefore we will consider only texts in which there
+is only one narrator. E. Detecting TS boundaries Segmentation on the text for time segments is described in detail
+in Section IV of this paper. F. Detecting Time Tracks Given a text, we should be able to identify and represent the
+time tracks and their corresponding unities. For this we will use some notation conventions: ● Let C = {c 0 , c 1,
+… c n } be a set of characters; ● Let T = {t 0 , t 1, … t n } be a set of temporal anchors; ● Let P = {p 0 , p 1, …
+p n } be a set of perspectives (narrators) - for this article we will consider P = {p 0 } = {“author”}; ● Let EV =
+{ev 0 , ev 1, … ev n } be a set of events, where each event can be linked to a set of characters, a temporal
+anchor, a location, an action (verb with a specific tense) and an order number: ev i = (c i , t , , l i , a , , o i
+). The order number is useful for ordering events that have the same tense and no temporal expressions associated
+with them, but are linked through one of the conjunctions mentioned above. If events are linked through a
+subordinating conjunction then the order number will be lower for the first one if the conjunction is a precedence
+one ( before ) or greater if the conjunction is a succession one ( after ). For the other conjunction types the
+order number will be the same for all events linked by them. The order number is increased incrementally depending
+on the temporal expressions or conjunctions identified within. The order number will be recalculated each time when
+a temporal expression is found and the event needs to be repositioned on the time axis. ● Let TST = {Past, Present,
+Future} be is a set of TS types, used to position time tracks - they will be extracted using the tenses of verbs
+identified in events. ● Let TS = {ts 0 , ts 1, … ts n } be a set of time segments, where each time segment contains
+a list of events ts i = {[ev i , .., ev n ]} ● Let TT = {tt 0 , tt 1, … tt n } be a set of time tracks, where each
+time track contains an array of tuples consisting of a time segment and the time segment type (ts i , tst i ) ●
+Given an element from a time track (ts i , tst i ) for all time events {ev i0, … ev in } in ts i the verbs must
+have the same tense category (Past, Present, Future) as tst i . All events {ev i0, … ev in } must have successive
+order numbers and temporal expressions (if any). Our goal in this paper is to present a proposal for the
+identification of time tracks
+
+===PAGE 7===
+so that the flow of the text can be represented on a time axis depending on multiple criterias, such as characters
+or locations. As an example, let’s consider a fragment from the already annotated novel, Map of the Invisible World
+by Tash Aw (Tash Aw, 2009), that is used to train a neural network for finding boundaries of time segments. Suppose
+it applies to the following span of text from the novel: This is Adam. He came to live in this house when he was
+five years old. Now he is sixteen and he has no memory of his life before he came here. For this small fragment we
+can define the sets: ● C = {“Adam”}; ● T = {“five years old”, “now”}; ● P = {“author”}; ● EV = {ev 1 , ev 2 , ev 3
+, ev 4 , ev 5 , ev 6 }, where: ev 1 = “This is Adam” = (“Adam”, “”, “”, “is”, 1) ev 2 = “He came to live in this
+house” = (“Adam”, “”, “”, “came”, 2) ev 3 = “when he was five years old” = (“Adam”,“five years old”,“”,“was”, 3) ev
+4 = “Now he is sixteen” = (“Adam”, “now”, “”, “is”, 4) ev 5 = “and he has no memory of his life” = (“Adam”, “”, “”,
+“has”, 5) ev 6 = “before he came here” = (“Adam”, “”, “”, “came”, 6) ● TS = {ts 1 , ts 2 , ts 3 , ts 4 }, where: ts
+1 = (ev 1 ) ts 2 = (ev 2 , ev 3 ) ts 3 = (ev 4 , ev 5 ) ts 4 = (ev 6 ) ● TT = {tt 1 , tt 2 }, where: tt 1 = [(ev 1
+, Present), (ev 4 , Present), (ev 5 , Present)] tt 2 = [(ev 2 , Past), (ev 3 , Past), (ev 6 , Past)] IV. D ATA
+EXTRACTION In order to automatically detect time segments and build time tracks we have used a corpus already
+annotated to TYM (Macovei, 2021). Apart from this, a preprocessing phase is necessary to provide the elementary
+features needed to the learning phase of a neural network approach. Not only a few libraries are used, but many,
+and the results are merged together for two reasons: in many cases some libraries may have better results than
+others and it is often the case that features must be combined in order to provide more details. The preprocessing
+phase extracts from the raw text the details of information necessary to perform event detection and segmentation
+into TSs. A. The preprocessing phase A first step in data preprocessing is to split the text into tokens,
+sentences, to notate parts of speeches and to identify chunks, tasks realised (for English) with help from the NLTK
+framework. This is very helpful in developing the rule-based and dictionary-based modules for extracting temporal
+expressions and events and building the corresponding time tracks. We have chosen NLTK because it identifies not
+only the part of speeches of tokens but also their relevant morpho-syntactic information. For example, for verbs it
+identifies the person and the tense, while for conjunctions it identifies if it’s a coordinating or a subordinating
+one. This framework comes with the possibility of creating chunking rules that prove very helpful in detecting and
+linking events. For example, a sentence may contain several clauses linked or not by conjunctions,
+
+===PAGE 8===
+with the same tenses or not. To identify which events should be linked we can use patterns such as the ones
+described below using the part of speeches from Annex 1: Sarah sings and dances at the same time.
+{<NN.?>*<VBZ>*<CC>*<NN.?>*<VBZ>} Sarah plays the guitar and she dances as well. {<NN.?>*<VBZ>*<CC>*<PRP.?>*<VBZ>}
+She is going home before night comes. {<PRP.?>*<VBZ><VBG>*<IN>*<PRP.?><VBP>} In addition, future tenses can not be
+detected by NLTK so patterns must be used to identify them, such as: John is going to arrive soon.
+{<NN.?><VBZ><VBG><TO>} John will arrive tomorrow. {<NN.?><MD><VB>} Jane will be watching TV when I come home.
+{<NN.?><MD><VB><VBG>} I shall have completed the task by tomorrow. {<PRP.?><MD><VB><VBD>} A second step is to
+extract temporal expressions. We have used SUTime, Duckling and SpaCy in order to process the text from a temporal
+point of view. For the example mentioned above, SUTime and SpaCy annotated five years old and now as temporal
+expressions of type Duration and Date: <TIMEX3 tid="t1" type="DURATION" value="P5Y">five years old</TIMEX3> <TIMEX3
+tid="t2" type="DATE" value="PRESENT_REF">Now</TIMEX3> On the other hand Duckling only found the temporal expression
+five years of type Duration with basic settings, but the advantage is that new rules can be configured: <TIMEX3
+tid="t1" type="DURATION" value="P5Y">five years old</TIMEX3> In Table 2 we can see some statistics regarding the
+temporal expressions extracted for the same text used as testing dataset. Table 2. Statistics of extracted temporal
+expressions Framework Type Number of temporal expressions SUTime Date & Time 1012 Duration 280 Duckling Date & Time
+1011 Duration 279 SpaCy Date & Time 1012 Duration 278 Although these frameworks can extract temporal expressions
+and durations, this is often insufficient in placing events on a time axis. This is where the rule-based approach
+comes in place. Of equal importance is to identify named entities of type Person and Organization to create
+characters’ timelines. Because they are used for the same purposes, statistics from ANNIE GATE, SpaCy and OpenNLP
+frameworks can be found in Table 3. Table 3. Statistics of extracted locations and named entities
+
+===PAGE 9===
+Framework Type Number of expressions ANNIE GATE Persons 49 Organizations 5 SpaCy Persons 51 Organizations 2 OpenNLP
+Persons 47 Organizations 3 The coreference resolution is the next step in identifying characters although they are
+not mentioned explicitly in text. For this paper, since we only considered texts in English, we have used ANNIE
+GATE for this task, due to its simplicity in using and its provided data structures. For other languages, we
+suggest using SpaCy. V. D ATA TRAINING The training set consists of the annotated novel Map of the Invisible World
+by Tash Aw (Tash Aw, 2009) in both English and Romanian languages in XML format. An example of a small fragment
+with two time segments and their corresponding describing entities is: <TA ID="A0" NAME="Narrator" /> <TA ID="A1"
+NAME="Adam" /> <TA ID="A2" NAME="soldiers" /> <TL ID="L1" NAME="unknown" PARENTID="" /> <TL ID="L2" NAME="the
+house" PARENTID="" /> <TS ID="TS1" SPANS="0~167" ACTORS="A1" LOCATION="L1" NAME="Adam found himself alone"
+TYPE="Narration" PER="A0" TEXT="1 When it finally happened, there was no violence, hardly any drama. It was over
+very quickly, and then Adam found himself alone once more. Hiding in the deep shade of the bushes, this is what he
+saw."/> <TS ID="TS2" SPANS="167~1379" ACTORS="A1,A2,A3" LOCATION="L2" NAME="Soldiers had Karl with them and Adam
+remained shrouded by the dense thorny foliage" TYPE="Narration" PER="A0,A1" TEXT="The soldiers jumped from the
+truck on to the sandy soil. They dusted themselves off, straightening their hitched-up trouser legs and tucking
+their shirts into their waistbands. Their long sleeves were rolled up thickly above their elbows and made their
+arms look skinny and frail, and the belts they wore were so wide they seemed to stretch their waists to their
+chests. They laughed and joked and aimed pretend-kicks at one another. Their boots were too big and when they ran
+they looked like clowns. They were just kids, Adam thought, just like me, only with guns. They hesitated as they
+approached the steps going up to the veranda, talking among themselves. They were too far away; he couldn’t hear
+what
+
+===PAGE 10===
+they were saying. Then two of them went up to the house and when they emerged they had Karl with them. He was not
+handcuffed; he followed them slowly, walking to the truck with his uneven gait before climbing up and disappearing
+under the tarpaulin canopy. From a distance he looked small, just like them, just like a child too, only with fair
+hair and pink skin. Stop. Adam wanted to call out, to scream for Karl to come back. Don’t leave, he wanted to
+shout. But he remained silent and unmoving, shrouded by the dense thorny foliage. He could do this now: he held his
+breath and counted slowly from one to ten." /> <TREL ID="TI1" FROM="TS2" TO="TS1" REL="IMMEDIATELY_BEFORE"
+TRIGGER="this is what he saw" /> Time segments (TS) are annotated using the following tags: ● ID - unique
+identifier; ● SPANS - start and ending offset of the time segment in text; ● ACTORS - list of characters; ●
+LOCATION - id of a previously identified location (proper noun or simple noun) 5 ; 5 Not used in this
+implementation. ● NAME - small description of the time segment; ● TYPE - can have the following values: Narration,
+Remembers, Supposition, General Knowledge and Fiction 6 ; ● PER - from whose perspective the time segment is being
+narrated; ● TEXT - the actual text sequence. Relations between time segments (TREL) are also present, providing the
+following information: ● ID - unique identifier; ● FROM - the starting time segment id; ● TO - the ending time
+segment id; ● REL - can have the following values: BEFORE, IMMEDIATELY_BEFORE, SIMULTANEOUS, IMMEDIATELY_AFTER,
+AFTER. Time actors (TA) and time locations (TL) have the same tags: ● ID - unique identifier; ● NAME - proper nouns
+or simple nouns; In order to be able to train a neural network, we must use text vectorization techniques
+(Kozhevnikov et. al, 2020). Since sentences have different sizes and different characteristics, we must convert
+them into vectors with the same number of relevant features. The expected input for most neural networks consists
+in a two-dimensional array where the lines correspond to each instance (time segment in our case) and the columns
+correspond to the most meaningful features chosen to represent the time segment. 6 Idem
+
+===PAGE 11===
+A first attempt in transforming text in numerical representations was made using the frequency vectorizer. The main
+idea is to create a dictionary with all the distinct words found in text and compute for each one the number of
+occurrences. This can be done at the whole text level or just at the sentence level. The problem with this
+implementation is the size of the dictionary when it comes to processing large texts as well as the useless number
+of zeros stored for words that may appear very rarely with a very negative impact on performance. A solution to
+this problem was to include only relevant words, such as nouns, verbs and conjunctions that provide valuable
+information. Although the computational time and dictionary size decreased significantly, the model did not
+represent the data in a manner that can be reliable for future testing. The solution to this problem came when
+using TF-IDF (Mingyong & Jiangang, 2012). The main idea is that some words may be found very often but do not
+necessarily offer significant information, so the problem is solved by normalizing the term frequency taking into
+account the whole text. With other words, if a word is found very often in a sentence (or time segment) but is
+found rarely in others, then the term is much more significant. For example, a character may be found mentioned
+multiple times in a sentence (explicitly or identified by coreference resolution), but more rarely in others, then
+it gains more importance. After computing the corresponding table for all significant terms (nouns, verbs,
+conjunctions) only the most significant ones have been kept (the chosen TF-IDF value had to be > 0.7). The TF-IDF
+method was used to find the most significant terms that must be embedded later in the word2vec format (Ying Xie et.
+al, 2018). This format is widely used as a model for neural networks and the focus of this article will be on the
+classification task using a Convolutional Neural Network (CNN) (Amit Kumar, 2020). Other features have been added
+as well, being mostly composed of counts: ● Tense of verbs in a time segment - quantified as 1 = Past, 2 = Present,
+3 = Future; ● Number of verbs; ● Number of conjunctions for each type - quantified as 1 = coordinating conjunction,
+2 = subordinating conjunction; ● Number of characters; ● Counts of associated temporal expressions - quantified as
+numbers of: 1 = precedence, 2 = simultaneity, 3 = succession; ● Difference between associated temporal expressions
+from different TS where the relation from TS1 and TS2 equals to BEFORE or IMMEDIATELY_BEFORE quantified as: 1 =
+precedence, 2 = simultaneity, 3 = succession - the expected result should be 1 - same logic is applied for other
+relation types. The training set consisted of 376 time segments and 382 time segment relations for the English
+language. Because the size of the annotated TSs in the corpus is clearly insufficient for training a neural network
+that requires at least a few thousands data points, we have considered the extracted events from each TS as
+training data points since the text from each segment was of a decent length. As a result, we have extracted over
+10,000 events.
+
+===PAGE 12===
+The training set consisted of 80% events and the test set consisted of the remaining 20%. VI. R ESULTS Identifying
+time segments was realized using the classifications retrieved from the CNN for every event. Every extracted event
+from the testing set has the same features computed as the events in the training data set. The goal is to classify
+each one using one of the categories: Past, Present, Future. Time segments are then obtained by concatenating
+events of the same category and in ascending order of their starting and ending position (offset) in text until the
+category changes. This is the point that indicates that another time axis starts, so another time segment should be
+delimited. Time tracks can easily be obtained further by comparing the temporal expressions associated with the
+time segments: compare the first identified temporal expression from TS1 with the last identified temporal
+expressions from TS2 in order to establish one of the relations: Before, Simultaneous, After. The model evaluation
+was made using a confusion matrix present in Table 4 for a testing set of 2,000 extracted events. The number of
+extracted time segments was equal to 93. Table 4. Resulted confusion matrix n = 2000 events Predicted Past
+Predicted Present Predicted Future Actual Past Actual Present Actual Future VII. C ONCLUSIONS Most NLP frameworks
+performed well, identifying almost the same number of temporal expressions, named entities and organizations.
+Although ANNIE GATE offers great support in english and their data structures are easier to use, we recommend SpaCy
+for extending the language portfolio. Although the training set was very thin, we managed to overcome this obstacle
+by using events for classification instead of time segments. For better precision in future studies, a training set
+consisting of a few thousands time segments is required. The classification method is also highly influenced by the
+selected features, so we recommend a feature selection step to identify which ones are relevant or not.
+Bibliography Amit, Kumar Sharma & Sandeep, Chaurasia & Srivastava, Devesh Kumar (2020): Sentimental Short Sentences
+Classification by Using CNN Deep Learning Model with Fine Tuned Word2Vec, Procedia Computer Science, Volume 167,
+2020, Pages 1139-1147, ISSN 1877-0509. 10.1016/j.procs.2020.03.416. Boghiu, Șerban (2020): Spatio-Temporal and
+Semantic Information Extraction, internal Ph.D. report, “Alexandru Ioan Cuza” University of Iași, Faculty of
+Computer Science. Cristea, Dan and Macovei, Andreea (2017): Why Time Resembles Rail Yards? A Way to Look at Time in
+Textbooks, in Romanian Journal of Information Science and Technology, Vol. 19, 1-2, 2016, pp. 31-43. Cunningham,
+Hamish & Maynard, Diana & Bontcheva, Kalina & Tablan, Valentin (2002):
+
+===PAGE 13===
+GATE: A Framework and Graphical Development Environment for Robust NLP Tools and Applications. Proceedings of the
+40th Anniversary Meeting of the Association for Computational Linguistics (ACL'02). James F. Allen, George Ferguson
+(1994): Actions and Events in Interval Temporal Logic, Journal of Logic and Computation, Volume 4, Issue 5, October
+1994, pp. 531–579, https://doi.org/10.1093/logcom/4.5.531 Kozhevnikov, Vadim & Pankratova, Evgeniya (2020):
+Research of the Text Data Vectorization and Classification Algorithms of Machine Learning. Theoretical & Applied
+Science. 10.15863/TAS.2020.05.85.106. Macovei, Andreea (2021): Deciphering temporal and semantic relations in
+texts, Ph.D. thesis, “Alexandru Ioan Cuza” University of Iași, Faculty of Computer Science. Mingyong Liu, Jiangang
+Yang (2012): International Conference on Computer Technology and Science (ICCTS 2012). 10.7763/IPCSIT.2012.V47.9
+Pustejovsky, James & Ingria, Robert & Saurí, Roser & Castaño, José & Moszkowicz, Jessica & Katz, Graham. (2005):
+The Specification Language TimeML, TimeML Project. Tash Aw (2009): Map of the Invisible World,
+https://booksvooks.com/map-of-the-invisible-world-pdf-tash-aw.html Ying Xie, Linh Le, Yiyun Zhou, Vijay V. Raghavan
+(2018): Deep Learning for Natural Language Processing, Handbook of Statistics, Elsevier, Volume 38, 2018, Pages
+317-328, ISSN 0169-7161, ISBN 9780444640420.10.1016/bs.host.2018.05.001. Annex 1. POS detected by NLTK Part of
+Speech Symbol Coordinating conjunction CC Preposition/subordinating conjunction IN Modal (could, will) MD Noun,
+singular (cat, tree) NN Noun plural (desks) NNS Proper noun, singular (Sarah) NNP Proper noun, plural (indians or
+americans) NNPS Personal pronoun PRP Infinite marker (to) TO Verb (ask) VB Verb gerund (judging) VBG Verb past
+tense (pleaded) VBD Verb past participle (reunified) VBN Verb, present tense not 3rd person singular (wrap) VBP
+Verb, present tense with 3rd person singular (bases) VBZ

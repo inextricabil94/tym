@@ -1,0 +1,17 @@
+﻿{
+  "status": "trained",
+  "task": "timebank_timex_type",
+  "language": "ro",
+  "training_rows": 1144,
+  "labels": [
+    "DATE",
+    "DURATION",
+    "SET",
+    "TIME"
+  ],
+  "source_types": [
+    "provided_annotation"
+  ],
+  "model_path": "C:\\Users\\serba\\Documents\\ChatGPT\\PhD\\tym-private-research\\mlnet-run-20261002\\timebank_timex_type_ro_sdca.zip",
+  "model_format": "ML.NET .zip"
+}

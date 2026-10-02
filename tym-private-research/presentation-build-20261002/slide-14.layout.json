@@ -1,0 +1,580 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/sxzfzt",
+    "id": "sxzfzt",
+    "slide": 14,
+    "layoutId": "c69ef7e8-07f8-4aab-a3cc-a4f23b1abfde",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Arial"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "c69ef7e8-07f8-4aab-a3cc-a4f23b1abfde",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xsjyxony",
+      "id": "1",
+      "bbox": [
+        72,
+        44,
+        1136,
+        100
+      ],
+      "geometry": "rect",
+      "text": "Baseline errors and structured probes",
+      "textPreview": "Baseline errors and structured probes",
+      "resolvedFontSize": 44,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 44,
+        "typeface": "Arial",
+        "color": "#142D43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Baseline errors and structured probes"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Baseline errors and structured probes",
+          "resolvedTextStyle": {
+            "fontSize": 44,
+            "typeface": "Arial",
+            "color": "#142D43",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Baseline errors and structured probes",
+              "fontSize": 44,
+              "typeface": "Arial",
+              "color": "#142D43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/na1sbm5k",
+      "id": "2",
+      "bbox": [
+        72,
+        172,
+        1136,
+        388
+      ],
+      "text": "Cue and task | Observed label | Qualitative reading\nRomanian TLINK with “înainte”\nDeparture before the later arrival | AFTER | The stated ordering suggests BEFORE\nRomanian segment with “și-a amintit”\nMara recalls her childhood room | NAR | The memory cue suggests REM\nEnglish TREL with “at the same time”\nRain stops as the ferry arrives | AFTER | The concurrent cue suggests SIMULTANEOUS",
+      "textPreview": "Cue and task | Observed label | Qualitative reading | Romanian TLINK with “înainte” | Departure before the later arrival | AFTER | The st...",
+      "rows": 4,
+      "cols": 3,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            72,
+            172,
+            560,
+            97
+          ],
+          "text": "Cue and task",
+          "textPreview": "Cue and task",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Cue and task",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Cue and task"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            632,
+            172,
+            210,
+            97
+          ],
+          "text": "Observed label",
+          "textPreview": "Observed label",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Observed label",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Observed label"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "column": 3,
+          "bbox": [
+            842,
+            172,
+            366,
+            97
+          ],
+          "text": "Qualitative reading",
+          "textPreview": "Qualitative reading",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Qualitative reading",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Qualitative reading"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            72,
+            269,
+            560,
+            97
+          ],
+          "text": "Romanian TLINK with “înainte”\nDeparture before the later arrival",
+          "textPreview": "Romanian TLINK with “înainte” | Departure before the later arrival",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Romanian TLINK with “înainte”",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Romanian TLINK with “înainte”"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "Departure before the later arrival",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Departure before the later arrival"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            632,
+            269,
+            210,
+            97
+          ],
+          "text": "AFTER",
+          "textPreview": "AFTER",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "AFTER",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "AFTER"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "column": 3,
+          "bbox": [
+            842,
+            269,
+            366,
+            97
+          ],
+          "text": "The stated ordering suggests BEFORE",
+          "textPreview": "The stated ordering suggests BEFORE",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "The stated ordering suggests BEFORE",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "The stated ordering suggests BEFORE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            72,
+            366,
+            560,
+            97
+          ],
+          "text": "Romanian segment with “și-a amintit”\nMara recalls her childhood room",
+          "textPreview": "Romanian segment with “și-a amintit” | Mara recalls her childhood room",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Romanian segment with “și-a amintit”",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Romanian segment with “și-a amintit”"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "Mara recalls her childhood room",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Mara recalls her childhood room"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            632,
+            366,
+            210,
+            97
+          ],
+          "text": "NAR",
+          "textPreview": "NAR",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "NAR",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "NAR"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 3,
+          "column": 3,
+          "bbox": [
+            842,
+            366,
+            366,
+            97
+          ],
+          "text": "The memory cue suggests REM",
+          "textPreview": "The memory cue suggests REM",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "The memory cue suggests REM",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "The memory cue suggests REM"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            72,
+            463,
+            560,
+            97
+          ],
+          "text": "English TREL with “at the same time”\nRain stops as the ferry arrives",
+          "textPreview": "English TREL with “at the same time” | Rain stops as the ferry arrives",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "English TREL with “at the same time”",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "English TREL with “at the same time”"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "Rain stops as the ferry arrives",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Rain stops as the ferry arrives"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            632,
+            463,
+            210,
+            97
+          ],
+          "text": "AFTER",
+          "textPreview": "AFTER",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "AFTER",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "AFTER"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 4,
+          "column": 3,
+          "bbox": [
+            842,
+            463,
+            366,
+            97
+          ],
+          "text": "The concurrent cue suggests SIMULTANEOUS",
+          "textPreview": "The concurrent cue suggests SIMULTANEOUS",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "The concurrent cue suggests SIMULTANEOUS",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "The concurrent cue suggests SIMULTANEOUS"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/b61gve5s",
+      "id": "3",
+      "bbox": [
+        72,
+        633,
+        1136,
+        62
+      ],
+      "geometry": "rect",
+      "text": "Structured TLINK changes the before fixture to BEFORE. Its “știa” SLINK fixture changes to MODAL.\nThese changes remain qualitative observations without adjudicated gold labels.",
+      "textPreview": "Structured TLINK changes the before fixture to BEFORE. Its “știa” SLINK fixture changes to MODAL. | These changes remain qualitative obse...",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Arial",
+        "color": "#536979",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Structured TLINK changes the before fixture to BEFORE. Its “știa” SLINK fixture changes to MODAL."
+          },
+          {
+            "index": 2,
+            "text": "These changes remain qualitative observations without adjudicated gold labels."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Structured TLINK changes the before fixture to BEFORE. Its “știa” SLINK fixture changes to MODAL.",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Arial",
+            "color": "#536979"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Structured TLINK changes the before fixture to BEFORE. Its “știa” SLINK fixture changes to MODAL.",
+              "fontSize": 21,
+              "typeface": "Arial",
+              "color": "#536979"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "These changes remain qualitative observations without adjudicated gold labels.",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Arial",
+            "color": "#536979"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "These changes remain qualitative observations without adjudicated gold labels.",
+              "fontSize": 21,
+              "typeface": "Arial",
+              "color": "#536979"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

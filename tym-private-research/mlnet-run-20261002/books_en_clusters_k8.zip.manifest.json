@@ -1,0 +1,16 @@
+﻿{
+  "schema_version": 1,
+  "task": "exploratory_unlabeled_text_clustering",
+  "language": "en",
+  "algorithm": "KMeans",
+  "featurizer": "ML.NET FeaturizeText",
+  "seed": 42,
+  "threads": 1,
+  "input_rows": 446,
+  "clusters": 8,
+  "document_count": 1,
+  "source_groups": [
+    "user-provided-books-20261002"
+  ],
+  "model_sha256": "b94b981c98e05facce0738d494b2994af50fb812f04ba27d5845a18c45af367d"
+}

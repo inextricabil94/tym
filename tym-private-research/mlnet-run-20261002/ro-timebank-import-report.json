@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "archive": "Ro-TimeBank.zip",
+  "archive_sha256": "6aa0ba361274b2f13a60e9da0c883c380fe0e959297ef86862a91ff3f499d878",
+  "archive_documents": 183,
+  "documents": 157,
+  "excluded_documents": [
+    {
+      "document_id": "WSJ900813-0157_ro",
+      "reason": "Untranslated English body passages"
+    },
+    {
+      "document_id": "WSJ910225-0066_ro",
+      "reason": "Untranslated English body passage"
+    },
+    {
+      "document_id": "wsj_0159_ro",
+      "reason": "Untranslated English body passage"
+    },
+    {
+      "document_id": "wsj_0173_ro",
+      "reason": "Untranslated English body passage"
+    },
+    {
+      "document_id": "wsj_0184_ro",
+      "reason": "Untranslated English body passage"
+    },
+    {
+      "document_id": "wsj_0329_ro",
+      "reason": "Untranslated English body passage"
+    },
+    {
+      "document_id": "wsj_0346_ro",
+      "reason": "Untranslated English body passage"
+    },
+    {
+      "document_id": "wsj_0570_ro",
+      "reason": "Untranslated English body passage"
+    },
+    {
+      "document_id": "wsj_0575_ro",
+      "reason": "Untranslated English body passages"
+    },
+    {
+      "document_id": "wsj_0583_ro",
+      "reason": "Untranslated English body passage"
+    },
+    {
+      "document_id": "wsj_0584_ro",
+      "reason": "Untranslated English body passage"
+    },
+    {
+      "document_id": "wsj_0585_ro",
+      "reason": "Untranslated English body passage"
+    },
+    {
+      "document_id": "wsj_0612_ro",
+      "reason": "Untranslated English body passages"
+    },
+    {
+      "document_id": "wsj_0662_ro",
+      "reason": "Untranslated English body passage"
+    },
+    {
+      "document_id": "wsj_0670_ro",
+      "reason": "Untranslated English body passages"
+    },
+    {
+      "document_id": "wsj_0685_ro",
+      "reason": "Untranslated English body passage"
+    },
+    {
+      "document_id": "wsj_0695_ro",
+      "reason": "Untranslated English body passage"
+    },
+    {
+      "document_id": "wsj_0810_ro",
+      "reason": "Untranslated English body passage"
+    },
+    {
+      "document_id": "wsj_0928_ro",
+      "reason": "Untranslated English body passage"
+    },
+    {
+      "document_id": "wsj_0938_ro",
+      "reason": "Untranslated English body passages"
+    },
+    {
+      "document_id": "wsj_1003_ro",
+      "reason": "Untranslated English body passages"
+    },
+    {
+      "document_id": "wsj_1008_ro",
+      "reason": "Untranslated English body passage"
+    },
+    {
+      "document_id": "wsj_1013_ro",
+      "reason": "Untranslated English body passage"
+    },
+    {
+      "document_id": "wsj_1014_ro",
+      "reason": "Untranslated English body passage"
+    },
+    {
+      "document_id": "wsj_1033_ro",
+      "reason": "Untranslated English body passage"
+    },
+    {
+      "document_id": "wsj_1073_ro",
+      "reason": "Untranslated English body passage"
+    }
+  ],
+  "output_rows": 20151,
+  "provenance": "provided_annotation/adjudication_unknown; train-only",
+  "corpus_license_scope": "research-use; commercial use and redistribution require checking source-owner terms",
+  "label_families": "ISO-TimeML only; never mapped to TYM TS/TREL classes",
+  "tasks": {
+    "timebank_alink": {
+      "rows": 199,
+      "labels": {
+        "CONTINUES": 49,
+        "CULMINATES": 26,
+        "INITIATES": 68,
+        "REINITIATES": 14,
+        "TERMINATES": 42
+      }
+    },
+    "timebank_event_class": {
+      "rows": 5947,
+      "labels": {
+        "ASPECTUAL": 208,
+        "I_ACTION": 549,
+        "I_STATE": 430,
+        "OCCURRENCE": 3090,
+        "PERCEPTION": 29,
+        "REPORTING": 786,
+        "STATE": 855
+      }
+    },
+    "timebank_event_tense": {
+      "rows": 5920,
+      "labels": {
+        "FUTURE": 213,
+        "INFINITIVE": 562,
+        "NONE": 2075,
+        "PAST": 1680,
+        "PASTPART": 113,
+        "PRESENT": 1024,
+        "PRESPART": 253
+      }
+    },
+    "timebank_slink": {
+      "rows": 2133,
+      "labels": {
+        "CONDITIONAL": 33,
+        "COUNTER_FACTIVE": 27,
+        "EVIDENTIAL": 877,
+        "FACTIVE": 286,
+        "MODAL": 905,
+        "NEG_EVIDENTIAL": 5
+      }
+    },
+    "timebank_timex_type": {
+      "rows": 1144,
+      "labels": {
+        "DATE": 937,
+        "DURATION": 139,
+        "SET": 11,
+        "TIME": 57
+      }
+    },
+    "timebank_tlink": {
+      "rows": 4808,
+      "labels": {
+        "AFTER": 639,
+        "BEFORE": 1059,
+        "BEGINS": 47,
+        "BEGUN_BY": 53,
+        "DURING": 221,
+        "DURING_INV": 1,
+        "ENDED_BY": 135,
+        "ENDS": 60,
+        "IAFTER": 31,
+        "IBEFORE": 23,
+        "IDENTITY": 545,
+        "INCLUDES": 457,
+        "IS_INCLUDED": 1033,
+        "SIMULTANEOUS": 504
+      }
+    }
+  },
+  "links_skipped_missing_endpoint": {},
+  "links_skipped_ambiguous_signal": {
+    "TLINK": 1
+  },
+  "notes": [
+    "Romanian TimeBank documents are translated news, not TYM literary segment annotations.",
+    "The paired XCES English/Romanian files are not used to project ISO-TimeML labels onto English.",
+    "This importer preserves separate EVENT, TIMEX3, TLINK, SLINK, and ALINK task namespaces.",
+    "No held-out evaluation is supported by this import; use independent adjudicated documents for evaluation."
+  ]
+}

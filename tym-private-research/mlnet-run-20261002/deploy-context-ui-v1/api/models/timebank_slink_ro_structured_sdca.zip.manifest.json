@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "model_id": "timebank_slink_ro_structured",
+  "task": "timebank_slink",
+  "language": "ro",
+  "input_format": "structured_target_v1",
+  "trainer": "SdcaMaximumEntropy",
+  "featurizer": "ML.NET FeaturizeText per structured channel, concatenated",
+  "feature_channels": [
+    "SourceContext",
+    "TargetContext",
+    "SourceMention",
+    "TargetMention",
+    "Signal"
+  ],
+  "seed": 42,
+  "maximum_iterations": 100,
+  "training_rows": 2133,
+  "labels": [
+    "CONDITIONAL",
+    "COUNTER_FACTIVE",
+    "EVIDENTIAL",
+    "FACTIVE",
+    "MODAL",
+    "NEG_EVIDENTIAL"
+  ],
+  "source_types": [
+    "provided_annotation"
+  ],
+  "source_groups": [
+    "ro-timebank-isotimeml"
+  ],
+  "document_count": 157,
+  "input_sha256": "4d37e1a0fc48e8dd06a89c04e541c19fbb4cc0b999818221c7965866dfbfd880",
+  "model_sha256": "6e9fcddd11181271669275d50a3ca1fc77c5d33e79fe632bde6bd4efb498cf3c",
+  "framework": "ML.NET 5.0.0 / .NET 10",
+  "trained_utc": "2026-10-02T10:58:55.4546498+00:00",
+  "research_limit": "Full-data exploratory classifier conditional on supplied target mentions or ordered endpoints. Provided annotations have unknown adjudication status. No training-set accuracy or book-gold claim is made."
+}

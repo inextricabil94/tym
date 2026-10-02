@@ -1,0 +1,33 @@
+﻿{
+  "schema_version": 1,
+  "task": "timebank_slink",
+  "language": "ro",
+  "trainer": "SdcaMaximumEntropy",
+  "featurizer": "ML.NET FeaturizeText",
+  "seed": 42,
+  "training_rows": 2133,
+  "labels": [
+    "CONDITIONAL",
+    "COUNTER_FACTIVE",
+    "EVIDENTIAL",
+    "FACTIVE",
+    "MODAL",
+    "NEG_EVIDENTIAL"
+  ],
+  "source_types": [
+    "provided_annotation"
+  ],
+  "source_groups": [
+    "ro-timebank-isotimeml"
+  ],
+  "document_count": 157,
+  "research_limit": "Exploratory training only: provided annotations have unknown adjudication status. No held-out generalization claim is supported.",
+  "synthetic_provenance": {
+    "rows": 0,
+    "rows_with_parent": 0,
+    "phenomenon_counts": {},
+    "transformation_counts": {},
+    "generator_version_counts": {}
+  },
+  "model_sha256": "119dfe0de9624693112d952adc99fb00dd839a25f8e2912f3b1dca163e814723"
+}

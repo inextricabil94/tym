@@ -1,0 +1,31 @@
+﻿{
+  "schema_version": 1,
+  "task": "timebank_timex_type",
+  "language": "ro",
+  "trainer": "SdcaMaximumEntropy",
+  "featurizer": "ML.NET FeaturizeText",
+  "seed": 42,
+  "training_rows": 1144,
+  "labels": [
+    "DATE",
+    "DURATION",
+    "SET",
+    "TIME"
+  ],
+  "source_types": [
+    "provided_annotation"
+  ],
+  "source_groups": [
+    "ro-timebank-isotimeml"
+  ],
+  "document_count": 157,
+  "research_limit": "Exploratory training only: provided annotations have unknown adjudication status. No held-out generalization claim is supported.",
+  "synthetic_provenance": {
+    "rows": 0,
+    "rows_with_parent": 0,
+    "phenomenon_counts": {},
+    "transformation_counts": {},
+    "generator_version_counts": {}
+  },
+  "model_sha256": "cc31b8dc22c1cb53bffa3126fe011fc92495c21dd8770ddb803bd6a1cab5b82f"
+}

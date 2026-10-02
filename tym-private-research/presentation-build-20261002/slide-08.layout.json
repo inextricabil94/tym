@@ -1,0 +1,515 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/5ovnuy",
+    "id": "5ovnuy",
+    "slide": 8,
+    "layoutId": "c69ef7e8-07f8-4aab-a3cc-a4f23b1abfde",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Arial"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "c69ef7e8-07f8-4aab-a3cc-a4f23b1abfde",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "2486145b-46ea-4f13-8f2a-613a8e7772f4",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gfilwfqh",
+      "id": "1",
+      "bbox": [
+        72,
+        44,
+        1136,
+        100
+      ],
+      "geometry": "rect",
+      "text": "ML.NET inference and annotation context",
+      "textPreview": "ML.NET inference and annotation context",
+      "resolvedFontSize": 44,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 44,
+        "typeface": "Arial",
+        "color": "#142D43",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ML.NET inference and annotation context"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ML.NET inference and annotation context",
+          "resolvedTextStyle": {
+            "fontSize": 44,
+            "typeface": "Arial",
+            "color": "#142D43",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ML.NET inference and annotation context",
+              "fontSize": 44,
+              "typeface": "Arial",
+              "color": "#142D43",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/y1gnq1c7",
+      "id": "2",
+      "bbox": [
+        72,
+        160,
+        1136,
+        420
+      ],
+      "text": "Stage | Implemented behavior\nPrepare in C# | Preserve label families and source provenance\nKeep directed relation endpoints and marked target context\nTrain with ML.NET | FeaturizeText n-gram features\nSdcaMaximumEntropy multiclass classifier\nPredict from artifacts | Load a saved model and score task-specific free text\nReturn label inventory and provenance\nDraft document analysis | Sentence/rule candidates and segment classifier\nImmutable source offsets and explicit date anchors",
+      "textPreview": "Stage | Implemented behavior | Prepare in C# | Preserve label families and source provenance | Keep directed relation endpoints and marke...",
+      "rows": 5,
+      "cols": 2,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            72,
+            160,
+            280,
+            84
+          ],
+          "text": "Stage",
+          "textPreview": "Stage",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Stage",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Stage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            352,
+            160,
+            856,
+            84
+          ],
+          "text": "Implemented behavior",
+          "textPreview": "Implemented behavior",
+          "fillColor": "#142D43",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Implemented behavior",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Implemented behavior"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            72,
+            244,
+            280,
+            84
+          ],
+          "text": "Prepare in C#",
+          "textPreview": "Prepare in C#",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Prepare in C#",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Prepare in C#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            352,
+            244,
+            856,
+            84
+          ],
+          "text": "Preserve label families and source provenance\nKeep directed relation endpoints and marked target context",
+          "textPreview": "Preserve label families and source provenance | Keep directed relation endpoints and marked target context",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Preserve label families and source provenance",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Preserve label families and source provenance"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "Keep directed relation endpoints and marked target context",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Keep directed relation endpoints and marked target context"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            72,
+            328,
+            280,
+            84
+          ],
+          "text": "Train with ML.NET",
+          "textPreview": "Train with ML.NET",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Train with ML.NET",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Train with ML.NET"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            352,
+            328,
+            856,
+            84
+          ],
+          "text": "FeaturizeText n-gram features\nSdcaMaximumEntropy multiclass classifier",
+          "textPreview": "FeaturizeText n-gram features | SdcaMaximumEntropy multiclass classifier",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "FeaturizeText n-gram features",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "FeaturizeText n-gram features"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "SdcaMaximumEntropy multiclass classifier",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "SdcaMaximumEntropy multiclass classifier"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            72,
+            412,
+            280,
+            84
+          ],
+          "text": "Predict from artifacts",
+          "textPreview": "Predict from artifacts",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Predict from artifacts",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Predict from artifacts"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            352,
+            412,
+            856,
+            84
+          ],
+          "text": "Load a saved model and score task-specific free text\nReturn label inventory and provenance",
+          "textPreview": "Load a saved model and score task-specific free text | Return label inventory and provenance",
+          "fillColor": "#FFFFFF",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Load a saved model and score task-specific free text",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Load a saved model and score task-specific free text"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "Return label inventory and provenance",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Return label inventory and provenance"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 5,
+          "column": 1,
+          "bbox": [
+            72,
+            496,
+            280,
+            84
+          ],
+          "text": "Draft document analysis",
+          "textPreview": "Draft document analysis",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Draft document analysis",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Draft document analysis"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 5,
+          "column": 2,
+          "bbox": [
+            352,
+            496,
+            856,
+            84
+          ],
+          "text": "Sentence/rule candidates and segment classifier\nImmutable source offsets and explicit date anchors",
+          "textPreview": "Sentence/rule candidates and segment classifier | Immutable source offsets and explicit date anchors",
+          "fillColor": "#F8FAFB",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Sentence/rule candidates and segment classifier",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Sentence/rule candidates and segment classifier"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "Immutable source offsets and explicit date anchors",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Immutable source offsets and explicit date anchors"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ud0ju58b",
+      "id": "3",
+      "bbox": [
+        72,
+        633,
+        1136,
+        62
+      ],
+      "geometry": "rect",
+      "text": "Example: Context: Mâine Mara [TARGET] va pleca [/TARGET] spre munte. Event: va pleca",
+      "textPreview": "Example: Context: Mâine Mara [TARGET] va pleca [/TARGET] spre munte. Event: va pleca",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Arial",
+        "color": "#536979",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Example: Context: Mâine Mara [TARGET] va pleca [/TARGET] spre munte. Event: va pleca"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Example: Context: Mâine Mara [TARGET] va pleca [/TARGET] spre munte. Event: va pleca",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Arial",
+            "color": "#536979"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Example: Context: Mâine Mara [TARGET] va pleca [/TARGET] spre munte. Event: va pleca",
+              "fontSize": 21,
+              "typeface": "Arial",
+              "color": "#536979"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

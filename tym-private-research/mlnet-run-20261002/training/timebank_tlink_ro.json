@@ -1,0 +1,27 @@
+﻿{
+  "status": "trained",
+  "task": "timebank_tlink",
+  "language": "ro",
+  "training_rows": 4808,
+  "labels": [
+    "AFTER",
+    "BEFORE",
+    "BEGINS",
+    "BEGUN_BY",
+    "DURING",
+    "DURING_INV",
+    "ENDED_BY",
+    "ENDS",
+    "IAFTER",
+    "IBEFORE",
+    "IDENTITY",
+    "INCLUDES",
+    "IS_INCLUDED",
+    "SIMULTANEOUS"
+  ],
+  "source_types": [
+    "provided_annotation"
+  ],
+  "model_path": "C:\\Users\\serba\\Documents\\ChatGPT\\PhD\\tym-private-research\\mlnet-run-20261002\\timebank_tlink_ro_sdca.zip",
+  "model_format": "ML.NET .zip"
+}

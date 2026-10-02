@@ -1,0 +1,8 @@
+{
+  "name": "tym-corpus-ui-serban",
+  "url": "https://tym-corpus-ui-serban.livelyrock-2726c024.eastus.azurecontainerapps.io",
+  "revision": "tym-corpus-ui-serban--g614tva",
+  "provisioning_state": "Succeeded",
+  "running_status": "Running",
+  "image": "ca0e9fe87ad1acr.azurecr.io/tym-corpus-ui:research-20261002-v1"
+}

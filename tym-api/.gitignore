@@ -1,0 +1,12 @@
+bin/
+obj/
+*.user
+*.suo
+*.log
+.vs/
+TestResults/
+build_verify/
+build_publish/
+tym-api-deploy.zip
+__pycache__/
+*.pyc

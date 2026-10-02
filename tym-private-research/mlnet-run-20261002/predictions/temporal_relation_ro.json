@@ -1,0 +1,17 @@
+﻿{
+  "status": "predicted",
+  "model_path": "C:\\Users\\serba\\Documents\\ChatGPT\\PhD\\tym-private-research\\mlnet-run-20261002\\temporal_relation_ro_sdca.zip",
+  "input_rows": 2,
+  "predictions": [
+    {
+      "id": "free-ro-retrospective",
+      "text": "Earlier segment: Mara a p\u0103r\u0103sit satul \u00EEnainte de r\u0103s\u0103rit. Relation cue: ani mai t\u00E2rziu. Later segment: Ea \u0219i-a amintit c\u0103l\u0103toria.",
+      "predicted_label": "SIMULTANEOUS"
+    },
+    {
+      "id": "free-ro-concurrent",
+      "text": "Earlier segment: Ploaia s-a oprit. Relation cue: \u00EEn acela\u0219i timp. Later segment: Feribotul a ajuns \u00EEn port.",
+      "predicted_label": "SIMULTANEOUS"
+    }
+  ]
+}
